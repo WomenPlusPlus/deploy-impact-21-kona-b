@@ -123,3 +123,4 @@ Add notes about how to use the system.
   - User interaction: https://www.blinkist.com/
   - Documentation: https://github.com/kylelobo/The-Documentation-Compendium
 - References:
+  - Database of social organizations that provide help to Senegal: https://docs.google.com/spreadsheets/d/1t0-ol45Tz43zTCvqFXLLu5FSWuCbg4kElbocGbylCHA/edit#gid=1868970450
