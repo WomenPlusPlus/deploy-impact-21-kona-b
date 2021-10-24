@@ -1,6 +1,3 @@
-# deploy-impact-21-kona-b
-Repository for Team kona-b for deploy(impact) running in 2021
-
 <p align="center">
   <a href="" rel="noopener">
  <img src="https://kona-connect.org/wp-content/uploads/2021/03/cropped-connect_logo_positive-e1614970117884-300x97.png" alt="Project logo"></a>
@@ -9,17 +6,14 @@ Repository for Team kona-b for deploy(impact) running in 2021
 
 <div align="center">
 
-  [![Program](https://img.shields.io/badge/Program-Deploy(impact)-orange.svg)](https://www.womenplusplus.ch/deploy-impact) 
-  [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/projects/5) 
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+  [![Program](https://img.shields.io/badge/Program-Deploy(impact)-blueviolet.svg)](https://www.womenplusplus.ch/deploy-impact) 
+  [![Status](https://img.shields.io/badge/Status-Developing-blueviolet.svg)](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/projects/5) 
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Kona Connect’s legal team, together with students and expert volunteers from around the world, are developing a tool to connect people in need to the organizations best equipped to help them. This tool – a legal aid chatbot – accessible 24/7 through any smartphone device, will automatically guide its users to the help they need, whilst simultaneously reducing aid agencies’ staggering workloads, freeing up time to help more individuals.
     <br> 
 </p>
 
@@ -35,7 +29,7 @@ Repository for Team kona-b for deploy(impact) running in 2021
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
 
-## 🧐 Problem Statement <a name = "problem_statement"></a>
+## ‼️ Problem Statement <a name = "problem_statement"></a>
 It is useful to design and follow a specific format when writing a problem statement. While there are several options
 for doing this, the following is a simple and straightforward template often used in Business Analysis to maintain
 focus on defining the problem.
@@ -55,7 +49,7 @@ This section is used to describe potential solutions.
 Once the ideal, reality, and consequences sections have been 
 completed, and understood, it becomes easier to provide a solution for solving the problem.
 
-## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
+## ⚠️ Dependencies / Limitations <a name = "limitations"></a>
 - What are the dependencies of your project?
 - Describe each limitation in detailed but concise terms
 - Explain why each limitation exists
@@ -63,7 +57,7 @@ completed, and understood, it becomes easier to provide a solution for solving t
 - Assess the impact of each limitation in relation to the overall findings and conclusions of your project, and if 
 appropriate, describe how these limitations could point to the need for further research.
 
-## 🚀 Future Scope <a name = "future_scope"></a>
+## 🎯 Future Scope <a name = "future_scope"></a>
 Write about what you could not develop during the course of the Hackathon; and about what your project can achieve 
 in the future.
 
@@ -95,22 +89,22 @@ And repeat
 until finished
 ```
 
-## 🎈 Usage <a name="usage"></a>
+## 📱 Usage <a name="usage"></a>
 Add notes about how to use the system.
 
-## ⛏️ Built With <a name = "tech_stack"></a>
+## 🪄 Built With <a name = "tech_stack"></a>
 - [MongoDB](https://www.mongodb.com/) - Database
 - [Express](https://expressjs.com/) - Server Framework
 - [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## ✍️ Authors <a name = "authors"></a>
+## 👥 Authors <a name = "authors"></a>
 - [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
 
 See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) 
 who participated in this project.
 
-## 🎉 Acknowledgments <a name = "acknowledgments"></a>
+## 🙏 Acknowledgments <a name = "acknowledgments"></a>
 - Hat tip to anyone whose code was used
 - Inspiration
 - References
