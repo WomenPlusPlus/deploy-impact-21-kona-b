@@ -1,10 +1,11 @@
-function App() {
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+export default function App() {
   return (
-    <div>
-      <header>
-        <h1>Dots</h1>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+    </Switch>
   );
 }
 
