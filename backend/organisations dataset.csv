@@ -1,0 +1,69 @@
+,level_0,Name of Organisation,Region,Can individuals contact them?,Unnamed: 0,index,Unnamed: 0.1
+0,0,new org2,Dakar,True,,,
+1,0,new org,Dakar,True,0,0,nan
+2,1,La Liane,Saint-Louis,True,1,0,0.0
+3,2,Association Jeunesse Espoir (AJS),Saint-Louis,True,2,1,1.0
+4,3,Connexion Sans Frontieres,Dakar,True,3,2,2.0
+5,4,African Network for Horticultural Development,Dakar,False,4,3,3.0
+6,5,African Network for Integrated Development (ANID),Dakar,True,5,4,4.0
+7,6,African Network for Support to Women Entrepreneurs (ANSWE),Dakar,True,6,5,5.0
+8,7,African Office for Development and Cooperation,Dakar,True,7,6,6.0
+9,8,Centre de Recherche Ouest Africaine (CROA),Dakar,True,8,7,7.0
+10,9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),Dakar,True,9,8,8.0
+11,10,African Regional Centre for Technology (ARCT),Dakar,True,10,9,9.0
+12,11,Forum for Agricultural Research in Africa (FARA),Dakar,False,11,10,10.0
+13,12,Groupe Présence Locale,Dakar YOFF,True,12,11,11.0
+14,13,Institut africain de gestion urbaine (IAGU),MBour,False,13,12,12.0
+15,14,OSIWA,Dakar,True,14,13,13.0
+16,15,Research and Action Group for Rural Development in the Third World,Dakar Fann,True,15,14,14.0
+17,16,Student and Youth Traveler Organization (SYTO),Dakar,False,16,15,15.0
+18,17,TrustAfrica,Dakar - Keur Mbaye Fall-Mbao,True,17,16,16.0
+19,18,UCJG/YMCA-SENEGAL,Dakar,True,18,17,17.0
+20,19,SOS Village,Dakar,True,19,18,18.0
+21,20,Alima,Dakar,True,20,19,19.0
+22,21,Amnesty International,Dakar,True,21,20,20.0
+23,22,BirdLife,Dakar,False,22,21,21.0
+24,23,CISV,Dakar,True,23,22,22.0
+25,24,Plan International,Dakar,True,24,23,23.0
+26,25,Croix Rouge Internationale,Dakar,True,25,24,24.0
+27,26,Caritas,Dakar/Pikine,True,26,25,25.0
+28,27,FAO,Dakar,False,27,26,26.0
+29,28,GIZ,nan,True,28,27,27.0
+30,29,GRET,Dakar,True,29,28,28.0
+31,30,IntraHealth,Dakar,True,30,29,29.0
+32,31,IPAR,Dakar,True,31,30,30.0
+33,32,Médecins sans Frontière,nan,False,32,31,31.0
+34,33,OIM,Dakar,True,33,32,32.0
+35,34,African Peace Corps,Dakar,True,34,33,33.0
+36,35,PNUD / UNDP,Dakar,True,35,34,34.0
+37,36,Positive Planet,Dakar,True,36,35,35.0
+38,37,Save the Children,nan,True,37,36,36.0
+39,38,Secours Islamique France,nan,True,38,37,37.0
+40,39,Sightsavers,nan,True,39,38,38.0
+41,40,Solthis,nan,False,40,39,39.0
+42,41,UNESCO,nan,True,41,40,40.0
+43,42,UNHCR,nan,True,42,41,41.0
+44,43,UNICEF,nan,True,43,42,42.0
+45,44,UNOPS,Dakar,False,44,43,43.0
+46,45,USAID,Dakar,False,45,44,44.0
+47,46,ONG Tostan,Dakar,True,46,45,45.0
+48,47,Action Pour les Droits Humains et l'Amité,Dakar,True,47,46,46.0
+49,48,ALEFS (Avec les enfants et les femmes du Sénégal),Mbour,True,48,47,47.0
+50,49,Unies vers’elle,Dakar,True,49,48,48.0
+51,50,Keur talibé,Saint-Louis,True,50,49,49.0
+52,51,Empire des enfants,Dakar,True,51,50,50.0
+53,52,ACTED,Dakar,False,52,51,51.0
+54,53,Action Contre la Faim,Dakar / Yoff,True,53,52,52.0
+55,54,Solidarité pour les enfants des rues ,Dakar,True,54,53,53.0
+56,55,AMOHS Association du mouvement humaniste de saint-louis,Saint-Louis,True,55,54,54.0
+57,56,Maison de la Gare,Saint-Louis,True,56,55,55.0
+58,57,Association des juristes sénégalaises,Dakar,True,57,56,56.0
+59,58,ONG Concept,Dakar,True,58,57,57.0
+60,59,Action femme Enfant (AFE),Saint-Louis,True,59,58,58.0
+61,60,Village Pilote,Dakar,True,60,59,59.0
+62,61,ENDA Tiers Monde,Dakar,False,61,60,60.0
+63,62,ENDA Jeunesse Action,Dakar,True,62,61,61.0
+64,63,World Vision,Dakar,True,63,62,62.0
+65,64,Samu Social Sénégal,nan,True,64,63,63.0
+66,65,RAO (Réseau Afrique de l’Ouest pour la protection des enfants),nan,False,65,64,64.0
+67,66,COSAED (Collectif des Structures d'Appui aux Enfants en Difficulté),nan,False,66,65,65.0
