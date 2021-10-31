@@ -7,4 +7,4 @@ def add(data):
     df2 = pd.DataFrame([data],
                        columns=['Name of Organisation', 'Region', 'Can individuals contact them?'])
     df = pd.concat([df2, df]).reset_index()
-    df.to_csv(filename, sep=',')
+    df.to_csv(filename, sep=',', index=False)
