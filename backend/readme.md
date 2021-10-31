@@ -1,10 +1,10 @@
-To run backend:
+# To run backend:
 
-install python 3.8
+- install python 3.8
 
-install dependencies:
+- install dependencies:
 ```
-pip install -r requirements.txt
+  pip install -r requirements.txt
 ```
 
-run api.py
+- run api.py
