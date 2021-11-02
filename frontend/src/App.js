@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import OrganisationPage from "./pages/OrganisationPage";
 import QuizPage from "./pages/QuizPage";
 import OrganisationsPage from "./pages/OrganisationsPage";
+import OrganisationFormPage from "./pages/OrganisationFormPage";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/organisations/:id" component={OrganisationPage} />
         <Route path="/quiz" component={QuizPage} />
         <Route path="/organisations" component={OrganisationsPage} />
+        <Route path="/organisationForm" component={OrganisationFormPage} />
       </Switch>
     </div>
   );
