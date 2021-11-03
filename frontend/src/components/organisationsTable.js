@@ -30,7 +30,7 @@ export default function OrganisationsTable() {
               <Tr className="border-b border-kona" key={organisation.id}>
                 <Td className="pb-5">{organisation.name}</Td>
                 <Td className="pb-5">
-                  {organisation.SDG.map((item) => {
+                  {organisation.sdg.map((item) => {
                     return (
                       <ul key={item}>
                         <li>{item}</li>

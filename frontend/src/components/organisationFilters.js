@@ -6,16 +6,21 @@ export default function OrganisationFilters({
   organisations,
   setFilteredOrganisations,
 }) {
-  const allRegions = new Set(organisations.map(({ region }) => region));
+  const allRegions = [...new Set(organisations.map(({ region }) => region))];
   const [selectedRegions, setSelectedRegions] = useState([]);
+
+  const allSdg = [...new Set(organisations.flatMap(({ sdg }) => sdg))];
+  const [selectedSdgs, setSelectedSdgs] = useState([]);
 
   useEffect(() => {
     const filteredOrganisations = organisations.filter(
-      ({ region }) =>
-        selectedRegions.length === 0 || selectedRegions.includes(region)
+      ({ region, sdg }) =>
+        (selectedRegions.length === 0 || selectedRegions.includes(region)) &&
+        (selectedSdgs.length === 0 ||
+          selectedSdgs.some((selectedSdg) => sdg.includes(selectedSdg)))
     );
     setFilteredOrganisations(filteredOrganisations);
-  }, [organisations, setFilteredOrganisations, selectedRegions]);
+  }, [organisations, setFilteredOrganisations, selectedRegions, selectedSdgs]);
 
   return (
     <div>
@@ -23,6 +28,11 @@ export default function OrganisationFilters({
         title="Regions"
         allValues={allRegions}
         setSelected={setSelectedRegions}
+      />
+      <CheckboxFilter
+        title="sdg"
+        allValues={allSdg}
+        setSelected={setSelectedSdgs}
       />
     </div>
   );
