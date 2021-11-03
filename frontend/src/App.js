@@ -4,7 +4,7 @@ import Navigation from "./components/navigation";
 import HomePage from "./pages/HomePage";
 import OrganisationPage from "./pages/OrganisationPage";
 import QuizPage from "./pages/QuizPage";
-import OrganisationsList from "./pages/OrganisationsListPage";
+import OrganisationsPage from "./pages/OrganisationsPage";
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/organisations/:id" component={OrganisationPage} />
         <Route path="/quiz" component={QuizPage} />
-        <Route path="/organisationslist" component={OrganisationsList} />
+        <Route path="/organisations" component={OrganisationsPage} />
       </Switch>
     </div>
   );
