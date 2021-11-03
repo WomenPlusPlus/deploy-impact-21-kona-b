@@ -3,7 +3,7 @@
     "id": "1",
     "slug": "la-liane",
     "name": "La Liane",
-    "SDG": [
+    "sdg": [
       "No Poverty",
       "No Hunger",
       "Health",
@@ -21,7 +21,7 @@
     "id": "19",
     "slug": "sos-village",
     "name": "SOS Village",
-    "SDG": [
+    "sdg": [
       "No Poverty",
       "No Hunger",
       "Health",
@@ -40,7 +40,7 @@
     "id": "56",
     "slug": "maison-de-la-gare",
     "name": "Maison de la Gare",
-    "SDG": [
+    "sdg": [
       "No Poverty",
       "No Hunger",
       "Health",

@@ -22,7 +22,7 @@ export default function OrganisationFilters({ title, allValues, setSelected }) {
   return (
     <div>
       <h3>{title}</h3>
-      {[...allValues].map((value) => (
+      {allValues.map((value) => (
         <label key={value}>
           <input
             type="checkbox"
