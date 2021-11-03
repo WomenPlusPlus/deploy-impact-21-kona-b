@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DocumentTitle from "react-document-title";
 
-export default function OrganisationsPage() {
+export default function OrganisationPage() {
+  const organisationName = "";
   return (
-    <DocumentTitle title="Page with the list of organisations">
+    <DocumentTitle title={organisationName}>
       <>
-        <h1>List of Organisations</h1>
+        <h1>{organisationName}</h1>
         <Link to="/">Home</Link>
       </>
     </DocumentTitle>
