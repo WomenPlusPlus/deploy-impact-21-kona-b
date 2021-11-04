@@ -20,18 +20,26 @@ export default function OrganisationFilters({ title, allValues, setSelected }) {
   }, [setSelected, selectedValues]);
 
   return (
-    <div>
-      <h3>{title}</h3>
+    <div className="mb-5 px-5">
+      <h3 className="font-extrabold mt-5 uppercase">{title}</h3>
       {allValues.map((value) => (
-        <label key={value}>
+        <div key={value} className="flex flex-row">
           <input
+            id={`filter-${title}-${value}`}
+            className="cursor-pointer mr-2 my-1"
             type="checkbox"
             name={value}
             checked={selectedValues.includes(value)}
             onChange={handleRegionsChange}
           />
-          {value}
-        </label>
+          <label
+            className="cursor-pointer select-none"
+            key={value}
+            htmlFor={`filter-${title}-${value}`}
+          >
+            {value}
+          </label>
+        </div>
       ))}
     </div>
   );
