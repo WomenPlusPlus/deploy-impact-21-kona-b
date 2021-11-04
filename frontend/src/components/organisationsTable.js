@@ -9,41 +9,59 @@ import organisations from "../data/organisationsList.json";
 export default function OrganisationsTable() {
   const [filteredOrganisations, setFilteredOrganisations] =
     useState(organisations);
+  const [active, setActive] = useState(false);
 
   return (
-    <>
-      <OrganisationFilters
-        organisations={organisations}
-        setFilteredOrganisations={setFilteredOrganisations}
-      />
-      <Table>
-        <Thead>
-          <Tr className="border-b-2 border-kona pb-5 text-left">
-            <Th className="pb-5">Name</Th>
-            <Th className="pb-5">SDG</Th>
-            <Th className="pb-5">Region</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {filteredOrganisations.map((organisation) => {
-            return (
-              <Tr className="border-b border-kona" key={organisation.id}>
-                <Td className="pb-5">{organisation.name}</Td>
-                <Td className="pb-5">
-                  {organisation.sdg.map((item) => {
-                    return (
-                      <ul key={item}>
-                        <li>{item}</li>
-                      </ul>
-                    );
-                  })}
-                </Td>
-                <Td className="">{organisation.region}</Td>
-              </Tr>
-            );
-          })}
-        </Tbody>
-      </Table>
-    </>
+    <div className="grid lg:grid-cols-3 gap-2 lg:gap-6">
+        <button
+          className="border border-gray-400 lg:hidden p-3 rounded-lg text-xs uppercase"
+          type="button"
+          onClick={() => {
+            setActive(!active);
+          }}
+        >
+          Filters
+        </button>
+      <div
+        className={`${!active ? "" : "bg-gray-100 rounded-lg text-xs"} bg-gray-100 rounded-lg text-xs`}
+      >
+        <div className={`${active ? "" : "hidden"} lg:block`}>
+          <OrganisationFilters
+            organisations={organisations}
+            setFilteredOrganisations={setFilteredOrganisations}
+          />
+        </div>
+      </div>
+      <div className="lg:col-span-2 mt-6">
+        <Table>
+          <Thead>
+            <Tr className="border-b-2 border-kona pb-5 text-left">
+              <Th className="pb-5">Name</Th>
+              <Th className="pb-5">SDG</Th>
+              <Th className="pb-5">Region</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            {filteredOrganisations.map((organisation) => {
+              return (
+                <Tr className="border-b border-kona" key={organisation.id}>
+                  <Td className="pb-5">{organisation.name}</Td>
+                  <Td className="pb-5">
+                    {organisation.sdg.map((item) => {
+                      return (
+                        <ul key={item}>
+                          <li>{item}</li>
+                        </ul>
+                      );
+                    })}
+                  </Td>
+                  <Td className="">{organisation.region}</Td>
+                </Tr>
+              );
+            })}
+          </Tbody>
+        </Table>
+      </div>
+    </div>
   );
 }

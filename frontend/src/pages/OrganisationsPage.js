@@ -14,7 +14,7 @@ export default function OrganisationsPage() {
             </h1>
             <p className="mb-6">
               Please find below the list of organisations. You can use our
-              filter to refine the list and click on each organisation to have
+              filters to refine the list and click on each organisation to have
               more details.
             </p>
             <OrganisationsTable />
