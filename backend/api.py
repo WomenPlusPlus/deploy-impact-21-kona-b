@@ -28,7 +28,7 @@ def search_organisations():
     return jsonify(res), 201
 
 
-@app.route('/dots/organisations/add', methods=['POST'])
+@app.route('/api/v0/organisations/add', methods=['POST'])
 def add_organisations():
     body = ast.literal_eval(request.data.decode('utf-8'))
     add(body['data'])
