@@ -25,6 +25,14 @@ def query_organisations():
     res = query(body['filters'])
     return jsonify(res), 201
 
+# @app.route('/api/v0/organisations/search', methods=['GET'])
+# def search_organisations():
+#     args = request.args
+#     print(args)
+#     body = ast.literal_eval(request.data.decode('utf-8'))
+#     res = query(body['filters'])
+#     return jsonify(res), 201
+
 
 
 @app.route('/dots/organisations/add', methods=['POST'])
