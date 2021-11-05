@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 import Navigation from "./components/navigation";
 import HomePage from "./pages/HomePage";
@@ -9,7 +9,7 @@ import OrganisationFormPage from "./pages/OrganisationFormPage";
 
 export default function App() {
   return (
-    <div className="m-5">
+    <Suspense fallback="loading">
       <Navigation />
       <Switch>
         <Route exact path="/" component={HomePage} />
@@ -18,6 +18,6 @@ export default function App() {
         <Route path="/organisations" component={OrganisationsPage} />
         <Route path="/organisationForm" component={OrganisationFormPage} />
       </Switch>
-    </div>
+    </Suspense>
   );
 }
