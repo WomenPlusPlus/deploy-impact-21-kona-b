@@ -3,6 +3,11 @@ import json
 
 
 def search(filters):
+    '''
+
+    :param filters: dictionary of the filer parameters
+    :return: dictionary of organisations matching passed filter values
+    '''
     filename = 'organisations dataset.csv'
     df = pd.read_csv(filename)
     df = df.astype(str)
