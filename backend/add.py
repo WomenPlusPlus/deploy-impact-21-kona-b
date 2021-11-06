@@ -2,6 +2,10 @@ import pandas as pd
 
 
 def add(data):
+    '''
+    :param data: dictionary of the new organisation info
+    :return: adds organisation to the db file
+    '''
     filename = 'organisations dataset.csv'
     keys = []
     values = []

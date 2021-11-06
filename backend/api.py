@@ -19,8 +19,12 @@ def page_not_found(e):
     return "<h1>404</h1><p> 404 :/ </p>", 404
 
 
-@app.route('/api/v0/organisations/search', methods=['GET'])
+@app.route('/api/v0/organisations', methods=['GET'])
 def search_organisations():
+    '''
+    eg. http://127.0.0.1:5000/api/v0/organisations?region=Dakar&contactable=True
+    :return: list of organisations matching passed filters
+    '''
     filter = {}
     filter['region'] = request.args['region']
     filter['contactable'] = request.args['contactable']
@@ -28,8 +32,13 @@ def search_organisations():
     return jsonify(res), 201
 
 
-@app.route('/api/v0/organisations/add', methods=['POST'])
+@app.route('/api/v0/organisations', methods=['POST'])
 def add_organisations():
+    '''
+    eg. http://127.0.0.1:5000/api/v0/organisations
+    body -> { "data":{"name":"new org6","region":"Dakar","contactable":"True"}}
+    :return: message indicating organisation was added successfully
+    '''
     body = ast.literal_eval(request.data.decode('utf-8'))
     add(body['data'])
     return jsonify("Organisation Added Successfully"), 201
