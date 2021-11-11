@@ -34,7 +34,6 @@ export default function OrganisationFilters({ title, allValues, setSelected }) {
           />
           <label
             className="cursor-pointer select-none"
-            key={value}
             htmlFor={`filter-${title}-${value}`}
           >
             {value}
