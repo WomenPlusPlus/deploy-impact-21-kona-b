@@ -1,6 +1,6 @@
 import pandas as pd
 import json
-
+import ast
 
 def search(filters):
     '''
@@ -14,8 +14,9 @@ def search(filters):
     for key, value in filters.items():
         df = df.loc[df[key] == value]
     js = df.to_json(orient='index')
-    res = json.loads(js)
-    return res
+    js = ast.literal_eval(js)
+    res = js.values()
+    return list(res)
 
 
 def get_all():
@@ -26,8 +27,9 @@ def get_all():
     df = pd.read_csv(filename)
     df = df.astype(str)
     js = df.to_json(orient='index')
-    res = json.loads(js)
-    return res
+    js = ast.literal_eval(js)
+    res = js.values()
+    return list(res)
 
 
 def get_one(org_id):
