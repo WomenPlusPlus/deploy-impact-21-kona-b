@@ -1,8 +1,7 @@
 import flask
 from flask import request, jsonify
-
-from backend import organisations
-from quiz import get_questions, process_quiz
+import organisations
+import quiz
 import ast
 
 app = flask.Flask(__name__)
@@ -73,14 +72,14 @@ def delete_organisation(org_id):
 
 @app.route('/api/v0/quiz', methods=['GET'])
 def send_quiz():
-    res = get_questions()
+    res = quiz.get_questions()
     return jsonify(res), 201
 
 
 @app.route('/api/v0/quiz', methods=['POST'])
 def get_quiz_answers():
     body = ast.literal_eval(request.data.decode('utf-8'))
-    filters = process_quiz(body['data'])
+    filters = quiz.process_quiz(body['data'])
     return jsonify(filters), 201
 
 
