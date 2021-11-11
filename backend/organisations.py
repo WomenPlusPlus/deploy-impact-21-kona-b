@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import ast
 
+# DISPLAY_INFO_FILE =
 def search(filters):
     '''
 
@@ -38,7 +39,8 @@ def get_one(org_id):
     df = df.astype(str)
     df = df.loc[df['id'] == org_id]
     js = df.to_json(orient='index')
-    res = json.loads(js)
+    js = ast.literal_eval(js)
+    res = list(js.values())
     return res
 
 
