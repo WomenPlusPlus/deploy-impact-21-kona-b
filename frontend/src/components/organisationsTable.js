@@ -12,7 +12,7 @@ export default function OrganisationsTable() {
   useEffect(() => {
     fetch("/api/v0/organisations").then((response) =>
       response.json().then((data) => {
-        setOrganisations(Object.values(data));
+        setOrganisations(data);
       })
     );
   }, []);
