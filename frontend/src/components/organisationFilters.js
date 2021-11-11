@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import CheckboxFilter from "./checkboxFilter";
 
+// SDG will be replaced by categories
+
 export default function OrganisationFilters({
   organisations,
   setFilteredOrganisations,
