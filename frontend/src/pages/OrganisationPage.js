@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import DocumentTitle from "react-document-title";
 
 import ContactDetails from "../components/contactDetails";
+import RatingForm from "../components/ratingForm";
+
 export default function OrganisationPage() {
   // Organisation example to used until we can access the database
   const [organisation, setOrganisation] = useState({
@@ -76,6 +78,7 @@ export default function OrganisationPage() {
             </h2>
             <p className="text-sm">{organisation.objective}</p>
             <ContactDetails organisation={organisation} />
+            <RatingForm />
           </div>
         </div>
       </main>
