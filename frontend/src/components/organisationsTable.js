@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 
@@ -45,7 +46,11 @@ export default function OrganisationsTable() {
             {filteredOrganisations.map((organisation) => {
               return (
                 <Tr className="border-b border-kona" key={organisation.id}>
-                  <Td className="pb-5">{organisation.name}</Td>
+                  <Td className="pb-5">
+                    <Link to={`/organisations/${organisation.id}`}>
+                      {organisation.name}
+                    </Link>
+                  </Td>
                   <Td className="pb-5">
                     {organisation.sdg.map((item) => {
                       return (
