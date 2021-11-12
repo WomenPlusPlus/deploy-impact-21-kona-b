@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import DocumentTitle from "react-document-title";
 
+import ContactDetails from "../components/contactDetails";
 export default function OrganisationPage() {
   // Organisation example to used until we can access the database
   const [organisation, setOrganisation] = useState({
@@ -74,6 +75,7 @@ export default function OrganisationPage() {
               Objective
             </h2>
             <p className="text-sm">{organisation.objective}</p>
+            <ContactDetails organisation={organisation} />
           </div>
         </div>
       </main>
