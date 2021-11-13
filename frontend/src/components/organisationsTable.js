@@ -59,15 +59,6 @@ export default function OrganisationsTable() {
                       {organisation.name}
                     </Link>
                   </Td>
-                  <Td className="pb-5">
-                    {organisation.sdg.map((item) => {
-                      return (
-                        <ul key={item}>
-                          <li>{item}</li>
-                        </ul>
-                      );
-                    })}
-                  </Td>
                   <Td className="">{organisation.region}</Td>
                 </Tr>
               );
