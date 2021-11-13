@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
-
+import { api } from "../config";
 import OrganisationFilters from "./organisationFilters";
 
 export default function OrganisationsTable() {
   const [organisations, setOrganisations] = useState([]);
   const [filteredOrganisations, setFilteredOrganisations] = useState([]);
-
   useEffect(() => {
-    fetch("/api/v0/organisations").then((response) =>
+    fetch(`${api}/organisations`).then((response) =>
       response.json().then((data) => {
         setOrganisations(data);
       })

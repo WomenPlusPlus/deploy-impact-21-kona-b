@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import DocumentTitle from "react-document-title";
-
+import { api } from "../config";
 import ContactDetails from "../components/contactDetails";
 import RatingForm from "../components/ratingForm";
 
@@ -26,7 +26,7 @@ export default function OrganisationPage() {
 
   const { id } = useParams();
   useEffect(() => {
-    fetch(`/api/v0/organisations/${id}`).then((response) =>
+    fetch(`${api}/organisations/${id}`).then((response) =>
       response.json().then((data) => {
         // API request to be used when the database will be updated
         setOrganisation({
