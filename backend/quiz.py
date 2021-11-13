@@ -1,12 +1,12 @@
 import pandas as pd
-import json
-
+import ast
 
 def get_questions():
     df = pd.read_csv('Quiz Questions.csv')
     df = df.astype(str)
     js = df.to_json(orient='index')
-    res = json.loads(js)
+    js = ast.literal_eval(js)
+    res = list(js.values())
     return res
 
 
