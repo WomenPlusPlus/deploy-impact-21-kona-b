@@ -49,7 +49,7 @@ export default function OrganisationPage() {
               Brief Description
             </h2>
             <p className="mb-4 text-justify text-sm">
-              {organisation.description}
+              {organisation.objective}
             </p>
             <h2 className="font-bold mt-4 tracking-wide uppercase">
               What do we offer
@@ -73,10 +73,6 @@ export default function OrganisationPage() {
                 </ul>
               );
             })}
-            <h2 className="font-bold mt-4 tracking-wide uppercase">
-              Objective
-            </h2>
-            <p className="text-sm">{organisation.objective}</p>
             <ContactDetails organisation={organisation} />
             <RatingForm />
           </div>
