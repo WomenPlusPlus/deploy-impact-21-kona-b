@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import DocumentTitle from "react-document-title";
 import { api } from "../config";
 import ContactDetails from "../components/contactDetails";
@@ -31,7 +31,7 @@ export default function OrganisationPage() {
         // API request to be used when the database will be updated
         setOrganisation({
           ...organisation,
-          ...data[id],
+          ...data[0],
         });
       })
     );
