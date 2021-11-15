@@ -1,8 +1,9 @@
 {
-  "title": "Bienvenue chez DOTS.",
-  "presentation": "a traduire en francais",
-  "textListOrganisations": "a traduire en francais",
+  "title": "Bienvenue chez",
+  "presentation": "Votre alternative à l'aide juridique - vous mettant en contact de manière responsable avec les organisations qui vous conviennent",
+  "subTitle": "Nous sommes là pour vous. Comment pouvons-nous vous aider?",
+  "textListOrganisations": "Trouvez directement une organisation en sélectionnant une ou plusieurs options dans notre liste.",
   "listOrganisationButton": "liste des organisations",
-  "textQuiz": "a traduire en francais",
+  "textQuiz": "Laissez-nous vous guider vers l'organisation qui pourra vous aider en répondant à quelques questions. Nous ne vous demanderons aucune information personnelle.",
   "quizButton": "quiz"
 }

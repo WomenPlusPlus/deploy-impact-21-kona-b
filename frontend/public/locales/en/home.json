@@ -1,8 +1,9 @@
 {
-  "title": "Welcome to DOTS.",
-  "presentation": "We are your alternative legal aid connecting you to the right organisations.",
-  "textListOrganisations": "You want to find an organisations in your current country:",
+  "title": "Welcome to",
+  "presentation": "Your legal aid alternative - responsibly connecting you to the right organisations",
+  "subTitle": "We are here for you. How can we help?",
+  "textListOrganisations": "Directly find an organisation by selecting one or more options from our list.",
   "listOrganisationButton": "List of organisations",
-  "textQuiz": "You want us to guide you to the right organisations depending on your needs:",
+  "textQuiz": "Let us guide you to the right organisation by answering some questions. We will not ask you for any personal information.",
   "quizButton": "quiz"
 }
