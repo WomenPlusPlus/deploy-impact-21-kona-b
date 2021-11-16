@@ -1,0 +1,6 @@
+q_id,question,format
+1,Gender,radio_buttons
+2,Age Group,radio_buttons
+3,Region,multi_select
+4,What topics interest you?,multi_select
+5,What type of help are you looking for?,multi_select
