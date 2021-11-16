@@ -1,0 +1,66 @@
+q_id,a_id,answers,filter,filter_value
+1,1,Male,gender,male
+1,2,Female,gender,female
+1,3,Other,gender,other
+1,4,Skip,,
+2,1,Baby (under 3),age_group,baby
+2,2,Child (4-12),age_group,child
+2,3,Youth (13-17),age_group,youth
+2,4,Adult (18+),age_group,adult
+2,5,Skip,,
+3,1,Dakar,region,Dakar
+3,2,Diourbel,region,Diourbel
+3,3,Kaolack,region,Kaolack
+3,4,Saint-Louis,region,Saint-Louis
+3,5, Thies,region, Thies
+3,6,Any,,
+4,1,Social protection,dots_category_id,1
+4,2,Achieve food security and improved nutrition and promote sustainable agriculture.,dots_category_id,2
+4,3,Increase productivity and incomes of small-scale food producers,dots_category_id,3
+4,4,Physical and mental health and well-being,dots_category_id,4
+4,5,Access to quality education at all levels,dots_category_id,5
+4,6,Gender support and opportunities,dots_category_id,6
+4,7,Decent work and economic growth,dots_category_id,8
+4,8,Reduce inequalities,dots_category_id,15
+4,9,Sustainable cities and communities,dots_category_id,16
+4,10,Partnership for the goal,dots_category_id,17
+5,1,Access to housing and social services,dots_subcategory_id,1
+5,2,Access to economic resources and information technology,dots_subcategory_id,2
+5,3,Access to financial services and microfinance,dots_subcategory_id,3
+5,4,Initiatives to protect against climate-related events,dots_subcategory_id,4
+5,5, Programs alleviating poverty,dots_subcategory_id,5
+5,6,Access to nutritious food,dots_subcategory_id,6
+5,7,Access to agricultural land and other production resources,dots_subcategory_id,7
+5,8,Access to services for small-scale farmers to increase productivity and income,dots_subcategory_id,8
+5,9,Implement resilient agricultural practices and increase productivity,dots_subcategory_id,9
+5,10,Adapt farming practices to climate change and environmental disasters,dots_subcategory_id,10
+5,11,Improve land and soil quality,dots_subcategory_id,11
+5,12,Access to seed and plant banks and other resources for farming,dots_subcategory_id,12
+5,13,"Resources for rural infrastructure, agricultural research, and technology",dots_subcategory_id,13
+5,14,Health prevention programs,dots_subcategory_id,14
+5,15,Disease prevention and treatment,dots_subcategory_id,15
+5,16,Access to mental health services,dots_subcategory_id,16
+5,17,Prevention and treatment of drug abuse,dots_subcategory_id,17
+5,18,"Access to healthcare services, medicines, and vaccines",dots_subcategory_id,18
+5,19,Access to primary and secondary education,dots_subcategory_id,19
+5,20,Access to pre-primary education,dots_subcategory_id,20
+5,21,"Access to affordable technical, vocational and higher education",dots_subcategory_id,21
+5,22,Develop relevant skills for employment and entrepreneurship,dots_subcategory_id,22
+5,23,Education for sustainable development and lifestyle,dots_subcategory_id,23
+5,24,Education for human rights,dots_subcategory_id,24
+5,25,Education for gender equality,dots_subcategory_id,25
+5,26,Programs to end discrimination against women,dots_subcategory_id,26
+5,27,Programs to end violence and exploitation against women,dots_subcategory_id,27
+5,28,Programs empowering women through technology,dots_subcategory_id,28
+5,29,Adopt and strengthen policies and legislation for gender equality,dots_subcategory_id,29
+5,30,Increase economic productivity through technological innovations,dots_subcategory_id,30
+5,31,Access to employment,dots_subcategory_id,31
+5,32,"Access to youth employment, education and training",dots_subcategory_id,32
+5,33,Strengthen capacity of financial institutions,dots_subcategory_id,33
+5,34,Incentivise ending discrimination laws and policies,dots_subcategory_id,34
+5,35,"Ensure safe, orderly and regular migration back home",dots_subcategory_id,35
+5,36,Strengthen national and regional development planning,dots_subcategory_id,36
+5,37,Effective partnership programs,dots_subcategory_id,37
+5,38,Access to justice and legal aid,dots_subcategory_id,38
+5,39,Access to legal identity and registration,dots_subcategory_id,39
+5,40,Access to information and protection of human rights,dots_subcategory_id,40
