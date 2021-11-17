@@ -33,25 +33,14 @@ def get_all_organisations():
     res = organisations.get_all()
     return jsonify(res), 201
 
-@app.route('/api/v0/organisations/search', methods=['GET'])
+@app.route('/api/v0/organisations/search', methods=['POST'])
 def search_organisations():
-    '''
-    eg. http://127.0.0.1:5000/api/v0/organisations/search?region=Dakar&contactable=True
-    :return: list of organisations matching passed filters
-    '''
-    filters = {}
-    filters['region'] = request.args['region']
-    filters['contactable'] = request.args['contactable']
-    res = organisations.search(filters)
+    body = ast.literal_eval(request.data.decode('utf-8'))
+    res = organisations.search(body)
     return jsonify(res), 201
 
 @app.route('/api/v0/organisations', methods=['POST'])
 def add_organisations():
-    '''
-    eg. http://127.0.0.1:5000/api/v0/organisations
-    body -> { "data":{"name":"new org6","region":"Dakar","contactable":"True"}}
-    :return: message indicating organisation was added successfully
-    '''
     body = ast.literal_eval(request.data.decode('utf-8'))
     organisations.add(body['data'])
     return jsonify("Organisation Added Successfully"), 201
