@@ -2,21 +2,22 @@ import pandas as pd
 import json
 import ast
 
-ORGANISATION_DISPLAY = "organisation_display.csv"
-ORGANISATION_DETAILS = "organisation_details.csv"
+ORGANISATION_DISPLAY = "organisation_display.json"
 
-#ToDo: return info from ORGANISATION_DISPLAY (to not have duplicate results)
 def search(filters):
     '''
 
     :param filters: dictionary of the filer parameters
     :return: dictionary of organisations matching passed filter values
     '''
-    filename = ORGANISATION_DETAILS
-    df = pd.read_csv(filename)
+    filename = ORGANISATION_DISPLAY
+    df = pd.read_json(filename, lines=True)
     df = df.astype(str)
-    for key, value in filters.items():
+    for i in range(len(df['categories'])):
+        df['categories'][i] = ast.literal_eval(df['categories'][i])
+    for key, value in filters['filters'].items():
         df = df.loc[df[key] == value]
+
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
     res = js.values()
@@ -28,8 +29,10 @@ def get_all():
     :return: dictionary of all organisations in db
     '''
     filename = ORGANISATION_DISPLAY
-    df = pd.read_csv(filename)
+    df = pd.read_json(filename, lines=True)
     df = df.astype(str)
+    for i in range(len(df['categories'])):
+        df['categories'][i] = ast.literal_eval(df['categories'][i])
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
     res = js.values()
@@ -38,8 +41,10 @@ def get_all():
 
 def get_one(org_id):
     filename = ORGANISATION_DISPLAY
-    df = pd.read_csv(filename, index_col=False)
+    df = pd.read_json(filename, lines=True)
     df = df.astype(str)
+    for i in range(len(df['categories'])):
+        df['categories'][i] = ast.literal_eval(df['categories'][i])
     df = df.loc[df['id'] == org_id]
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
@@ -52,14 +57,14 @@ def add(data):
     :param data: dictionary of the new organisation info
     :return: adds organisation to the db file
     '''
-    filename = ORGANISATION_DETAILS
+    filename = ORGANISATION_DISPLAY
     keys = []
     values = []
     for key, value in data.items():
         keys.append(key)
         values.append(value)
 
-    df = pd.read_csv(filename, index_col=False)
+    df = pd.read_json(filename, lines=True)
     df = df.astype(str)
     df2 = pd.DataFrame([values],
                        columns=keys)
@@ -69,7 +74,7 @@ def add(data):
 
 def delete(org_id):
     filename = 'organisations dataset.csv'
-    df = pd.read_csv(filename, index_col=False)
+    df = pd.read_json(filename, lines=True)
     df = df.astype(str)
     df = df[df.id != org_id]
     df.to_csv(filename, sep=',', index=False)
@@ -77,7 +82,7 @@ def delete(org_id):
 
 def update_values(org_id, data):
     filename = 'organisations dataset.csv'
-    df = pd.read_csv(filename, index_col=False)
+    df = pd.read_json(filename, lines=True)
     df = df.astype(str)
     for key, value in data.items():
         df.loc[df.id == org_id, key] = value
