@@ -1,9 +1,11 @@
 {
-  "title": "Welcome to",
-  "presentation": "Your legal aid alternative - responsibly connecting you to the right organisations",
-  "subTitle": "We are here for you. How can we help?",
-  "textListOrganisations": "Directly find an organisation by selecting one or more options from our list.",
-  "listOrganisationButton": "List of organisations",
-  "textQuiz": "Let us guide you to the right organisation by answering some questions. We will not ask you for any personal information.",
-  "quizButton": "quiz"
+  "welcome": "Welcome to Dots.",
+  "presentation": "We are your alternative legal aid app responsibly connecting you to the right organisations",
+  "title": "How can we help?",
+  "subTitle": "We selected a list of trusted organisations, to find the right one for your need:",
+  "textListOrganisations": "Search for different organisations depending on your needs",
+  "listOrganisationButton": "View all organisations",
+  "textQuiz": "Answer a few simple questions to find the right organisation",
+  "quizButton": "Use our search assistant",
+  "privacyPolicy": "We promise to respect your privacy. Find out more."
 }

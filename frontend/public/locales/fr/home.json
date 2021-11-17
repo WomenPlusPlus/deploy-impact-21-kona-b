@@ -1,9 +1,11 @@
 {
-  "title": "Bienvenue chez",
-  "presentation": "Votre alternative à l'aide juridique - vous mettant en contact de manière responsable avec les organisations qui vous conviennent",
-  "subTitle": "Nous sommes là pour vous. Comment pouvons-nous vous aider?",
-  "textListOrganisations": "Trouvez directement une organisation en sélectionnant une ou plusieurs options dans notre liste.",
-  "listOrganisationButton": "liste des organisations",
-  "textQuiz": "Laissez-nous vous guider vers l'organisation qui pourra vous aider en répondant à quelques questions. Nous ne vous demanderons aucune information personnelle.",
-  "quizButton": "quiz"
+  "welcome": "Bienvenue chez Dots.",
+  "presentation": "TO TRANSLATE AGAIN. Votre alternative à l'aide juridique - vous mettant en contact de manière responsable avec les organisations qui vous conviennent",
+  "title": "Comment pouvons-nous vous aider?",
+  "subTitle": "TO TRANSLATE",
+  "textListOrganisations": "TO TRANSLATE",
+  "listOrganisationButton": "Voir toutes les organisations",
+  "textQuiz": "TO TRANSLATE",
+  "quizButton": "Utiliser notre assistant de recherche",
+  "privacyPolicy": "TO TRANSLATE"
 }
