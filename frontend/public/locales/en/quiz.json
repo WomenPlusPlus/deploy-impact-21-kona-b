@@ -1,0 +1,102 @@
+{
+  "presentation": "We are going to go through a set of questions in order to find the right organisations for your needs. Your answers are totally anonymous. If you want to have more information about how we are using data on our website, please check our privacy policy page.",
+  "submitButton": "Next",
+  "submitButtonLast": "Submit",
+  "user": {
+    "question": "Who are you seeking help for?",
+    "filters": {
+      "you": "You",
+      "else": "Someone else"
+    }
+  },
+  "gender": {
+    "question": "Please select the gender",
+    "filters": {
+      "male": "Man",
+      "female": "Woman",
+      "other": "Other",
+      "skip": "Prefer not to say"
+    }
+  },
+  "age": {
+    "question": "Please select the age",
+    "filters": {
+      "baby": "Baby (0-3)",
+      "child": "Child (4-12)",
+      "youth": "Youth (13-17)",
+      "adult": "Adult (Over 18)",
+      "skip": "Prefer not to say"
+    }
+  },
+  "region": {
+    "question": "Please select the region",
+    "filters": {
+      "dakar": "Dakar",
+      "diourbel": "Diourbel",
+      "kaolack": "Kaolack",
+      "saintLouis": "Saint-Louis",
+      "thies": "Thies",
+      "all": "All"
+    }
+  },
+  "dots_categories": {
+    "question": "What do you need help with?",
+    "filters": {
+      "socialProtection": "Social protection(1)",
+      "food": "Achieve food security and improved nutrition and promote sustainable agriculture(2)",
+      "productivityAndIncome": "Increase productivity and incomes of small-scale food producers(3)",
+      "wellBeing": "Physical and mental health and well-being(4)",
+      "education": "Access to quality education at all levels(5)",
+      "genderSupport": "Gender support and opportunities(6)",
+      "economicGrowth": "Decent work and economic growth(8)",
+      "reducedInequalities": "Reduced inequalities(15)",
+      "sustainableCities": "Sustainable cities and communities(16)",
+      "partnership": "Partnership for the goal(17)"
+    }
+  },
+  "dots_subCategories": {
+    "question": "Please select what you need help with?",
+    "filters": {
+      "housingAndSocialServices": "Access to housing and social services(1)",
+      "economicResources": "Access to economic resources and information technology(2)",
+      "financialServices": "Access to financial services and microfinance(3)",
+      "protectionClimatEvents": "Initiatives to protect against climate-related events(4)",
+      "alleviatePoverty": "Programs alleviating poverty(5)",
+      "nutritiousFood": "Access to nutritious food(6)",
+      "agriculturalLand": "Access to agricultural land and other production resources(7)",
+      "smallScaleFarmers": "Access to services for small-scale farmers to increase productivity and income(8)",
+      "resilientAgriculturalPractices": "Implement resilient agricultural practices and increase productivity(9)",
+      "adaptFarmingPractices": "Adapt farming practices to climate change and environmental disasters(10)",
+      "LandAndSoilQuality": "Improve land and soil quality (11)",
+      "farmingResources": "Access to seed and plant banks and other resources for farming(12)",
+      "ruralInfrastructureResources": "Resources for rural infrastructure, agricultural research, and technology(13)",
+      "healthPrevention": "Health prevention programs(14)",
+      "diseasePrevention": "Disease prevention and treatment(15)",
+      "mentalHealth": "Access to mental health services(16)",
+      "drugAbuse": "Prevention and treatment of drug abuse(17)",
+      "accessToHealthcare": "Access to healthcare services, medicines, and vaccines(18)",
+      "primaryAndSecondaryEducation": "Access to primary and secondary education(19)",
+      "prePrimaryEducation": "Access to pre-primary education(20)",
+      "accessHigherEducation": "Access to affordable technical, vocational and higher education(21)",
+      "skillsForEmployment": "Develop relevant skills for employment and entrepreneurship(22)",
+      "sustainableDevelopementEducation": "Education for sustainable development and lifestyle(23)",
+      "humanRightsEducation": "Education for human rights(24)",
+      "genderEqualityEducation": "Education for gender equality(25)",
+      "endWomenDiscrimination": "Programs to end discrimination against women(26)",
+      "endViolenceWomen": "Programs to end violence and exploitation against women(27)",
+      "empowerWomen": "Programs empowering women through technology(28)",
+      "legislationForGenderEquality": "Adopt and strengthen policies and legislation for gender equality(29)",
+      "economicProductivity": "Increase economic productivity through technological innovations(30)",
+      "employment": "Access to employment(31)",
+      "youthEmployment": "Access to youth employment, education and training(32)",
+      "financialInstitutions": "Strengthen capacity of financial institutions(33)",
+      "endingDiscriminationLaws": "Incentivise ending discrimination laws and policies(34)",
+      "migration": "Ensure safe, orderly and regular migration back home(35)",
+      "developmentPlanning": "Strengthen national and regional development planning(36)",
+      "effectivePartnership": "Effective partnership programs(37)",
+      "justiceAndLegalAid": "Access to justice and legal aid(38)",
+      "legalIdentity": "Access to legal identity and registration(39)",
+      "humanRightsProtection": "Access to information and protection of human rights(40)"
+    }
+  }
+}
