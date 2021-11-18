@@ -14,7 +14,7 @@ def get_questions():
     quiz = []
     for i in q_js:
         res = {}
-        res["scope"] = {"id": q_js[i]["q_id"], "filter": q_js[i]["filter"]}
+        res["scope"] = {"id": q_js[i]["q_id"], "text": q_js[i]["question"], "filter": q_js[i]["filter"]}
         res["type"] = q_js[i]["format"]
         ans = []
         for j in a_js:
