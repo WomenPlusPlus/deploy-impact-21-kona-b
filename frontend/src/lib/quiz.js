@@ -63,45 +63,106 @@ const quiz = [
       },
       {
         id: 3,
-        text: "productivityAndIncome",
+        text: "wellBeing",
         value: "3",
       },
       {
         id: 4,
-        text: "wellBeing",
+        text: "education",
         value: "4",
       },
       {
         id: 5,
-        text: "education",
+        text: "genderEquality",
         value: "5",
       },
+      {
+        id: 6,
+        text: "cleanWater",
+        value: "6",
+      },
+      {
+        id: 7,
+        text: "energy",
+        value: "7",
+      },
+      {
+        id: 8,
+        text: "workAndEntrepreneurship",
+        value: "8",
+      },
+      {
+        id: 9,
+        text: "informationTechnology",
+        value: "9",
+      },
+      {
+        id: 10,
+        text: "equalOpportunities",
+        value: "10",
+      },
+      {
+        id: 11,
+        text: "housing",
+        value: "11",
+      },
+      {
+        id: 12,
+        text: "sustainableLifestyles",
+        value: "12",
+      },
+      {
+        id: 13,
+        text: "climateAction",
+        value: "13",
+      },
+      {
+        id: 14,
+        text: "fishing",
+        value: "14",
+      },
+      {
+        id: 15,
+        text: "biodiversity",
+        value: "15",
+      },
+      {
+        id: 16,
+        text: "justiceAndLegal",
+        value: "16",
+      },
+      {
+        id: 17,
+        text: "partnerships",
+        value: "17",
+      },
+
     ],
     type: "checkbox",
   },
-  {
-    scope: { id: 6, filter: "dots_subCategories" },
-    answers: [
-      {
-        id: 1,
-        text: "housingAndSocialServices",
-        value: "socialProtectionOne",
-      },
-      { id: 2, text: "economicResources", value: "socialProtectionTwo" },
-      {
-        id: 3,
-        text: "financialServices",
-        value: "socialProtectionThree",
-      },
-      {
-        id: 4,
-        text: "protectionClimatEvents",
-        value: "socialProtectionFour",
-      },
-      { id: 5, text: "alleviatePoverty", value: "socialProtectionFive" },
-    ],
-    type: "checkbox",
-  },
+  // {
+  //   scope: { id: 6, filter: "dots_subCategories" },
+  //   answers: [
+  //     {
+  //       id: 1,
+  //       text: "housingAndSocialServices",
+  //       value: "socialProtectionOne",
+  //     },
+  //     { id: 2, text: "economicResources", value: "socialProtectionTwo" },
+  //     {
+  //       id: 3,
+  //       text: "financialServices",
+  //       value: "socialProtectionThree",
+  //     },
+  //     {
+  //       id: 4,
+  //       text: "protectionClimatEvents",
+  //       value: "socialProtectionFour",
+  //     },
+  //     { id: 5, text: "alleviatePoverty", value: "socialProtectionFive" },
+  //   ],
+  //   type: "checkbox",
+  // },
 ];
 
 export default quiz;
