@@ -61,12 +61,12 @@ export default function QuizPage() {
     });
     setStep(step + 1);
   };
+  const handleClickBack = () => {
+    setStep(step - 1);
+  };
 
-  // for now use effect to check all answer state which will be sent to backend.
-  useEffect(() => {
-    console.log("all value", allAnswer);
-    console.log("step", step);
-  }, [allAnswer, step]);
+  console.log("all value", allAnswer);
+  console.log("step", step);
 
   return (
     <DocumentTitle title="Quiz">
@@ -120,30 +120,40 @@ export default function QuizPage() {
                   </div>
                 )}
               </div>
-              {/* is question type is checkbox, display next/submit button */}
-              {quiz[step].type === "checkbox" && (
-                <div className="flex justify-end">
-                  <Button
-                    text={
-                      step >= numberQuestions - 1
-                        ? t("submitButtonLast")
-                        : t("submitButton")
-                    }
-                    step={step}
-                    onClick={() => handleClickNext(answer)}
-                    numberQuestions={numberQuestions}
-                  />
-                </div>
-              )}
-              {(quiz[step].scope.filter === "gender" ||
-                quiz[step].scope.filter === "age") && (
-                <div className="flex justify-end">
-                  <Button
-                    text={t("skipButton")}
-                    onClick={() => handleClickSkip()}
-                  />
-                </div>
-              )}
+              <div className="grid grid-cols-2">
+                {step > 0 && (
+                  <div>
+                    <Button
+                      text={t("backButton")}
+                      onClick={() => handleClickBack()}
+                    />
+                  </div>
+                )}
+                {/* is question type is checkbox, display next/submit button */}
+                {quiz[step].type === "checkbox" && (
+                  <div className="flex justify-end">
+                    <Button
+                      text={
+                        step >= numberQuestions - 1
+                          ? t("submitButtonLast")
+                          : t("submitButton")
+                      }
+                      step={step}
+                      onClick={() => handleClickNext(answer)}
+                      numberQuestions={numberQuestions}
+                    />
+                  </div>
+                )}
+                {(quiz[step].scope.filter === "gender" ||
+                  quiz[step].scope.filter === "age") && (
+                  <div className="flex justify-end">
+                    <Button
+                      text={t("skipButton")}
+                      onClick={() => handleClickSkip()}
+                    />
+                  </div>
+                )}
+              </div>
             </div>
           ) : (
             <div>Hello</div>

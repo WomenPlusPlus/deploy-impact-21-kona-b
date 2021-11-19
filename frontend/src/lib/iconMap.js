@@ -1,6 +1,4 @@
 import {
-  MdMale,
-  MdFemale,
   MdFamilyRestroom,
   MdWork,
   MdFoodBank,
@@ -15,14 +13,14 @@ import {
   GiRollingEnergy,
 } from "react-icons/gi";
 import { GrTechnology } from "react-icons/gr";
-import { FaFish, FaHandHoldingWater } from "react-icons/fa";
+import { FaFish, FaHandHoldingWater,FaFemale,FaMale } from "react-icons/fa";
 import { BsTreeFill, BsGenderFemale } from "react-icons/bs";
 import { GoLaw } from "react-icons/go";
 import { SiHandshake } from "react-icons/si";
 
 const iconMap = {
-  male: MdMale,
-  female: MdFemale,
+  male: FaMale,
+  female: FaFemale,
   socialProtection: MdFamilyRestroom,
   food: RiPlantFill,
   wellBeing: GiHealthNormal,

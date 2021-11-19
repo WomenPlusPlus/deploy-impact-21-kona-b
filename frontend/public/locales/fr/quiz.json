@@ -2,10 +2,12 @@
   "presentation": "to translate",
   "submitButton": "Suivant",
   "submitButtonLast": "Envoyer",
+  "skipButton": "Passer",
+  "backButton": "Retour",
   "user": {
     "question": "Pour qui cherchez-vous de l'aide?",
     "filters": {
-      "you": "Vous",
+      "me": "Moi",
       "else": "Quelqu'un d'autre"
     }
   },
@@ -14,8 +16,7 @@
     "filters": {
       "male": "Homme",
       "female": "Femme",
-      "other": "Autre",
-      "skip": "to translate"
+      "other": "Autre"
     }
   },
   "age": {
@@ -24,8 +25,7 @@
       "baby": "Bébé (0-3)",
       "child": "Enfant (4-12)",
       "youth": "Adolescent (13-17)",
-      "adult": "Adulte (Over 18)",
-      "skip": "to translate"
+      "adult": "Adulte (Over 18)"
     }
   },
   "region": {
