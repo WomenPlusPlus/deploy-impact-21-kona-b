@@ -3,7 +3,7 @@ import DocumentTitle from "react-document-title";
 import { useTranslation } from "react-i18next";
 
 import QuizButton from "../components/quizButton";
-import Checkbox from "../components/checkbox";
+import CheckboxButton from "../components/checkboxButton";
 import SubmitButton from "../components/submitButton";
 import iconMap from "../lib/iconMap";
 import quiz from "../lib/quiz";
@@ -64,7 +64,7 @@ export default function QuizPage() {
                   {quiz[step].answers.map((filterKey) => {
                     return (
                       <div key={filterKey.value}>
-                        <Checkbox
+                        <CheckboxButton
                           translationKey={`${quiz[step].scope.filter}.filters.${filterKey.text}`}
                           setValue={() =>
                             handleClickAnswer(quiz[step].type, filterKey.value)
