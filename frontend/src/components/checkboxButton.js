@@ -6,16 +6,17 @@ import Checkbox from "react-custom-checkbox";
 export default function CheckboxButton({
   translationKey,
   setValue,
-  value,
+  active,
   Icon,
 }) {
   const { t } = useTranslation("quiz");
 
   return (
     <div>
-      <label onClick={() => setValue()} className="flex flex-row my-1">
+      <label className="flex flex-row my-1">
         <Checkbox
-          checked={false}
+          onChange={setValue}
+          checked={active}
           icon={
             <div
               style={{
