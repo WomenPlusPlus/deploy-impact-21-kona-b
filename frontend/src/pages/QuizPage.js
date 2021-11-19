@@ -70,7 +70,7 @@ export default function QuizPage() {
                             handleClickAnswer(quiz[step].type, filterKey.value)
                           }
                           active={answer === filterKey.value}
-                          Icon={iconMap[filterKey.value]}
+                          Icons={iconMap[filterKey.text]}
                         />
                       </div>
                     );
@@ -89,7 +89,7 @@ export default function QuizPage() {
                         }
                         value={answer}
                         active={answer === filterKey.value}
-                        Icon={iconMap[filterKey.value]}
+                        Icon={iconMap[filterKey.text]}
                       />
                     );
                   })}
