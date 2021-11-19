@@ -1,23 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import * as Icon from "react-icons/fi";
+import { FiCheck } from "react-icons/fi";
 import Checkbox from "react-custom-checkbox";
 
 export default function CheckboxButton({
   translationKey,
   setValue,
   value,
-  Icons,
+  Icon,
 }) {
   const { t } = useTranslation("quiz");
-
-  // if the button is active then active is set to true
-  const [active, setActive] = useState(value === translationKey);
-
-  // the hook changes the value of the active variable when the value (setValue) changes
-  useEffect(() => {
-    setActive(value === translationKey);
-  }, [value, translationKey]);
 
   return (
     <div>
@@ -33,7 +25,7 @@ export default function CheckboxButton({
                 alignSelf: "stretch",
               }}
             >
-              <Icon.FiCheck color="white" size={20} />
+              <FiCheck color="white" size={16} />
             </div>
           }
           borderColor="#8F20B2"
@@ -41,7 +33,7 @@ export default function CheckboxButton({
           style={{ overflow: "hidden" }}
           size={20}
         />
-        <div className="ml-2 mr-1">{Icons && <Icons />}</div>
+        <div className="ml-2 mr-1 pt-1">{Icon && <Icon />}</div>
         {t(translationKey)}
       </label>
     </div>
