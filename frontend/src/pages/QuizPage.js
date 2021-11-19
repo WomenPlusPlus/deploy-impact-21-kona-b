@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import QuizButton from "../components/quizButton";
 import Checkbox from "../components/checkbox";
 import SubmitButton from "../components/submitButton";
+import iconMap from "../lib/iconMap";
 
 export default function QuizPage() {
   const { t } = useTranslation("quiz");
@@ -160,13 +161,14 @@ export default function QuizPage() {
                             handleClickAnswer(quiz[step].type, filterKey.value)
                           }
                           active={answer === filterKey.value}
+                          Icon={iconMap[filterKey.value]}
                         />
                       </div>
                     );
                   })}
                 </div>
               ) : (
-                // else it display the Quizbutton element
+                // else it display the Quizbutton component
                 <div className="grid grid-cols-2 gap-4">
                   {quiz[step].answers.map((filterKey) => {
                     return (
@@ -178,6 +180,7 @@ export default function QuizPage() {
                         }
                         value={answer}
                         active={answer === filterKey.value}
+                        Icon={iconMap[filterKey.value]}
                       />
                     );
                   })}
