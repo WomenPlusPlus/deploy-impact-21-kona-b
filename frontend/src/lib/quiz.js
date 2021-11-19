@@ -4,7 +4,7 @@ const quiz = [
   {
     scope: { id: 1, filter: "user" },
     answers: [
-      { id: 1, text: "you", value: "you" },
+      { id: 1, text: "me", value: "me" },
       { id: 2, text: "else", value: "else" },
     ],
     type: "radio",
@@ -16,7 +16,6 @@ const quiz = [
       { id: 2, text: "child", value: "child" },
       { id: 3, text: "youth", value: "youth" },
       { id: 4, text: "adult", value: "adult" },
-      { id: 5, text: "skip", value: "" },
     ],
     type: "radio",
   },
@@ -32,7 +31,6 @@ const quiz = [
         value: "female",
       },
       { id: 3, text: "other", value: "other" },
-      { id: 4, text: "skip", value: "" },
     ],
     type: "radio",
   },
@@ -42,7 +40,7 @@ const quiz = [
       { id: 1, text: "dakar", value: "dakar" },
       { id: 2, text: "diourbel", value: "diourbel" },
       { id: 3, text: "kaolack", value: "kaolack" },
-      { id: 4, text: "saintlouis", value: "saintlouis" },
+      { id: 4, text: "saintLouis", value: "saintLouis" },
       { id: 5, text: "thies", value: "thies" },
       { id: 6, text: "all", value: "all" },
     ],
