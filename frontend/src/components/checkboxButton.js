@@ -3,7 +3,12 @@ import { useTranslation } from "react-i18next";
 import * as Icon from "react-icons/fi";
 import Checkbox from "react-custom-checkbox";
 
-export default function CheckboxButton({ translationKey, setValue, value }) {
+export default function CheckboxButton({
+  translationKey,
+  setValue,
+  value,
+  Icons,
+}) {
   const { t } = useTranslation("quiz");
 
   // if the button is active then active is set to true
@@ -16,7 +21,7 @@ export default function CheckboxButton({ translationKey, setValue, value }) {
 
   return (
     <div>
-      <label onClick={() => setValue()}>
+      <label onClick={() => setValue()} className="flex flex-row my-1">
         <Checkbox
           checked={false}
           icon={
@@ -35,8 +40,9 @@ export default function CheckboxButton({ translationKey, setValue, value }) {
           borderRadius={20}
           style={{ overflow: "hidden" }}
           size={20}
-          label={t(translationKey)}
         />
+        <div className="ml-2 mr-1">{Icons && <Icons />}</div>
+        {t(translationKey)}
       </label>
     </div>
   );

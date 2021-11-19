@@ -43,13 +43,13 @@
     "question": "What do you need help with?",
     "filters": {
       "socialProtection": "Social protection",
-      "food": "Food and farming",
-      "wellBeing": "Health and well-being",
+      "food": "Food & farming",
+      "wellBeing": "Health & well-being",
       "education": "Education",
       "genderEquality": "Gender equality",
       "cleanWater": "Clean water",
       "energy": "Energy consumption",
-      "workAndEntrepreneurship": "Work and entrepreneurship",
+      "workAndEntrepreneurship": "Work & entrepreneurship",
       "informationTechnology": "Information technology",
       "equalOpportunities": "Equal opportunities",
       "housing": "Housing",
@@ -57,7 +57,7 @@
       "climateAction": "Climate action",
       "fishing": "Fishing",
       "biodiversity": "Biodiversity",
-      "justiceAndLegal": "Justice and legal",
+      "justiceAndLegal": "Justice & legal",
       "partnerships": "Partnerships"
     }
   },
