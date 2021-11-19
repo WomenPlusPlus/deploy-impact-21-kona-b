@@ -47,11 +47,18 @@
       "productivityAndIncome": "Increase productivity and incomes of small-scale food producers(3)",
       "wellBeing": "Physical and mental health and well-being(4)",
       "education": "Access to quality education at all levels(5)",
-      "genderSupport": "Gender support and opportunities(6)",
+      "genderEquality": "Gender support and opportunities(6)",
+      "energy": "Affordable and clean energy(7)",
       "economicGrowth": "Decent work and economic growth(8)",
-      "reducedInequalities": "Reduced inequalities(15)",
-      "sustainableCities": "Sustainable cities and communities(16)",
-      "partnership": "Partnership for the goal(17)"
+      "industryAndInnovation": "Industry, innovation and infrastructure(9)",
+      "reducedInequalities": "Reduced inequalities(10)",
+      "sustainableCities": "Sustainable cities and communities(11)",
+      "responsibleConsumption": "Responsible consumption and production(12)",
+      "climateAction": "Climate action(13)",
+      "waterLife": "Life below water(14)",
+      "equalOpportunities": "Reduced inequalities(15)",
+      "housing": "Sustainable cities and communities(16)",
+      "partnerships": "Partnership for the goal(17)"
     }
   },
   "dots_subCategories": {
