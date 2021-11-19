@@ -70,32 +70,7 @@ export default function QuizPage() {
                             handleClickAnswer(quiz[step].type, filterKey.value)
                           }
                           active={answer === filterKey.value}
-                          Icons={iconMap[filterKey.text]}
-                        />
-                      </div>
-                    );
-                  })}
-                </div>
-              ) : (
-                // else it display the Quizbutton component
-                <div className="grid grid-cols-2 gap-4">
-                  {quiz[step].answers.map((filterKey) => {
-                    return (
-                      <QuizButton
-                        key={filterKey.value}
-                        translationKey={`${quiz[step].scope.filter}.filters.${filterKey.text}`}
-                        setValue={() =>
-                          handleClickAnswer(quiz[step].type, filterKey.value)
-                        }
-                        value={answer}
-                        active={answer === filterKey.value}
-                        Icon={iconMap[filterKey.text]}
-                      />
-                    );
-                  })}
-                </div>
-              )}
-            </div>
+                            Icon={iconMap[filterKey.text]}
             <div className="flex justify-end">
               <SubmitButton
                 text={t("submitButton")}
