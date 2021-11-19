@@ -13,105 +13,108 @@
 
 ---
 
-<p align="center"> Kona Connect’s legal team, together with students and expert volunteers from around the world, are developing a tool to connect people in need to the organizations best equipped to help them. This tool – a legal aid chatbot – accessible 24/7 through any smartphone device, will automatically guide its users to the help they need, whilst simultaneously reducing aid agencies’ staggering workloads, freeing up time to help more individuals.
+<p align="center"> Kona Connect’s legal team, together with students and expert volunteers from around the world, are developing a tool to connect people in need to the organizations best equipped to help them. This tool which is accessible 24/7 through any device, will automatically guide its users to the help they need, whilst simultaneously reducing aid agencies’ staggering workloads, freeing up time to help more individuals.
     <br> 
 </p>
 
 ## 📝 Table of Contents
 - [Problem Statement](#problem_statement)
-- [Idea / Solution](#idea)
-- [Dependencies / Limitations](#limitations)
-- [Future Scope](#future_scope)
-- [Setting up a local environment](#getting_started)
-- [Usage](#usage)
-- [Technology Stack](#tech_stack)
-- [Contributing](../CONTRIBUTING.md)
+- [Solution](#idea)
+- [The web app](#web_app)
+- [For developers](#for_developers)
+  - [Prerequisites ](#prerequisites)
+  - [Installation](#install)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+- [Repository structure](#structure)
+- [The database](#database)
+  - [Maintenance](#maintenance)
+- [App translation](#translation)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
 
 ## ‼️ Problem Statement <a name = "problem_statement"></a>
+Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. 
+
+One of the main factors that contributes to the increase of people living in precarious situations is statelessnes. A stateless person is someone who is "not considered as a national by any state under the operation of its law" [1](https://en.wikipedia.org/wiki/Statelessness). UNHCR estimates that statelesness affects millions of people worldwide, and at least 700.000 are in West and Central Affrica [2](https://data2.unhcr.org/en/situations/statelesswa). Being statelessnes is just one of the many reasons that causes people to be in vulnerable situations, being of high importance to provide a tool that eases the search for help.
 
 
+## 💡 Solution <a name = "idea"></a>
+The solution is provided by Konna Connect by means of the platform "Dots", a web app used for searching help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
 
+The goal of the tool is to connect people in need to the right organizations as quickly as easily as possible. For this, our solutions provides two main options:
+- A quick quiz: By answering a few question, users will be guided to the organization(s) most likely to be able to help them and their situation.
+- The list of all organisations with filters: By selecting the filters that apply to their situation the user will get the NGOs that provide the needed help.
+    
+In the first stage, our solution is focused in providing help for the people located in Senegal. Therefore, the web app is available in English and French, and has a framework which allows to easily translate it to any regional language. Moreover, thanks to the design of our UX/UI experts, most interface options are coupled with an icon to make the app more accessible and intuitive.
 
-## 💡 Idea / Solution <a name = "idea"></a>
-Kona Connect operates a platform called "Dots", a mobile application used for searching help.  To do this, Kona Connect's team identifies and classifies the social organizations, and with this information creates a database.  By answering a few question, users will be guided to the organization(s) most likely to be able to help them and their situation.    
+## :iphone: The web app <a name = "web_app"></a>
 
-The mapping of the vast amount of information out there and the large number of organizations needs to be approached strategically. This is why Kona Connect categorize the different issues and available help through the structure of the 17 Sustainable Development Goals (SDG).
+Dots web app can be used from any device (laptop, phone, tablet). 
 
-###  Frontend (Client)
+You can now use it here:
+https://konaconnectdots.z1.web.core.windows.net/
+
+## For developers <a name = "for_developers"></a>
+If you are a developer you need to know this.
+
+### ⚠️ Prerequisites <a name = "prerequisites"></a>
+__Frontent:__
+- [React](https://reactjs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - Developer Server Environment
+- [Tailwindcss](https://tailwindcss.com/) - CSS Framework
+
+__Backend:__
+- [Python 3.8](https://www.python.org/downloads/)
+
+### :computer: Installation <a name = "install"></a>
+####  Frontend (Client) <a name = "frontend"></a>
+- Progressive web app
 - Runs in all major browsers
 - Has a mobile-first responsive design
-- Is installable as a native application
 - Provides access to information in the backend based on the United Nations Sustainable Development Goal selected
 
-###  Backend (Server)
-- Does not require technical expertise to operate
-- Is flexible and extensible
-- Is deployable on any infrastructure
-- Allows adding of resources and content dynamically
-- Provides responses to users based on text prompts
-- Once the ideal, reality, and consequences sections have been completed, and understood, it becomes easier to provide a solution for solving the problem.
+Find the instructions on how to run it [here](/frontend).
 
-## ⚠️ Dependencies / Limitations <a name = "limitations"></a>
-- What are the dependencies of your project?
-- Describe each limitation in detailed but concise terms
-- Explain why each limitation exists
-- Provide the reasons why each limitation could not be overcome using the method(s) chosen to acquire.
-- Assess the impact of each limitation in relation to the overall findings and conclusions of your project, and if 
-appropriate, describe how these limitations could point to the need for further research.
+####  Backend (Server) <a name = "backend"></a>
+- Developped using Python 3.8
+- Processes database using pandas and SQL
+- ...
 
-## 🎯 Future Scope <a name = "future_scope"></a>
-- Develop document of "Terms and Conditions" to be linked to the button created.
-- 
+Find the instructions on how to run it [here](/backend).
 
-## 🏁 Getting Started - Setting up a local environment <a name = "getting_started"></a>
+## :house: Repository structure <a name = "structure"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development 
-and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+- __backend:__ In this directory you will find all the files related to the backend.
+  
+  - ... backend files and subdirectories 
+- __frontend:__ In this directory you will find all the files related to the frontend.
+  
+  - ...frontend files and subdirectories
+- __LICENSE:__ File containing the license information.
 
-### Prerequisites
+## :bar_chart: The database <a name = "database"></a>
+Explanation about the database
 
-What things you need to install the software and how to install them.
+### Maintenance <a name = "maintenance"></a>
+Database maintenance
 
-```
-Give examples
-```
+## :books: App translation <a name = "translation"></a>
+Explain how the app can be translated using .json files
 
-### Installing
+## :postal_horn: Troubleshooting <a name = "troubleshooting"></a>
+If you find any error or weird behaviour when using Dots, please open an issue and we will try to address it ass soon as possible.
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-## 📱 Usage <a name="usage"></a>
-Add notes about how to use the system.
-
-## 🪄 Built With - Technology stack<a name = "tech_stack"></a>
-- [Postgre SQL](https://www.postgresql.org/) - Database
-- [Aiven](https://aiven.io/) - Database
-- [MongoDB](https://www.mongodb.com/) - Database
-- [React](https://reactjs.org/) - Server framework
-- [Python](https://www.python.org/) - Backend language
-- [Name]() - Web Framework
-- [Name]() - Server Environment
-
+## :clipboard: License <a name = "license"></a>
+This repository is licensed under the GPL - 3 license. This guarantees the end users the freedom to run, study, share, and modify the software provided. You can find more information in the [LICENSE](/LICENSE.txt) file.
 
 ## 👥 Authors <a name = "authors"></a>
 - [@bcabgil](https://github.com/bcabgil) - Project management and data science
 - [@gildafc](https://github.com/gildafc) - Project management and data science
 - [@lorna-mn](https://github.com/lorna-mn) - UX / UI
-- [@lorna-mn](https://github.com/lorna-mn) - UX / UI
+- [@andrew](https://github.com/lorna-mn) - UX / UI
 - [@heba0](https://github.com/heba0) - Fullstack
 - [@EmilieHumbert](https://github.com/EmilieHumbert) - Frontend Web developer
 - [@jacksondieter](https://github.com/jacksondieter) - Frontend and backend lead
