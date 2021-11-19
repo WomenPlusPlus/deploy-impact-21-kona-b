@@ -10,16 +10,6 @@ const quiz = [
     type: "radio",
   },
   {
-    scope: { id: 2, filter: "age" },
-    answers: [
-      { id: 1, text: "baby", value: "baby" },
-      { id: 2, text: "child", value: "child" },
-      { id: 3, text: "youth", value: "youth" },
-      { id: 4, text: "adult", value: "adult" },
-    ],
-    type: "radio",
-  },
-  {
     scope: { id: 3, filter: "gender" },
     answers: [
       { id: 1, text: "male", iconGroup: "md", icon: "MdMale", value: "male" },
@@ -31,6 +21,16 @@ const quiz = [
         value: "female",
       },
       { id: 3, text: "other", value: "other" },
+    ],
+    type: "radio",
+  },
+  {
+    scope: { id: 2, filter: "age" },
+    answers: [
+      { id: 1, text: "baby", value: "baby" },
+      { id: 2, text: "child", value: "child" },
+      { id: 3, text: "youth", value: "youth" },
+      { id: 4, text: "adult", value: "adult" },
     ],
     type: "radio",
   },
@@ -134,7 +134,6 @@ const quiz = [
         text: "partnerships",
         value: "17",
       },
-
     ],
     type: "checkbox",
   },
