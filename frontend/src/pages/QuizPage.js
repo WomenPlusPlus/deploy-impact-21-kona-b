@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import DocumentTitle from "react-document-title";
 import { useTranslation } from "react-i18next";
 
 import QuizButton from "../components/quizButton";
 import CheckboxButton from "../components/checkboxButton";
-import SubmitButton from "../components/submitButton";
+import Button from "../components/button";
 import iconMap from "../lib/iconMap";
 import quiz from "../lib/quiz";
 
@@ -13,7 +13,7 @@ export default function QuizPage() {
 
   // answer saves the answer picked by the user
   const [answer, setAnswer] = useState();
-  const [allAnswer, setAllAnswer] = useState([]);
+  const [allAnswer, setAllAnswer] = useState({});
 
   const [step, setStep] = useState(0);
   const numberQuestions = 5;
@@ -32,7 +32,10 @@ export default function QuizPage() {
       }
     } else {
       setAnswer(value);
-      setAllAnswer([...allAnswer, [quiz[step].scope, answer]]);
+      setAllAnswer({
+        ...allAnswer,
+        [quiz[step].scope.filter]: value,
+      });
       if (step < numberQuestions) {
         setStep(step + 1);
       }
@@ -42,10 +45,21 @@ export default function QuizPage() {
   // on click update the array of all answers (will be send to backend)
   // and increment step by 1 to get the next question
   const handleClickNext = () => {
-    setAllAnswer([...allAnswer, [quiz[step].scope, answer]]);
+    setAllAnswer({
+      ...allAnswer,
+      [quiz[step].scope.filter]: answer,
+    });
     if (step < numberQuestions) {
       setStep(step + 1);
     }
+  };
+
+  const handleClickSkip = () => {
+    setAllAnswer({
+      ...allAnswer,
+      [quiz[step].scope.filter]: "",
+    });
+    setStep(step + 1);
   };
 
   // for now use effect to check all answer state which will be sent to backend.
@@ -79,7 +93,7 @@ export default function QuizPage() {
                                 filterKey.value
                               )
                             }
-                            active={answer === filterKey.value}
+                            active={(answer || []).includes(filterKey.value)}
                             Icon={iconMap[filterKey.text]}
                           />
                         </div>
@@ -106,14 +120,27 @@ export default function QuizPage() {
                   </div>
                 )}
               </div>
+              {/* is question type is checkbox, display next/submit button */}
               {quiz[step].type === "checkbox" && (
                 <div className="flex justify-end">
-                  <SubmitButton
-                    text={t("submitButton")}
-                    textLast={t("submitButtonLast")}
+                  <Button
+                    text={
+                      step >= numberQuestions - 1
+                        ? t("submitButtonLast")
+                        : t("submitButton")
+                    }
                     step={step}
                     onClick={() => handleClickNext(answer)}
                     numberQuestions={numberQuestions}
+                  />
+                </div>
+              )}
+              {(quiz[step].scope.filter === "gender" ||
+                quiz[step].scope.filter === "age") && (
+                <div className="flex justify-end">
+                  <Button
+                    text={t("skipButton")}
+                    onClick={() => handleClickSkip()}
                   />
                 </div>
               )}
