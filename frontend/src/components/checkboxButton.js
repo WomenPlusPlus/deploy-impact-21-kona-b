@@ -13,7 +13,7 @@ export default function CheckboxButton({
 
   return (
     <div>
-      <label className="flex flex-row my-1">
+      <label className="flex flex-row my-3">
         <Checkbox
           onChange={setValue}
           checked={active}
