@@ -24,19 +24,28 @@
     "filters": {
       "baby": "Bébé (0-3)",
       "child": "Enfant (4-12)",
-      "youth": "Adolescent (13-17)",
-      "adult": "Adulte (Over 18)"
+      "teen": "Adolescent (13-17)",
+      "youngAdult": "Jeune Adult (18-25)",
+      "adult": "Adulte (18+)"
     }
   },
   "region": {
     "question": "Please select the region?",
     "filters": {
       "dakar": "Dakar",
-      "diourbel": "Diourbel",
-      "kaolack": "Kaolack",
       "saintLouis": "Saint-Louis",
-      "thies": "Thies",
-      "all": "All"
+      "louga": "Louga",
+      "thies": "Thiès",
+      "diourbel": "Diourbel",
+      "matam": "Matam",
+      "fatick": "Fatick",
+      "kaolack": "Kaolack",
+      "kaffrine": "Kaffrine",
+      "tambacounda": "Tambacounda",
+      "kedougou": "Kédougou",
+      "kolda": "Kolda",
+      "sedhiou": "Sédhiou",
+      "ziguinchor": "Ziguinchor"   
     }
   },
   "dots_categories": {
