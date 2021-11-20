@@ -3,7 +3,7 @@ from flask_cors import CORS
 import organisations
 import quiz
 import ast
-from backend import filters
+import filters
 
 # ----------------------------------------------------------------------------#
 # App Config.

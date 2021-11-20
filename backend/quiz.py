@@ -1,12 +1,15 @@
 import pandas as pd
 import json
 
+QUIZ_PATH = "csv/quiz/"
+
 QUESTIONS = 'Questions.csv'
 ANSWERS = 'Answers.csv'
 
+
 def get_questions():
-    questions = pd.read_csv(QUESTIONS)
-    answers = pd.read_csv(ANSWERS)
+    questions = pd.read_csv(QUIZ_PATH + QUESTIONS)
+    answers = pd.read_csv(QUIZ_PATH + ANSWERS)
     q_js = questions.to_json(orient='index')
     q_js = json.loads(q_js)
     a_js = answers.to_json(orient='index')
@@ -23,4 +26,3 @@ def get_questions():
         res["answers"] = ans
         quiz.append(res)
     return quiz
-
