@@ -3,6 +3,7 @@ from flask_cors import CORS
 import organisations
 import quiz
 import ast
+from backend import filters
 
 # ----------------------------------------------------------------------------#
 # App Config.
@@ -33,10 +34,10 @@ def get_all_organisations():
     res = organisations.get_all()
     return jsonify(res), 201
 
-@app.route('/api/v0/organisations/search', methods=['POST'])
+@app.route('/api/v0/organisations/filter', methods=['POST'])
 def search_organisations():
     body = ast.literal_eval(request.data.decode('utf-8'))
-    res = organisations.search(body)
+    res = filters.get_filtered_orgs(body)
     return jsonify(res), 201
 
 @app.route('/api/v0/organisations', methods=['POST'])
@@ -66,11 +67,10 @@ def send_quiz():
     res = quiz.get_questions()
     return jsonify(res), 201
 
-@app.route('/api/v0/quiz', methods=['POST'])
-def get_quiz_answers():
-    body = ast.literal_eval(request.data.decode('utf-8'))
-    filters = quiz.process_quiz(body['data'])
-    return jsonify(filters), 201
+@app.route('/api/v0/filters', methods=['GET'])
+def get_filters():
+    res = filters.get_filters()
+    return jsonify(res), 201
 
 # ----------------------------------------------------------------------------#
 # Error Handling.

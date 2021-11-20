@@ -2,45 +2,32 @@ import pandas as pd
 import json
 import ast
 
+JSON_PATH = "json/"
 ORGANISATION_DISPLAY = "organisation_display.json"
-
-def search(filters):
-    '''
-
-    :param filters: dictionary of the filer parameters
-    :return: dictionary of organisations matching passed filter values
-    '''
-    filename = ORGANISATION_DISPLAY
-    df = pd.read_json(filename, lines=True)
-    df = df.astype(str)
-    for i in range(len(df['categories'])):
-        df['categories'][i] = ast.literal_eval(df['categories'][i])
-    for key, value in filters['filters'].items():
-        df = df.loc[df[key] == value]
-
-    js = df.to_json(orient='index')
-    js = ast.literal_eval(js)
-    res = js.values()
-    return list(res)
 
 
 def get_all():
     '''
     :return: dictionary of all organisations in db
     '''
-    filename = ORGANISATION_DISPLAY
+    filename = JSON_PATH + ORGANISATION_DISPLAY
     df = pd.read_json(filename, lines=True)
     df = df.astype(str)
     for i in range(len(df['categories'])):
         df['categories'][i] = ast.literal_eval(df['categories'][i])
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
-    res = js.values()
-    return list(res)
+    res = list(js.values())
+    return res
 
 
 def get_one(org_id):
-    filename = ORGANISATION_DISPLAY
+    '''
+
+    :param org_id: organisation id
+    :return: get info of a single organisation corresponding to organisation id
+    '''
+    filename = JSON_PATH + ORGANISATION_DISPLAY
     df = pd.read_json(filename, lines=True)
     df = df.astype(str)
     for i in range(len(df['categories'])):
@@ -57,7 +44,7 @@ def add(data):
     :param data: dictionary of the new organisation info
     :return: adds organisation to the db file
     '''
-    filename = ORGANISATION_DISPLAY
+    filename = JSON_PATH + ORGANISATION_DISPLAY
     keys = []
     values = []
     for key, value in data.items():
@@ -69,21 +56,32 @@ def add(data):
     df2 = pd.DataFrame([values],
                        columns=keys)
     df = pd.concat([df, df2]).reset_index(drop=True)
-    df.to_csv(filename, sep=',', index=False)
+    df.to_json(filename, orient='records', lines=True)
 
 
 def delete(org_id):
-    filename = 'organisations dataset.csv'
+    '''
+
+    :param org_id: organisation id
+    :return: remove organisation corresponding to the organisation id from db
+    '''
+    filename = JSON_PATH + ORGANISATION_DISPLAY
     df = pd.read_json(filename, lines=True)
     df = df.astype(str)
     df = df[df.id != org_id]
-    df.to_csv(filename, sep=',', index=False)
+    df.to_json(filename, orient='records', lines=True)
 
 
 def update_values(org_id, data):
-    filename = 'organisations dataset.csv'
+    '''
+
+    :param org_id: organisation id
+    :param data: dictionary of {column name}:{value to put}
+    :return:
+    '''
+    filename = JSON_PATH + ORGANISATION_DISPLAY
     df = pd.read_json(filename, lines=True)
     df = df.astype(str)
     for key, value in data.items():
         df.loc[df.id == org_id, key] = value
-    df.to_csv(filename, sep=',', index=False)
+    df.to_json(filename, orient='records', lines=True)

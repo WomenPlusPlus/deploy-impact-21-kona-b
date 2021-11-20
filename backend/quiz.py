@@ -24,6 +24,3 @@ def get_questions():
         quiz.append(res)
     return quiz
 
-
-def process_quiz(data):
-    return {}
