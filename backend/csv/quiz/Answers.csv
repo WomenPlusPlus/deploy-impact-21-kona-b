@@ -1,29 +1,42 @@
 q_id,a_id,answers,filter,filter_value
-2,1,Male,gender,gender_male
-2,2,Female,gender,gender_female
-2,3,Other,gender,gender_other
-2,4,Skip,,
-3,1,Baby (under 3),age_group,age_group_baby
-3,2,Child (4-12),age_group,age_group_child
-3,3,Youth (13-17),age_group,age_group_youth
-3,4,Adult (18+),age_group,age_group_adult
-3,5,Skip,,
-4,1,Dakar,region,Dakar
-4,2,Diourbel,region,Diourbel
-4,3,Kaolack,region,Kaolack
-4,4,Saint-Louis,region,Saint-Louis
-4,5, Thies,region, Thies
-4,6,Any,,
+2,1,Male,gender,male
+2,2,Female,gender,female
+2,3,Other,gender,other
+3,1,Baby (under 3),age,baby
+3,2,Child (4-12),age,child
+3,3,Youth (13-17),age,youth
+3,4,Adult (18+),age,adult
+4,1,Dakar,region,dakar
+4,2,Saint-Louis,region,saint_louis
+4,3,Louga,region,louga
+4,4,Thies,region,thies
+4,5,Diourbel,region,diourbel
+4,6,Matam,region,mattam
+4,7,Fatick,region,fatick
+4,8,Kaolack,region,kaolack
+4,9,Kaffrine,region,kaffrine
+4,10,Tamabacounda,region,tamabacounda
+4,11,Kedougou,region,kedougou
+4,12,Kolda,region,kolda
+4,13,Sedhiou,region,sedhiou
+4,14,Ziguinohor,region,ziguinohor
 5,1,Social protection,dots_category_id,1
-5,2,Achieve food security and improved nutrition and promote sustainable agriculture.,dots_category_id,2
-5,3,Increase productivity and incomes of small-scale food producers,dots_category_id,3
-5,4,Physical and mental health and well-being,dots_category_id,4
-5,5,Access to quality education at all levels,dots_category_id,5
-5,6,Gender support and opportunities,dots_category_id,6
-5,7,Decent work and economic growth,dots_category_id,8
-5,8,Reduce inequalities,dots_category_id,15
-5,9,Sustainable cities and communities,dots_category_id,16
-5,10,Partnership for the goal,dots_category_id,17
+5,2,Food and farming,dots_category_id,2
+5,3,Health and well-being,dots_category_id,3
+5,4,Education,dots_category_id,4
+5,5,Gender equality,dots_category_id,5
+5,6,Clean water,dots_category_id,6
+5,7,Energy consumption,dots_category_id,7
+5,8,Work and entrepreneurship,dots_category_id,8
+5,9,Information technology,dots_category_id,9
+5,10,Equal opportunities,dots_category_id,10
+5,11,Housing,dots_category_id,11
+5,12,Sustainable lifestyles,dots_category_id,12
+5,13,Climate action,dots_category_id,13
+5,14,Fishing,dots_category_id,14
+5,15,Biodiversity,dots_category_id,15
+5,16,Justice and legal,dots_category_id,16
+5,17,Partnerships,dots_category_id,17
 6,1,Access to housing and social services,dots_subcategory_id,1
 6,2,Access to economic resources and information technology,dots_subcategory_id,2
 6,3,Access to financial services and microfinance,dots_subcategory_id,3

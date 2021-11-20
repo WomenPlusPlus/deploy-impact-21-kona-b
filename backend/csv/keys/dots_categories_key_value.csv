@@ -1,18 +1,18 @@
-sdg_id,key,value
-1,1,Social protection
-2,2,Zero hunger
-3,3,Physical and mental health and well-being
-4,4,Access to quality education at all levels
-5,5,Gender support and opportunities
-6,6,Clean water and sanitation
-7,7,Affordable and clean energy
-8,8,Decent work and economic growth
-9,9,"Industry, innovation and infrastructure"
-10,10,Reduced inequalities
-11,11,Sustainable cities and communities
-12,12,Responsible consumption and production
-13,13,Climate action
-14,14,Life below water
-15,15,Life on land
-16,16,"Peace, justice and strong institutions"
-17,17,Partnership
+sdg_id,key,translation_key,value,icon
+1,1,socialProtection,Social protection,MdFamilyRestroom
+2,2,food,Food and farming,RiPlantFill
+3,3,wellBeing,Health and well-being,GiHealthNormal
+4,4,education,Education,GiOpenBook
+5,5,genderEquality,Gender equality,BsGenderFemale
+6,6,cleanWater,Clean water,FaHandHoldingWater
+7,7,energy,Energy consumption,GiRollingEnergy
+8,8,workAndEntrepreneurship,Work and entrepreneurship,MdWork
+9,9,informationTechnology,Information technology,GrTechnology
+10,10,equalOpportunities,Equal opportunities,GiPodiumWinner
+11,11,housing,Housing,GiPlanetConquest
+12,12,sustainableLifestyles,Sustainable lifestyles,MdFoodBank
+13,13,climateAction,Climate action,GiEarthAfricaEurope
+14,14,fishing,Fishing,FaFish
+15,15,biodiversity,Biodiversity,BsTreeFill
+16,16,justiceAndLegal,Justice and legal,GoLaw
+17,17,partnerships,Partnerships,SiHandshake

@@ -1,7 +1,7 @@
-q_id,question,format,filter
-1,For you or someone else,radio_buttons,
-2,Gender,radio_buttons,gender
-3,Age Group,radio_buttons,age_group
-4,Region,multi_select,region
-5,What topics interest you?,multi_select,dots_category_id
-6,What type of help are you looking for?,multi_select,dots_subcategory_id
+q_id,question,format,filter,translation_key
+1,For you or someone else,radio_buttons,,user
+2,Gender,radio_buttons,gender,gender
+3,Age Group,radio_buttons,age,age
+4,Region,multi_select,region,region
+5,What topics interest you?,multi_select,dots_category_id,dots_categories
+6,What type of help are you looking for?,multi_select,dots_subcategory_id,dots_subCategories

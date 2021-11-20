@@ -1,4 +1,4 @@
-key,value
-male,Male
-female,Female
-other,Other
+key,value,icon,translation_key
+male,Male,FaMale,male
+female,Female,FaFemale,female
+other,Other,,other

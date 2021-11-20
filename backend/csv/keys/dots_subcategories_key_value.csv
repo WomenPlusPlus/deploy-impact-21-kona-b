@@ -1,41 +1,41 @@
-sdg_id,sdg_target_id,dots_category_id,key,value
-1,1.4,1,1,Access to housing and social services
-1,1.4,1,2,Access to economic resources and information technology
-1,1.4,1,3,Access to financial services and microfinance
-1,1.5,1,4,Initiatives to protect against climate-related events
-1,1.A,1,5, Programs alleviating poverty
-2,2.1,2,6,Access to nutritious food
-2,2.3,2,7,Access to agricultural land and other production resources
-2,2.3,2,8,Access to services for small-scale farmers to increase productivity and income
-2,2.4,2,9,Implement resilient agricultural practices and increase productivity
-2,2.4,2,10,Adapt farming practices to climate change and environmental disasters
-2,2.4,2,11,Improve land and soil quality
-2,2.5,2,12,Access to seed and plant banks and other resources for farming
-2,2.A,2,13,"Resources for rural infrastructure, agricultural research, and technology"
-3,3.4,3,14,Health prevention programs
-3,3.4,3,15,Disease prevention and treatment
-3,3.4,3,16,Access to mental health services
-3,3.5,3,17,Prevention and treatment of drug abuse
-3,3.8,3,18,"Access to healthcare services, medicines, and vaccines"
-4,4.1,4,19,Access to primary and secondary education
-4,4.2,4,20,Access to pre-primary education
-4,4.3,4,21,"Access to affordable technical, vocational and higher education"
-4,4.4,4,22,Develop relevant skills for employment and entrepreneurship
-4,4.7,4,23,Education for sustainable development and lifestyle
-4,4.7,4,24,Education for human rights
-4,4.7,4,25,Education for gender equality
-5,5.1,5,26,Programs to end discrimination against women
-5,5.2,5,27,Programs to end violence and exploitation against women
-5,5.B,5,28,Programs empowering women through technology
-5,5.C,5,29,Adopt and strengthen policies and legislation for gender equality
-8,8.2,8,30,Increase economic productivity through technological innovations
-8,8.5,8,31,Access to employment
-8,8.6,8,32,"Access to youth employment, education and training"
-8,8.10,8,33,Strengthen capacity of financial institutions
-10,10.3,10,34,Incentivise ending discrimination laws and policies
-10,10.7,10,35,"Ensure safe, orderly and regular migration back home"
-11,11.B,11,36,Strengthen national and regional development planning
-17,17.17,17,37,Effective partnership programs
-16,16.3,16,38,Access to justice and legal aid
-16,16.9,16,39,Access to legal identity and registration
-16,16.10,16,40,Access to information and protection of human rights
+sdg_id,sdg_target_id,dots_category_id,key,value,translation_key,icon
+1,1.4,1,1,Access to housing and social services,housingAndSocialServices,
+1,1.4,1,2,Access to economic resources and information technology,economicResources,
+1,1.4,1,3,Access to financial services and microfinance,financialServices,
+1,1.5,1,4,Initiatives to protect against climate-related events,protectionClimatEvents,
+1,1.A,1,5, Programs alleviating poverty,alleviatePoverty,
+2,2.1,2,6,Access to nutritious food,nutritiousFood,
+2,2.3,2,7,Access to agricultural land and other production resources,agriculturalLand,
+2,2.3,2,8,Access to services for small-scale farmers to increase productivity and income,smallScaleFarmers,
+2,2.4,2,9,Implement resilient agricultural practices and increase productivity,resilientAgriculturalPractices,
+2,2.4,2,10,Adapt farming practices to climate change and environmental disasters,adaptFarmingPractices,
+2,2.4,2,11,Improve land and soil quality,LandAndSoilQuality,
+2,2.5,2,12,Access to seed and plant banks and other resources for farming,farmingResources,
+2,2.A,2,13,"Resources for rural infrastructure, agricultural research, and technology",ruralInfrastructureResources,
+3,3.4,3,14,Health prevention programs,healthPrevention,
+3,3.4,3,15,Disease prevention and treatment,diseasePrevention,
+3,3.4,3,16,Access to mental health services,mentalHealth,
+3,3.5,3,17,Prevention and treatment of drug abuse,drugAbuse,
+3,3.8,3,18,"Access to healthcare services, medicines, and vaccines",accessToHealthcare,
+4,4.1,4,19,Access to primary and secondary education,primaryAndSecondaryEducation,
+4,4.2,4,20,Access to pre-primary education,prePrimaryEducation,
+4,4.3,4,21,"Access to affordable technical, vocational and higher education",accessHigherEducation,
+4,4.4,4,22,Develop relevant skills for employment and entrepreneurship,skillsForEmployment,
+4,4.7,4,23,Education for sustainable development and lifestyle,sustainableDevelopementEducation,
+4,4.7,4,24,Education for human rights,humanRightsEducation,
+4,4.7,4,25,Education for gender equality,genderEqualityEducation,
+5,5.1,5,26,Programs to end discrimination against women,endWomenDiscrimination,
+5,5.2,5,27,Programs to end violence and exploitation against women,endViolenceWomen,
+5,5.B,5,28,Programs empowering women through technology,empowerWomen,
+5,5.C,5,29,Adopt and strengthen policies and legislation for gender equality,legislationForGenderEquality,
+8,8.2,8,30,Increase economic productivity through technological innovations,economicProductivity,
+8,8.5,8,31,Access to employment,employment,
+8,8.6,8,32,"Access to youth employment, education and training",youthEmployment,
+8,8.10,8,33,Strengthen capacity of financial institutions,financialInstitutions,
+10,10.3,10,34,Incentivise ending discrimination laws and policies,endingDiscriminationLaws,
+10,10.7,10,35,"Ensure safe, orderly and regular migration back home",migration,
+11,11.B,11,36,Strengthen national and regional development planning,developmentPlanning,
+17,17.17,17,37,Effective partnership programs,effectivePartnership,
+16,16.3,16,38,Access to justice and legal aid,justiceAndLegalAid,
+16,16.9,16,39,Access to legal identity and registration,legalIdentity,
+16,16.10,16,40,Access to information and protection of human rights,humanRightsProtection,
