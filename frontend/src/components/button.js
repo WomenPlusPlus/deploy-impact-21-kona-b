@@ -1,9 +1,13 @@
 import React from "react";
+import classNames from "classnames";
 
-export default function Button({ text, onClick }) {
+export default function Button({ text, onClick, primary }) {
   return (
     <button
-      className="border border-kona hover:bg-gray-200 my-6 px-4 py-2 rounded uppercase"
+      className={classNames(
+        `border border-gray-200 my-6 px-4 py-2 rounded uppercase`,
+        { "border-kona": primary }
+      )}
       type="submit"
       onClick={() => onClick()}
     >

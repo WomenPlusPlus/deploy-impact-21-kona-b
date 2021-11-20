@@ -138,9 +138,8 @@ export default function QuizPage() {
                           ? t("submitButtonLast")
                           : t("submitButton")
                       }
-                      step={step}
                       onClick={() => handleClickNext(answer)}
-                      numberQuestions={numberQuestions}
+                      primary={true}
                     />
                   </div>
                 )}
