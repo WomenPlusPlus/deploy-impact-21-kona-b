@@ -1,0 +1,546 @@
+id,name,female,other,male,adult,youth,child,baby
+1,La Liane,1,0,0,1,0,0,0
+1,La Liane,0,1,0,1,0,0,0
+1,La Liane,1,0,0,0,1,0,0
+1,La Liane,1,0,0,0,0,1,0
+1,La Liane,1,0,0,0,0,0,1
+1,La Liane,0,0,1,0,1,0,0
+1,La Liane,0,0,1,0,0,1,0
+1,La Liane,0,0,1,0,0,0,1
+1,La Liane,0,1,0,0,1,0,0
+1,La Liane,0,1,0,0,0,1,0
+1,La Liane,0,1,0,0,0,0,1
+2,Association Jeunesse Espoir (AJS),1,0,0,1,0,0,0
+2,Association Jeunesse Espoir (AJS),1,0,0,0,1,0,0
+2,Association Jeunesse Espoir (AJS),1,0,0,0,0,1,0
+2,Association Jeunesse Espoir (AJS),1,0,0,0,0,0,1
+2,Association Jeunesse Espoir (AJS),0,0,1,1,0,0,0
+2,Association Jeunesse Espoir (AJS),0,0,1,0,1,0,0
+2,Association Jeunesse Espoir (AJS),0,0,1,0,0,1,0
+2,Association Jeunesse Espoir (AJS),0,0,1,0,0,0,1
+2,Association Jeunesse Espoir (AJS),0,1,0,1,0,0,0
+2,Association Jeunesse Espoir (AJS),0,1,0,0,1,0,0
+2,Association Jeunesse Espoir (AJS),0,1,0,0,0,1,0
+2,Association Jeunesse Espoir (AJS),0,1,0,0,0,0,1
+3,Connexion Sans Frontieres,1,0,0,1,0,0,0
+3,Connexion Sans Frontieres,1,0,0,0,1,0,0
+3,Connexion Sans Frontieres,1,0,0,0,0,1,0
+3,Connexion Sans Frontieres,0,0,1,1,0,0,0
+3,Connexion Sans Frontieres,0,0,1,0,1,0,0
+3,Connexion Sans Frontieres,0,0,1,0,0,1,0
+3,Connexion Sans Frontieres,0,1,0,1,0,0,0
+3,Connexion Sans Frontieres,0,1,0,0,1,0,0
+3,Connexion Sans Frontieres,0,1,0,0,0,1,0
+4,African Network for Horticultural Development,1,0,0,0,1,0,0
+4,African Network for Horticultural Development,1,0,0,1,0,0,0
+4,African Network for Horticultural Development,0,0,1,0,1,0,0
+4,African Network for Horticultural Development,0,0,1,1,0,0,0
+4,African Network for Horticultural Development,0,1,0,0,1,0,0
+4,African Network for Horticultural Development,0,1,0,1,0,0,0
+5,African Network for Integrated Development (ANID),1,0,0,0,1,0,0
+5,African Network for Integrated Development (ANID),1,0,0,1,0,0,0
+5,African Network for Integrated Development (ANID),0,0,1,0,1,0,0
+5,African Network for Integrated Development (ANID),0,0,1,1,0,0,0
+5,African Network for Integrated Development (ANID),0,1,0,0,1,0,0
+5,African Network for Integrated Development (ANID),0,1,0,1,0,0,0
+6,African Network for Support to Women Entrepreneurs (ANSWE),1,0,0,0,1,0,0
+6,African Network for Support to Women Entrepreneurs (ANSWE),1,0,0,1,0,0,0
+7,African Office for Development and Cooperation,1,0,0,0,1,0,0
+7,African Office for Development and Cooperation,1,0,0,1,0,0,0
+7,African Office for Development and Cooperation,1,0,0,0,0,1,0
+7,African Office for Development and Cooperation,1,0,0,0,0,0,1
+7,African Office for Development and Cooperation,0,0,1,0,1,0,0
+7,African Office for Development and Cooperation,0,0,1,1,0,0,0
+7,African Office for Development and Cooperation,0,0,1,0,0,1,0
+7,African Office for Development and Cooperation,0,0,1,0,0,0,1
+7,African Office for Development and Cooperation,0,1,0,0,1,0,0
+7,African Office for Development and Cooperation,0,1,0,1,0,0,0
+7,African Office for Development and Cooperation,0,1,0,0,0,1,0
+7,African Office for Development and Cooperation,0,1,0,0,0,0,1
+8,Centre de Recherche Ouest Africaine (CROA),1,0,0,0,1,0,0
+8,Centre de Recherche Ouest Africaine (CROA),1,0,0,1,0,0,0
+8,Centre de Recherche Ouest Africaine (CROA),0,0,1,0,1,0,0
+8,Centre de Recherche Ouest Africaine (CROA),0,0,1,1,0,0,0
+8,Centre de Recherche Ouest Africaine (CROA),0,1,0,0,1,0,0
+8,Centre de Recherche Ouest Africaine (CROA),0,1,0,1,0,0,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),1,0,0,0,0,0,1
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),1,0,0,0,0,1,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),1,0,0,0,1,0,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),1,0,0,1,0,0,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),0,0,1,0,0,0,1
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),0,0,1,0,0,1,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),0,0,1,0,1,0,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),0,0,1,1,0,0,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),0,1,0,0,0,0,1
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),0,1,0,0,0,1,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),0,1,0,0,1,0,0
+9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),0,1,0,1,0,0,0
+10,African Regional Centre for Technology (ARCT),1,0,0,1,0,0,0
+10,African Regional Centre for Technology (ARCT),0,0,1,1,0,0,0
+10,African Regional Centre for Technology (ARCT),0,1,0,1,0,0,0
+11,Forum for Agricultural Research in Africa (FARA),1,0,0,1,0,0,0
+11,Forum for Agricultural Research in Africa (FARA),0,0,1,1,0,0,0
+11,Forum for Agricultural Research in Africa (FARA),0,1,0,1,0,0,0
+12,Groupe Présence Locale,1,0,0,0,0,0,1
+12,Groupe Présence Locale,1,0,0,0,0,1,0
+12,Groupe Présence Locale,1,0,0,0,1,0,0
+12,Groupe Présence Locale,1,0,0,1,0,0,0
+12,Groupe Présence Locale,0,0,1,0,0,0,1
+12,Groupe Présence Locale,0,0,1,0,0,1,0
+12,Groupe Présence Locale,0,0,1,0,1,0,0
+12,Groupe Présence Locale,0,0,1,1,0,0,0
+12,Groupe Présence Locale,0,1,0,0,0,0,1
+12,Groupe Présence Locale,0,1,0,0,0,1,0
+12,Groupe Présence Locale,0,1,0,0,1,0,0
+12,Groupe Présence Locale,0,1,0,1,0,0,0
+13,Institut africain de gestion urbaine (IAGU),0,0,0,0,0,0,0
+14,OSIWA,1,0,0,1,0,0,0
+14,OSIWA,0,0,1,1,0,0,0
+14,OSIWA,0,1,0,1,0,0,0
+15,Research and Action Group for Rural Development in the Third World,1,0,0,0,1,0,0
+15,Research and Action Group for Rural Development in the Third World,1,0,0,1,0,0,0
+15,Research and Action Group for Rural Development in the Third World,0,0,1,0,1,0,0
+15,Research and Action Group for Rural Development in the Third World,0,0,1,1,0,0,0
+15,Research and Action Group for Rural Development in the Third World,0,1,0,0,1,0,0
+15,Research and Action Group for Rural Development in the Third World,0,1,0,1,0,0,0
+16,Student and Youth Traveler Organization (SYTO),1,0,0,0,1,0,0
+16,Student and Youth Traveler Organization (SYTO),1,0,0,1,0,0,0
+16,Student and Youth Traveler Organization (SYTO),0,0,1,0,1,0,0
+16,Student and Youth Traveler Organization (SYTO),0,0,1,1,0,0,0
+16,Student and Youth Traveler Organization (SYTO),0,1,0,0,1,0,0
+16,Student and Youth Traveler Organization (SYTO),0,1,0,1,0,0,0
+17,TrustAfrica,1,0,0,0,1,0,0
+17,TrustAfrica,1,0,0,1,0,0,0
+17,TrustAfrica,0,0,1,0,1,0,0
+17,TrustAfrica,0,0,1,1,0,0,0
+17,TrustAfrica,0,1,0,0,1,0,0
+17,TrustAfrica,0,1,0,1,0,0,0
+18,UCJG/YMCA-SENEGAL,1,0,0,0,0,1,0
+18,UCJG/YMCA-SENEGAL,1,0,0,0,1,0,0
+18,UCJG/YMCA-SENEGAL,1,0,0,1,0,0,0
+18,UCJG/YMCA-SENEGAL,0,0,1,0,0,1,0
+18,UCJG/YMCA-SENEGAL,0,0,1,0,1,0,0
+18,UCJG/YMCA-SENEGAL,0,0,1,1,0,0,0
+18,UCJG/YMCA-SENEGAL,0,1,0,0,0,1,0
+18,UCJG/YMCA-SENEGAL,0,1,0,0,1,0,0
+18,UCJG/YMCA-SENEGAL,0,1,0,1,0,0,0
+19,SOS Village,1,0,0,0,0,0,1
+19,SOS Village,1,0,0,0,0,1,0
+19,SOS Village,1,0,0,0,1,0,0
+19,SOS Village,1,0,0,1,0,0,0
+19,SOS Village,0,0,1,0,0,0,1
+19,SOS Village,0,0,1,0,0,1,0
+19,SOS Village,0,0,1,0,1,0,0
+19,SOS Village,0,0,1,1,0,0,0
+19,SOS Village,0,1,0,0,0,0,1
+19,SOS Village,0,1,0,0,0,1,0
+19,SOS Village,0,1,0,0,1,0,0
+19,SOS Village,0,1,0,1,0,0,0
+20,Alima,1,0,0,0,0,0,1
+20,Alima,1,0,0,0,0,1,0
+20,Alima,1,0,0,0,1,0,0
+20,Alima,1,0,0,1,0,0,0
+20,Alima,0,0,1,0,0,0,1
+20,Alima,0,0,1,0,0,1,0
+20,Alima,0,0,1,0,1,0,0
+20,Alima,0,0,1,1,0,0,0
+20,Alima,0,1,0,0,0,0,1
+20,Alima,0,1,0,0,0,1,0
+20,Alima,0,1,0,0,1,0,0
+20,Alima,0,1,0,1,0,0,0
+21,Amnesty International,1,0,0,0,0,0,1
+21,Amnesty International,1,0,0,0,0,1,0
+21,Amnesty International,1,0,0,0,1,0,0
+21,Amnesty International,1,0,0,1,0,0,0
+21,Amnesty International,0,0,1,0,0,0,1
+21,Amnesty International,0,0,1,0,0,1,0
+21,Amnesty International,0,0,1,0,1,0,0
+21,Amnesty International,0,0,1,1,0,0,0
+21,Amnesty International,0,1,0,0,0,0,1
+21,Amnesty International,0,1,0,0,0,1,0
+21,Amnesty International,0,1,0,0,1,0,0
+21,Amnesty International,0,1,0,1,0,0,0
+22,BirdLife,0,0,0,0,0,0,0
+23,CISV,1,0,0,0,1,0,0
+23,CISV,1,0,0,1,0,0,0
+23,CISV,0,0,1,0,1,0,0
+23,CISV,0,0,1,1,0,0,0
+23,CISV,0,1,0,0,1,0,0
+23,CISV,0,1,0,1,0,0,0
+24,Plan International,1,0,0,0,0,0,1
+24,Plan International,1,0,0,0,0,1,0
+24,Plan International,1,0,0,0,1,0,0
+24,Plan International,1,0,0,1,0,0,0
+24,Plan International,0,0,1,0,0,0,1
+24,Plan International,0,0,1,0,0,1,0
+24,Plan International,0,0,1,0,1,0,0
+24,Plan International,0,0,1,1,0,0,0
+24,Plan International,0,1,0,0,0,0,1
+24,Plan International,0,1,0,0,0,1,0
+24,Plan International,0,1,0,0,1,0,0
+24,Plan International,0,1,0,1,0,0,0
+25,Croix Rouge Internationale,1,0,0,0,0,0,1
+25,Croix Rouge Internationale,1,0,0,0,0,1,0
+25,Croix Rouge Internationale,1,0,0,0,1,0,0
+25,Croix Rouge Internationale,1,0,0,1,0,0,0
+25,Croix Rouge Internationale,0,0,1,0,0,0,1
+25,Croix Rouge Internationale,0,0,1,0,0,1,0
+25,Croix Rouge Internationale,0,0,1,0,1,0,0
+25,Croix Rouge Internationale,0,0,1,1,0,0,0
+25,Croix Rouge Internationale,0,1,0,0,0,0,1
+25,Croix Rouge Internationale,0,1,0,0,0,1,0
+25,Croix Rouge Internationale,0,1,0,0,1,0,0
+25,Croix Rouge Internationale,0,1,0,1,0,0,0
+26,Caritas,1,0,0,0,0,0,1
+26,Caritas,1,0,0,0,0,1,0
+26,Caritas,1,0,0,0,1,0,0
+26,Caritas,1,0,0,1,0,0,0
+26,Caritas,0,0,1,0,0,0,1
+26,Caritas,0,0,1,0,0,1,0
+26,Caritas,0,0,1,0,1,0,0
+26,Caritas,0,0,1,1,0,0,0
+26,Caritas,0,1,0,0,0,0,1
+26,Caritas,0,1,0,0,0,1,0
+26,Caritas,0,1,0,0,1,0,0
+26,Caritas,0,1,0,1,0,0,0
+27,FAO,0,0,0,0,0,0,0
+28,GIZ,1,0,0,0,1,0,0
+28,GIZ,1,0,0,1,0,0,0
+28,GIZ,0,0,1,0,1,0,0
+28,GIZ,0,0,1,1,0,0,0
+28,GIZ,0,1,0,0,1,0,0
+28,GIZ,0,1,0,1,0,0,0
+29,GRET,1,0,0,0,0,0,1
+29,GRET,1,0,0,0,0,1,0
+29,GRET,1,0,0,0,1,0,0
+29,GRET,1,0,0,1,0,0,0
+29,GRET,0,0,1,0,0,0,1
+29,GRET,0,0,1,0,0,1,0
+29,GRET,0,0,1,0,1,0,0
+29,GRET,0,0,1,1,0,0,0
+29,GRET,0,1,0,0,0,0,1
+29,GRET,0,1,0,0,0,1,0
+29,GRET,0,1,0,0,1,0,0
+29,GRET,0,1,0,1,0,0,0
+30,IntraHealth,1,0,0,0,1,0,0
+30,IntraHealth,1,0,0,1,0,0,0
+30,IntraHealth,0,0,1,0,1,0,0
+30,IntraHealth,0,0,1,1,0,0,0
+30,IntraHealth,0,1,0,0,1,0,0
+30,IntraHealth,0,1,0,1,0,0,0
+31,IPAR,1,0,0,0,1,0,0
+31,IPAR,1,0,0,1,0,0,0
+31,IPAR,0,0,1,0,1,0,0
+31,IPAR,0,0,1,1,0,0,0
+31,IPAR,0,1,0,0,1,0,0
+31,IPAR,0,1,0,1,0,0,0
+32,Médecins sans Frontière,1,0,0,0,0,0,1
+32,Médecins sans Frontière,1,0,0,0,0,1,0
+32,Médecins sans Frontière,1,0,0,0,1,0,0
+32,Médecins sans Frontière,1,0,0,1,0,0,0
+32,Médecins sans Frontière,0,0,1,0,0,0,1
+32,Médecins sans Frontière,0,0,1,0,0,1,0
+32,Médecins sans Frontière,0,0,1,0,1,0,0
+32,Médecins sans Frontière,0,0,1,1,0,0,0
+32,Médecins sans Frontière,0,1,0,0,0,0,1
+32,Médecins sans Frontière,0,1,0,0,0,1,0
+32,Médecins sans Frontière,0,1,0,0,1,0,0
+32,Médecins sans Frontière,0,1,0,1,0,0,0
+33,OIM,1,0,0,0,0,0,1
+33,OIM,1,0,0,0,0,1,0
+33,OIM,1,0,0,0,1,0,0
+33,OIM,1,0,0,1,0,0,0
+33,OIM,0,0,1,0,0,0,1
+33,OIM,0,0,1,0,0,1,0
+33,OIM,0,0,1,0,1,0,0
+33,OIM,0,0,1,1,0,0,0
+33,OIM,0,1,0,0,0,0,1
+33,OIM,0,1,0,0,0,1,0
+33,OIM,0,1,0,0,1,0,0
+33,OIM,0,1,0,1,0,0,0
+34,African Peace Corps,1,0,0,0,1,0,0
+34,African Peace Corps,1,0,0,1,0,0,0
+34,African Peace Corps,0,0,1,0,1,0,0
+34,African Peace Corps,0,0,1,1,0,0,0
+34,African Peace Corps,0,1,0,0,1,0,0
+34,African Peace Corps,0,1,0,1,0,0,0
+35,PNUD / UNDP,1,0,0,0,0,0,1
+35,PNUD / UNDP,1,0,0,0,0,1,0
+35,PNUD / UNDP,1,0,0,0,1,0,0
+35,PNUD / UNDP,1,0,0,1,0,0,0
+35,PNUD / UNDP,0,0,1,0,0,0,1
+35,PNUD / UNDP,0,0,1,0,0,1,0
+35,PNUD / UNDP,0,0,1,0,1,0,0
+35,PNUD / UNDP,0,0,1,1,0,0,0
+35,PNUD / UNDP,0,1,0,0,0,0,1
+35,PNUD / UNDP,0,1,0,0,0,1,0
+35,PNUD / UNDP,0,1,0,0,1,0,0
+35,PNUD / UNDP,0,1,0,1,0,0,0
+36,Positive Planet,1,0,0,0,1,0,0
+36,Positive Planet,1,0,0,1,0,0,0
+36,Positive Planet,0,1,0,0,1,0,0
+36,Positive Planet,0,1,0,1,0,0,0
+36,Positive Planet,1,0,0,0,1,0,0
+36,Positive Planet,0,0,1,0,1,0,0
+36,Positive Planet,0,1,0,0,1,0,0
+37,Save the Children,1,0,0,0,0,0,1
+37,Save the Children,1,0,0,0,0,1,0
+37,Save the Children,1,0,0,0,1,0,0
+37,Save the Children,0,0,1,0,0,0,1
+37,Save the Children,0,0,1,0,0,1,0
+37,Save the Children,0,0,1,0,1,0,0
+37,Save the Children,0,1,0,0,0,0,1
+37,Save the Children,0,1,0,0,0,1,0
+37,Save the Children,0,1,0,0,1,0,0
+38,Secours Islamique France,1,0,0,0,0,0,1
+38,Secours Islamique France,1,0,0,0,0,1,0
+38,Secours Islamique France,1,0,0,0,1,0,0
+38,Secours Islamique France,1,0,0,1,0,0,0
+38,Secours Islamique France,0,0,1,0,0,0,1
+38,Secours Islamique France,0,0,1,0,0,1,0
+38,Secours Islamique France,0,0,1,0,1,0,0
+38,Secours Islamique France,0,0,1,1,0,0,0
+38,Secours Islamique France,0,1,0,0,0,0,1
+38,Secours Islamique France,0,1,0,0,0,1,0
+38,Secours Islamique France,0,1,0,0,1,0,0
+38,Secours Islamique France,0,1,0,1,0,0,0
+39,Sightsavers,1,0,0,0,0,0,1
+39,Sightsavers,1,0,0,0,0,1,0
+39,Sightsavers,1,0,0,0,1,0,0
+39,Sightsavers,1,0,0,1,0,0,0
+39,Sightsavers,0,0,1,0,0,0,1
+39,Sightsavers,0,0,1,0,0,1,0
+39,Sightsavers,0,0,1,0,1,0,0
+39,Sightsavers,0,0,1,1,0,0,0
+39,Sightsavers,0,1,0,0,0,0,1
+39,Sightsavers,0,1,0,0,0,1,0
+39,Sightsavers,0,1,0,0,1,0,0
+39,Sightsavers,0,1,0,1,0,0,0
+40,Solthis,1,0,0,0,0,0,1
+40,Solthis,1,0,0,0,0,1,0
+40,Solthis,1,0,0,0,1,0,0
+40,Solthis,1,0,0,1,0,0,0
+40,Solthis,0,0,1,0,0,0,1
+40,Solthis,0,0,1,0,0,1,0
+40,Solthis,0,0,1,0,1,0,0
+40,Solthis,0,0,1,1,0,0,0
+40,Solthis,0,1,0,0,0,0,1
+40,Solthis,0,1,0,0,0,1,0
+40,Solthis,0,1,0,0,1,0,0
+40,Solthis,0,1,0,1,0,0,0
+41,UNESCO,1,0,0,0,0,0,1
+41,UNESCO,1,0,0,0,0,1,0
+41,UNESCO,1,0,0,0,1,0,0
+41,UNESCO,1,0,0,1,0,0,0
+41,UNESCO,0,0,1,0,0,0,1
+41,UNESCO,0,0,1,0,0,1,0
+41,UNESCO,0,0,1,0,1,0,0
+41,UNESCO,0,0,1,1,0,0,0
+41,UNESCO,0,1,0,0,0,0,1
+41,UNESCO,0,1,0,0,0,1,0
+41,UNESCO,0,1,0,0,1,0,0
+41,UNESCO,0,1,0,1,0,0,0
+42,UNHCR,1,0,0,0,0,0,1
+42,UNHCR,1,0,0,0,0,1,0
+42,UNHCR,1,0,0,0,1,0,0
+42,UNHCR,1,0,0,1,0,0,0
+42,UNHCR,0,0,1,0,0,0,1
+42,UNHCR,0,0,1,0,0,1,0
+42,UNHCR,0,0,1,0,1,0,0
+42,UNHCR,0,0,1,1,0,0,0
+42,UNHCR,0,1,0,0,0,0,1
+42,UNHCR,0,1,0,0,0,1,0
+42,UNHCR,0,1,0,0,1,0,0
+42,UNHCR,0,1,0,1,0,0,0
+43,UNICEF,1,0,0,0,0,0,1
+43,UNICEF,1,0,0,0,0,1,0
+43,UNICEF,0,0,1,0,0,0,1
+43,UNICEF,0,0,1,0,0,1,0
+43,UNICEF,0,1,0,0,0,0,1
+43,UNICEF,0,1,0,0,0,1,0
+44,UNOPS,0,0,0,0,0,0,0
+45,USAID,1,0,0,0,1,0,0
+45,USAID,1,0,0,1,0,0,0
+45,USAID,0,0,1,0,1,0,0
+45,USAID,0,0,1,1,0,0,0
+45,USAID,0,1,0,0,1,0,0
+45,USAID,0,1,0,1,0,0,0
+46,ONG Tostan,1,0,0,0,0,0,1
+46,ONG Tostan,1,0,0,0,0,1,0
+46,ONG Tostan,1,0,0,0,1,0,0
+46,ONG Tostan,1,0,0,1,0,0,0
+46,ONG Tostan,0,0,1,0,0,0,1
+46,ONG Tostan,0,0,1,0,0,1,0
+46,ONG Tostan,0,0,1,0,1,0,0
+46,ONG Tostan,0,0,1,1,0,0,0
+46,ONG Tostan,0,1,0,0,0,0,1
+46,ONG Tostan,0,1,0,0,0,1,0
+46,ONG Tostan,0,1,0,0,1,0,0
+46,ONG Tostan,0,1,0,1,0,0,0
+47,Action Pour les Droits Humains et l'Amité,1,0,0,0,0,0,1
+47,Action Pour les Droits Humains et l'Amité,1,0,0,0,0,1,0
+47,Action Pour les Droits Humains et l'Amité,1,0,0,0,1,0,0
+47,Action Pour les Droits Humains et l'Amité,1,0,0,1,0,0,0
+47,Action Pour les Droits Humains et l'Amité,0,0,1,0,0,0,1
+47,Action Pour les Droits Humains et l'Amité,0,0,1,0,0,1,0
+47,Action Pour les Droits Humains et l'Amité,0,0,1,0,1,0,0
+47,Action Pour les Droits Humains et l'Amité,0,0,1,1,0,0,0
+47,Action Pour les Droits Humains et l'Amité,0,1,0,0,0,0,1
+47,Action Pour les Droits Humains et l'Amité,0,1,0,0,0,1,0
+47,Action Pour les Droits Humains et l'Amité,0,1,0,0,1,0,0
+47,Action Pour les Droits Humains et l'Amité,0,1,0,1,0,0,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),1,0,0,0,1,0,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),1,0,0,1,0,0,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),0,1,0,0,1,0,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),0,1,0,1,0,0,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),1,0,0,0,0,0,1
+48,ALEFS (Avec les enfants et les femmes du Sénégal),1,0,0,0,0,1,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),1,0,0,0,1,0,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),0,0,1,0,0,0,1
+48,ALEFS (Avec les enfants et les femmes du Sénégal),0,0,1,0,0,1,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),0,0,1,0,1,0,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),0,1,0,0,0,0,1
+48,ALEFS (Avec les enfants et les femmes du Sénégal),0,1,0,0,0,1,0
+48,ALEFS (Avec les enfants et les femmes du Sénégal),0,1,0,0,1,0,0
+49,Unies vers’elle,1,0,0,1,0,0,0
+49,Unies vers’elle,0,1,0,1,0,0,0
+49,Unies vers’elle,1,0,0,0,0,0,1
+49,Unies vers’elle,1,0,0,0,0,1,0
+49,Unies vers’elle,1,0,0,0,1,0,0
+49,Unies vers’elle,0,0,1,0,0,0,1
+49,Unies vers’elle,0,0,1,0,0,1,0
+49,Unies vers’elle,0,0,1,0,1,0,0
+49,Unies vers’elle,0,1,0,0,0,0,1
+49,Unies vers’elle,0,1,0,0,0,1,0
+49,Unies vers’elle,0,1,0,0,1,0,0
+50,Keur talibé,1,0,0,0,0,0,1
+50,Keur talibé,1,0,0,0,0,1,0
+50,Keur talibé,1,0,0,0,1,0,0
+50,Keur talibé,0,0,1,0,0,0,1
+50,Keur talibé,0,0,1,0,0,1,0
+50,Keur talibé,0,0,1,0,1,0,0
+50,Keur talibé,0,1,0,0,0,0,1
+50,Keur talibé,0,1,0,0,0,1,0
+50,Keur talibé,0,1,0,0,1,0,0
+51,Empire des enfants,1,0,0,0,0,0,1
+51,Empire des enfants,1,0,0,0,0,1,0
+51,Empire des enfants,1,0,0,0,1,0,0
+51,Empire des enfants,0,0,1,0,0,0,1
+51,Empire des enfants,0,0,1,0,0,1,0
+51,Empire des enfants,0,0,1,0,1,0,0
+51,Empire des enfants,0,1,0,0,0,0,1
+51,Empire des enfants,0,1,0,0,0,1,0
+51,Empire des enfants,0,1,0,0,1,0,0
+52,ACTED,0,0,0,0,0,0,0
+53,Action Contre la Faim,1,0,0,0,0,0,1
+53,Action Contre la Faim,1,0,0,0,0,1,0
+53,Action Contre la Faim,1,0,0,0,1,0,0
+53,Action Contre la Faim,1,0,0,1,0,0,0
+53,Action Contre la Faim,0,0,1,0,0,0,1
+53,Action Contre la Faim,0,0,1,0,0,1,0
+53,Action Contre la Faim,0,0,1,0,1,0,0
+53,Action Contre la Faim,0,0,1,1,0,0,0
+53,Action Contre la Faim,0,1,0,0,0,0,1
+53,Action Contre la Faim,0,1,0,0,0,1,0
+53,Action Contre la Faim,0,1,0,0,1,0,0
+53,Action Contre la Faim,0,1,0,1,0,0,0
+54,Solidarité pour les enfants des rues,1,0,0,0,0,0,1
+54,Solidarité pour les enfants des rues,1,0,0,0,0,1,0
+54,Solidarité pour les enfants des rues,1,0,0,0,1,0,0
+54,Solidarité pour les enfants des rues,0,0,1,0,0,0,1
+54,Solidarité pour les enfants des rues,0,0,1,0,0,1,0
+54,Solidarité pour les enfants des rues,0,0,1,0,1,0,0
+54,Solidarité pour les enfants des rues,0,1,0,0,0,0,1
+54,Solidarité pour les enfants des rues,0,1,0,0,0,1,0
+54,Solidarité pour les enfants des rues,0,1,0,0,1,0,0
+55,AMOHS Association du mouvement humaniste de saint-louis,1,0,0,0,0,0,1
+55,AMOHS Association du mouvement humaniste de saint-louis,1,0,0,0,0,1,0
+55,AMOHS Association du mouvement humaniste de saint-louis,1,0,0,0,1,0,0
+55,AMOHS Association du mouvement humaniste de saint-louis,0,0,1,0,0,0,1
+55,AMOHS Association du mouvement humaniste de saint-louis,0,0,1,0,0,1,0
+55,AMOHS Association du mouvement humaniste de saint-louis,0,0,1,0,1,0,0
+55,AMOHS Association du mouvement humaniste de saint-louis,0,1,0,0,0,0,1
+55,AMOHS Association du mouvement humaniste de saint-louis,0,1,0,0,0,1,0
+55,AMOHS Association du mouvement humaniste de saint-louis,0,1,0,0,1,0,0
+56,Maison de la Gare,1,0,0,0,0,0,1
+56,Maison de la Gare,1,0,0,0,0,1,0
+56,Maison de la Gare,1,0,0,0,1,0,0
+56,Maison de la Gare,1,0,0,1,0,0,0
+56,Maison de la Gare,0,0,1,0,0,0,1
+56,Maison de la Gare,0,0,1,0,0,1,0
+56,Maison de la Gare,0,0,1,0,1,0,0
+56,Maison de la Gare,0,0,1,1,0,0,0
+56,Maison de la Gare,0,1,0,0,0,0,1
+56,Maison de la Gare,0,1,0,0,0,1,0
+56,Maison de la Gare,0,1,0,0,1,0,0
+56,Maison de la Gare,0,1,0,1,0,0,0
+57,Association des juristes sénégalaises,1,0,0,1,0,0,0
+57,Association des juristes sénégalaises,1,0,0,0,0,0,1
+57,Association des juristes sénégalaises,1,0,0,0,0,1,0
+57,Association des juristes sénégalaises,1,0,0,0,1,0,0
+57,Association des juristes sénégalaises,0,0,1,0,0,0,1
+57,Association des juristes sénégalaises,0,0,1,0,0,1,0
+57,Association des juristes sénégalaises,0,0,1,0,1,0,0
+57,Association des juristes sénégalaises,0,1,0,0,0,0,1
+57,Association des juristes sénégalaises,0,1,0,0,0,1,0
+57,Association des juristes sénégalaises,0,1,0,0,1,0,0
+58,ONG Concept,1,0,0,0,0,0,1
+58,ONG Concept,1,0,0,0,0,1,0
+58,ONG Concept,1,0,0,0,1,0,0
+58,ONG Concept,1,0,0,1,0,0,0
+58,ONG Concept,0,0,1,0,0,0,1
+58,ONG Concept,0,0,1,0,0,1,0
+58,ONG Concept,0,0,1,0,1,0,0
+58,ONG Concept,0,0,1,1,0,0,0
+58,ONG Concept,0,1,0,0,0,0,1
+58,ONG Concept,0,1,0,0,0,1,0
+58,ONG Concept,0,1,0,0,1,0,0
+58,ONG Concept,0,1,0,1,0,0,0
+59,Action femme Enfant (AFE),1,0,0,0,0,0,1
+59,Action femme Enfant (AFE),1,0,0,0,0,1,0
+59,Action femme Enfant (AFE),1,0,0,0,1,0,0
+59,Action femme Enfant (AFE),1,0,0,1,0,0,0
+60,Village Pilote,1,0,0,0,0,0,1
+60,Village Pilote,1,0,0,0,0,1,0
+60,Village Pilote,1,0,0,0,1,0,0
+60,Village Pilote,1,0,0,1,0,0,0
+60,Village Pilote,0,0,1,0,0,0,1
+60,Village Pilote,0,0,1,0,0,1,0
+60,Village Pilote,0,0,1,0,1,0,0
+60,Village Pilote,0,0,1,1,0,0,0
+60,Village Pilote,0,1,0,0,0,0,1
+60,Village Pilote,0,1,0,0,0,1,0
+60,Village Pilote,0,1,0,0,1,0,0
+60,Village Pilote,0,1,0,1,0,0,0
+61,ENDA Tiers Monde,0,0,0,0,0,0,0
+62,ENDA Jeunesse Action,1,0,0,0,0,0,1
+62,ENDA Jeunesse Action,1,0,0,0,0,1,0
+62,ENDA Jeunesse Action,1,0,0,0,1,0,0
+62,ENDA Jeunesse Action,0,0,1,0,0,0,1
+62,ENDA Jeunesse Action,0,0,1,0,0,1,0
+62,ENDA Jeunesse Action,0,0,1,0,1,0,0
+62,ENDA Jeunesse Action,0,1,0,0,0,0,1
+62,ENDA Jeunesse Action,0,1,0,0,0,1,0
+62,ENDA Jeunesse Action,0,1,0,0,1,0,0
+63,World Vision,1,0,0,0,0,0,1
+63,World Vision,1,0,0,0,0,1,0
+63,World Vision,1,0,0,0,1,0,0
+63,World Vision,1,0,0,1,0,0,0
+63,World Vision,0,0,1,0,0,0,1
+63,World Vision,0,0,1,0,0,1,0
+63,World Vision,0,0,1,0,1,0,0
+63,World Vision,0,0,1,1,0,0,0
+63,World Vision,0,1,0,0,0,0,1
+63,World Vision,0,1,0,0,0,1,0
+63,World Vision,0,1,0,0,1,0,0
+63,World Vision,0,1,0,1,0,0,0
+64,Samu Social Sénégal,1,0,0,0,0,0,1
+64,Samu Social Sénégal,1,0,0,0,0,1,0
+64,Samu Social Sénégal,1,0,0,0,1,0,0
+64,Samu Social Sénégal,0,0,1,0,0,0,1
+64,Samu Social Sénégal,0,0,1,0,0,1,0
+64,Samu Social Sénégal,0,0,1,0,1,0,0
+64,Samu Social Sénégal,0,1,0,0,0,0,1
+64,Samu Social Sénégal,0,1,0,0,0,1,0
+64,Samu Social Sénégal,0,1,0,0,1,0,0
+65,RAO (Réseau Afrique de l’Ouest pour la protection des enfants),0,0,0,0,0,0,0
