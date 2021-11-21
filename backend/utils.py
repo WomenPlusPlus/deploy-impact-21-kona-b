@@ -1,13 +1,6 @@
 import pandas as pd
 import ast
-
-# extra filters / column headers
-AGE = "age"
-GENDER = "gender"
-SUB_CATEGORIES = "dots_subcategories"
-REGION = "region"
-CATEGORIES = "dots_categories"
-AGE_GENDER = "age_gender"
+import strings
 
 
 def str_to_list(df):
@@ -17,11 +10,11 @@ def str_to_list(df):
     :return: modified dataframe with columns of lists instead of string list
     '''
     # convert lists string  to list objects
-    for i in range(len(df[CATEGORIES])):
-        df[CATEGORIES][i] = ast.literal_eval(df[CATEGORIES][i])
-        df[AGE][i] = ast.literal_eval(df[AGE][i])
-        df[GENDER][i] = ast.literal_eval(df[GENDER][i])
-        df[SUB_CATEGORIES][i] = ast.literal_eval(df[SUB_CATEGORIES][i])
-        df[AGE_GENDER][i] = ast.literal_eval(df[AGE_GENDER][i])
-        df[REGION][i] = ast.literal_eval(df[REGION][i])
+    for i in range(len(df[strings.CATEGORIES])):
+        df[strings.CATEGORIES][i] = ast.literal_eval(df[strings.CATEGORIES][i])
+        df[strings.AGE][i] = ast.literal_eval(df[strings.AGE][i])
+        df[strings.GENDER][i] = ast.literal_eval(df[strings.GENDER][i])
+        df[strings.SUB_CATEGORIES][i] = ast.literal_eval(df[strings.SUB_CATEGORIES][i])
+        df[strings.AGE_GENDER][i] = ast.literal_eval(df[strings.AGE_GENDER][i])
+        df[strings.REGION][i] = ast.literal_eval(df[strings.REGION][i])
     return df
