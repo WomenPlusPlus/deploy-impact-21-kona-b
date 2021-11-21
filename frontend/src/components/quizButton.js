@@ -16,9 +16,11 @@ export default function QuizButton({ translationKey, setValue, active, Icon }) {
         type="button"
         onClick={() => setValue()}
       >
-        <div className="text-xl flex justify-center mb-2">
-          {Icon && <Icon />}
-        </div>
+        {Icon && (
+          <div className="text-xl flex justify-center mb-2">
+            <Icon />
+          </div>
+        )}
 
         {t(translationKey)}
       </button>
