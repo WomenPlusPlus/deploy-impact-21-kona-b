@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "react-loading-skeleton/dist/skeleton.css";
 import useSWR from "swr";
@@ -19,12 +19,13 @@ export default function Quiz() {
   const [answer, setAnswer] = useState();
   const [allAnswer, setAllAnswer] = useState({});
 
-  const numberQuestions = 5;
+  const numberQuestions = quiz.length;
   const [step, setStep] = useState(0);
 
-  useEffect(()=>{
-    setAnswer()
-  },[step])
+  const resetOrRestoreAnswer = (step) => {
+    setAnswer(allAnswer[quiz[step]?.scope.filter]);
+  };
+
   // when user can have more than one answer, makes an array with multiple answers
   // which will be deleted when they untick the answer
   // when user can only have one answer, save the value and go to the next question
@@ -38,43 +39,29 @@ export default function Quiz() {
         setAnswer([value]);
       }
     } else {
-      setAnswer(value);
-      setAllAnswer({
-        ...allAnswer,
-        [quiz[step].scope.filter]: value,
-      });
-      if (step < numberQuestions) {
-        setStep(step + 1);
-      }
+      handleClickNext(value)
     }
   };
 
   // on click update the array of all answers (will be send to backend)
   // and increment step by 1 to get the next question
-  const handleClickNext = () => {
+  const handleClickNext = (value = answer) => {
+    const newStep = step + 1;
     setAllAnswer({
       ...allAnswer,
-      [quiz[step].scope.filter]: answer,
+      [quiz[step].scope.filter]: value,
     });
-    // if no answer then error message.
-    if (step < numberQuestions) {
-      setStep(step + 1);
-    }
+    resetOrRestoreAnswer(newStep);
+    setStep(newStep);
   };
 
-  const handleClickSkip = () => {
-    setAllAnswer({
-      ...allAnswer,
-      [quiz[step].scope.filter]: "",
-    });
-    setStep(step + 1);
-  };
   const handleClickBack = () => {
-    setStep(step - 1);
+    const newStep = step - 1;
+    resetOrRestoreAnswer(newStep);
+    setStep(newStep);
   };
 
   console.log("all value", allAnswer);
-
 
   return (
     <div>
@@ -141,7 +128,7 @@ export default function Quiz() {
                       ? t("submitButtonLast")
                       : t("submitButton")
                   }
-                  onClick={() => handleClickNext(answer)}
+                  onClick={() => handleClickNext()}
                   primary={true}
                 />
               </div>
@@ -151,7 +138,7 @@ export default function Quiz() {
               <div className="flex justify-end">
                 <Button
                   text={t("skipButton")}
-                  onClick={() => handleClickSkip()}
+                  onClick={() => handleClickNext()}
                 />
               </div>
             )}
