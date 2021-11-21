@@ -101,7 +101,7 @@ export default function Quiz() {
               </div>
             ) : (
               // else it display the Quizbutton component
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4">
                 {quiz[step].answers.map((filterKey) => {
                   return (
                     <QuizButton
