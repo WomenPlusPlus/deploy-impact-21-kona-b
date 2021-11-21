@@ -13,29 +13,35 @@ export default function CheckboxButton({
 
   return (
     <div>
-      <label className="flex flex-row my-3">
-        <Checkbox
-          onChange={setValue}
-          checked={active}
-          icon={
-            <div
-              style={{
-                display: "flex",
-                flex: 1,
-                backgroundColor: "#8F20B2",
-                alignSelf: "stretch",
-              }}
-            >
-              <FiCheck color="white" size={16} />
-            </div>
-          }
-          borderColor="#8F20B2"
-          borderRadius={20}
-          style={{ overflow: "hidden" }}
-          size={20}
-        />
-        <div className="ml-2 mr-1 pt-1">{Icon && <Icon />}</div>
-        {t(translationKey)}
+      <label className="flex flex-row items-start my-3">
+        <div className="pt-1">
+          <Checkbox
+            onChange={setValue}
+            checked={active}
+            icon={
+              <div
+                style={{
+                  display: "flex",
+                  flex: 1,
+                  backgroundColor: "#8F20B2",
+                  alignSelf: "stretch",
+                }}
+              >
+                <FiCheck color="white" size={16} />
+              </div>
+            }
+            borderColor="#8F20B2"
+            borderRadius={20}
+            style={{ overflow: "hidden" }}
+            size={20}
+          />
+        </div>
+        {Icon && (
+          <div className="ml-2 pt-1">
+            <Icon />
+          </div>
+        )}
+        <div className={Icon ? "ml-1" : "ml-2"}>{t(translationKey)}</div>
       </label>
     </div>
   );
