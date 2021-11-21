@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { SWRConfig } from "swr";
@@ -28,18 +28,18 @@ export default function App() {
         <div className="grid grid-cols-9 sm:grid-cols-7 max-w-xl lg:max-w-4xl mx-auto w-mobile mb-8 sm:mb-20">
           <div className="col-start-1 sm:col-start-1 col-span-9 sm:col-span-7 mx-2 sm:mx-0">
             <Navigation />
-            <Switch>
-              <Route exact path="/" component={HomePage} />
-              <Route path="/organisations/:id" component={OrganisationPage} />
-              <Route path="/quiz" component={QuizPage} />
-              <Route path="/organisations" component={OrganisationsPage} />
+            <Routes>
+              <Route exact path="/" element={<HomePage />} />
+              <Route path="/organisations/:id" element={<OrganisationPage />} />
+              <Route path="/quiz" element={<QuizPage />} />
+              <Route path="/organisations" element={<OrganisationsPage />} />
               <Route
                 path="/organisation-form"
-                component={OrganisationFormPage}
+                element={<OrganisationFormPage />}
               />
-              <Route path="/privacy-policy" component={PrivacyPolicyPage} />
-              <Route path="/about-us" component={AboutUsPage} />
-            </Switch>
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+              <Route path="/about-us" element={<AboutUsPage />} />
+            </Routes>
           </div>
         </div>
       </Suspense>
