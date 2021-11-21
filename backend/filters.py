@@ -21,7 +21,7 @@ GENDER_FILTER = "gender_filters.csv"
 REGION_FILTER = "region_filters.csv"
 GENDER_AGE_FILTER = "gender_and_age_filters.csv"
 
-# orgss data
+# organisations data
 ORGANISATION_DISPLAY = "organisation_display.json"
 
 # filters
@@ -29,7 +29,8 @@ AGE = "age"
 GENDER = "gender"
 SUB_CATEGORIES = "dots_subcategories"
 REGION = "region"
-
+CATEGORIES = "dots_categories"
+AGE_GENDER = "age_gender"
 
 def get_filters():
     '''
@@ -46,23 +47,23 @@ def get_filters():
     # get data for each filter group
     age = df_age_keys.to_json(orient='index')
     age_key_val_list = list(json.loads(age).values())
-    age_key_val_dict = {"filter_key": "age", "filter_value": age_key_val_list}
+    age_key_val_dict = {"filter_key": AGE, "filter_value": age_key_val_list}
 
     dsc = df_dots_subcategories_keys.to_json(orient='index')
     dsc_key_val_list = list(json.loads(dsc).values())
-    dsc_key_val_dict = {"filter_key": "dots_subcategories", "filter_value": dsc_key_val_list}
+    dsc_key_val_dict = {"filter_key": SUB_CATEGORIES, "filter_value": dsc_key_val_list}
 
     gender = df_gender_keys.to_json(orient='index')
     gender_key_val_list = list(json.loads(gender).values())
-    gender_key_val_dict = {"filter_key": "gender", "filter_value": gender_key_val_list}
+    gender_key_val_dict = {"filter_key": GENDER, "filter_value": gender_key_val_list}
 
     dc = df_dots_categories_keys.to_json(orient='index')
     dc_key_val_list = list(json.loads(dc).values())
-    dc_key_val_dict = {"filter_key": "dots_categories", "filter_value": dc_key_val_list}
+    dc_key_val_dict = {"filter_key": CATEGORIES, "filter_value": dc_key_val_list}
 
     region = df_region_key.to_json(orient='index')
     region_key_val_list = list(json.loads(region).values())
-    region_key_val_dict = {"filter_key": "region", "filter_value": region_key_val_list}
+    region_key_val_dict = {"filter_key": REGION, "filter_value": region_key_val_list}
 
     res = []
     res.append(age_key_val_dict)
@@ -124,8 +125,13 @@ def get_filtered_orgs(filters):
 
     df = df.astype(str).reset_index(drop=True)
 
-    for i in range(len(df['categories'])):
-        df['categories'][i] = ast.literal_eval(df['categories'][i])
+    #convert array strings to array objects
+    for i in range(len(df[CATEGORIES])):
+        df[CATEGORIES][i] = ast.literal_eval(df[CATEGORIES][i])
+        df[AGE][i] = ast.literal_eval(df[AGE][i])
+        df[GENDER][i] = ast.literal_eval(df[GENDER][i])
+        df[SUB_CATEGORIES][i] = ast.literal_eval(df[SUB_CATEGORIES][i])
+        df[AGE_GENDER][i] = ast.literal_eval(df[AGE_GENDER][i])
 
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)

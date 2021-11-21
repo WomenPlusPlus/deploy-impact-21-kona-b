@@ -5,6 +5,14 @@ import ast
 JSON_PATH = "json/"
 ORGANISATION_DISPLAY = "organisation_display.json"
 
+# extra filters / column headers
+AGE = "age"
+GENDER = "gender"
+SUB_CATEGORIES = "dots_subcategories"
+REGION = "region"
+CATEGORIES = "dots_categories"
+AGE_GENDER = "age_gender"
+CATEGORIES = "dots_categories"
 
 def get_all():
     '''
@@ -13,8 +21,14 @@ def get_all():
     filename = JSON_PATH + ORGANISATION_DISPLAY
     df = pd.read_json(filename, lines=True)
     df = df.astype(str)
-    for i in range(len(df['categories'])):
-        df['categories'][i] = ast.literal_eval(df['categories'][i])
+    #convert array strings to array objects
+    for i in range(len(df[CATEGORIES])):
+        df[CATEGORIES][i] = ast.literal_eval(df[CATEGORIES][i])
+        df[AGE][i] = ast.literal_eval(df[AGE][i])
+        df[GENDER][i] = ast.literal_eval(df[GENDER][i])
+        df[SUB_CATEGORIES][i] = ast.literal_eval(df[SUB_CATEGORIES][i])
+        df[AGE_GENDER][i] = ast.literal_eval(df[AGE_GENDER][i])
+
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
     res = list(js.values())
@@ -30,8 +44,13 @@ def get_one(org_id):
     filename = JSON_PATH + ORGANISATION_DISPLAY
     df = pd.read_json(filename, lines=True)
     df = df.astype(str)
-    for i in range(len(df['categories'])):
-        df['categories'][i] = ast.literal_eval(df['categories'][i])
+    #convert array strings to array objects
+    for i in range(len(df[CATEGORIES])):
+        df[CATEGORIES][i] = ast.literal_eval(df[CATEGORIES][i])
+        df[AGE][i] = ast.literal_eval(df[AGE][i])
+        df[GENDER][i] = ast.literal_eval(df[GENDER][i])
+        df[SUB_CATEGORIES][i] = ast.literal_eval(df[SUB_CATEGORIES][i])
+        df[AGE_GENDER][i] = ast.literal_eval(df[AGE_GENDER][i])
     df = df.loc[df['id'] == org_id]
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
