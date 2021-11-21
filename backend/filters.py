@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 import ast
+import utils
 
 # files path
 KEYS_PATH = "csv/keys/"
@@ -124,15 +125,7 @@ def get_filtered_orgs(filters):
         df = df.append(filtered_df)
 
     df = df.astype(str).reset_index(drop=True)
-
-    #convert array strings to array objects
-    for i in range(len(df[CATEGORIES])):
-        df[CATEGORIES][i] = ast.literal_eval(df[CATEGORIES][i])
-        df[AGE][i] = ast.literal_eval(df[AGE][i])
-        df[GENDER][i] = ast.literal_eval(df[GENDER][i])
-        df[SUB_CATEGORIES][i] = ast.literal_eval(df[SUB_CATEGORIES][i])
-        df[AGE_GENDER][i] = ast.literal_eval(df[AGE_GENDER][i])
-
+    df = utils.str_to_list(df)
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
     res = list(js.values())

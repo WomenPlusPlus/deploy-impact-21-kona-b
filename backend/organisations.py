@@ -1,6 +1,6 @@
 import pandas as pd
-import json
 import ast
+import utils
 
 JSON_PATH = "json/"
 ORGANISATION_DISPLAY = "organisation_display.json"
@@ -21,13 +21,14 @@ def get_all():
     filename = JSON_PATH + ORGANISATION_DISPLAY
     df = pd.read_json(filename, lines=True)
     df = df.astype(str)
+    df = utils.str_to_list(df)
     #convert array strings to array objects
-    for i in range(len(df[CATEGORIES])):
-        df[CATEGORIES][i] = ast.literal_eval(df[CATEGORIES][i])
-        df[AGE][i] = ast.literal_eval(df[AGE][i])
-        df[GENDER][i] = ast.literal_eval(df[GENDER][i])
-        df[SUB_CATEGORIES][i] = ast.literal_eval(df[SUB_CATEGORIES][i])
-        df[AGE_GENDER][i] = ast.literal_eval(df[AGE_GENDER][i])
+    # for i in range(len(df[CATEGORIES])):
+    #     df[CATEGORIES][i] = ast.literal_eval(df[CATEGORIES][i])
+    #     df[AGE][i] = ast.literal_eval(df[AGE][i])
+    #     df[GENDER][i] = ast.literal_eval(df[GENDER][i])
+    #     df[SUB_CATEGORIES][i] = ast.literal_eval(df[SUB_CATEGORIES][i])
+    #     df[AGE_GENDER][i] = ast.literal_eval(df[AGE_GENDER][i])
 
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
@@ -44,13 +45,7 @@ def get_one(org_id):
     filename = JSON_PATH + ORGANISATION_DISPLAY
     df = pd.read_json(filename, lines=True)
     df = df.astype(str)
-    #convert array strings to array objects
-    for i in range(len(df[CATEGORIES])):
-        df[CATEGORIES][i] = ast.literal_eval(df[CATEGORIES][i])
-        df[AGE][i] = ast.literal_eval(df[AGE][i])
-        df[GENDER][i] = ast.literal_eval(df[GENDER][i])
-        df[SUB_CATEGORIES][i] = ast.literal_eval(df[SUB_CATEGORIES][i])
-        df[AGE_GENDER][i] = ast.literal_eval(df[AGE_GENDER][i])
+    df = utils.str_to_list(df)
     df = df.loc[df['id'] == org_id]
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)

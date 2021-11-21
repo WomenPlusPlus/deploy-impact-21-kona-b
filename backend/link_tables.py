@@ -41,7 +41,7 @@ df_age_keys = pd.read_csv(KEYS_PATH + AGE_KEYS)
 df_dots_categories_keys = pd.read_csv(KEYS_PATH + DOTS_CATEGORIES_KEYS)
 df_dots_subcategories_keys = pd.read_csv(KEYS_PATH + DOTS_SUBCATEGORIES_KEYS)
 df_gender_keys = pd.read_csv(KEYS_PATH + GENDER_KEYS)
-df_region_key = pd.read_csv(KEYS_PATH + REGION_KEYS)
+df_region_keys = pd.read_csv(KEYS_PATH + REGION_KEYS)
 
 # filters df
 df_age_filters = pd.read_csv(FILTERS_PATH + AGE_FILTER)
@@ -109,4 +109,6 @@ df[SUB_CATEGORIES] = sub_cats_row
 df[GENDER] = get_linked_data(df_age_filters, df_age_keys)
 df[AGE] = get_linked_data(df_gender_filters, df_gender_keys)
 df[AGE_GENDER] = [df[GENDER][i] + df[AGE][i] for i in range(len(df[GENDER]))]
+df[REGION] = get_linked_data(df_region_filters, df_region_keys)
+
 df.to_json(JSON_PATH + ORGANISATION_DISPLAY, orient='records', lines=True)
