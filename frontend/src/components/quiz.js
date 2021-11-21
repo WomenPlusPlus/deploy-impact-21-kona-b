@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import "react-loading-skeleton/dist/skeleton.css";
+import { createSearchParams, useNavigate } from "react-router-dom";
 import useSWR from "swr";
+import "react-loading-skeleton/dist/skeleton.css";
 
 import QuizButton from "./quizButton";
 import CheckboxButton from "./checkboxButton";
@@ -11,19 +12,20 @@ import { api } from "../config";
 
 export default function Quiz() {
   const { t } = useTranslation("quiz");
+  const navigate = useNavigate();
 
   // API quiz request
   const { data: quiz } = useSWR(`${api}/quiz`);
 
   // answer saves the answer picked by the user
   const [answer, setAnswer] = useState();
-  const [allAnswer, setAllAnswer] = useState({});
+  const [allAnswers, setAllAnswers] = useState({});
 
-  const numberQuestions = quiz.length;
+  const numberQuestions = quiz?.length || 0;
   const [step, setStep] = useState(0);
 
   const resetOrRestoreAnswer = (step) => {
-    setAnswer(allAnswer[quiz[step]?.scope.filter]);
+    setAnswer(allAnswers[quiz[step]?.scope.filter]);
   };
 
   // when user can have more than one answer, makes an array with multiple answers
@@ -39,7 +41,7 @@ export default function Quiz() {
         setAnswer([value]);
       }
     } else {
-      handleClickNext(value)
+      handleClickNext(value);
     }
   };
 
@@ -47,12 +49,21 @@ export default function Quiz() {
   // and increment step by 1 to get the next question
   const handleClickNext = (value = answer) => {
     const newStep = step + 1;
-    setAllAnswer({
-      ...allAnswer,
-      [quiz[step].scope.filter]: value,
-    });
+    const updatedAnswers = value
+      ? {
+          ...allAnswers,
+          [quiz[step].scope.filter]: value,
+        }
+      : allAnswers;
+    if (allAnswers !== updatedAnswers) {
+      setAllAnswers(updatedAnswers);
+    }
     resetOrRestoreAnswer(newStep);
     setStep(newStep);
+    if (newStep >= numberQuestions) {
+      const searchParams = createSearchParams(updatedAnswers);
+      navigate(`/organisations?${searchParams.toString()}`);
+    }
   };
 
   const handleClickBack = () => {
@@ -60,8 +71,6 @@ export default function Quiz() {
     resetOrRestoreAnswer(newStep);
     setStep(newStep);
   };
-
-  console.log("all value", allAnswer);
 
   return (
     <div>
