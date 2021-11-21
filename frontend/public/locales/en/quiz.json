@@ -8,7 +8,7 @@
     "question": "Who are you seeking help for?",
     "filters": {
       "me": "Me",
-      "else": "Someone else"
+      "other": "Someone else"
     }
   },
   "gender": {
