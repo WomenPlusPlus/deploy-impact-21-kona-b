@@ -1,81 +1,81 @@
-q_id,a_id,answers,filter,filter_value
-2,1,Male,gender,male
-2,2,Female,gender,female
-2,3,Other,gender,other
-3,1,Baby (under 3),age,baby
-3,2,Child (4-12),age,child
-3,3,Youth (13-17),age,youth
-3,4,Adult (18+),age,adult
-4,1,Dakar,region,dakar
-4,2,Saint-Louis,region,saint_louis
-4,3,Louga,region,louga
-4,4,Thies,region,thies
-4,5,Diourbel,region,diourbel
-4,6,Matam,region,mattam
-4,7,Fatick,region,fatick
-4,8,Kaolack,region,kaolack
-4,9,Kaffrine,region,kaffrine
-4,10,Tamabacounda,region,tamabacounda
-4,11,Kedougou,region,kedougou
-4,12,Kolda,region,kolda
-4,13,Sedhiou,region,sedhiou
-4,14,Ziguinohor,region,ziguinohor
-5,1,Social protection,dots_category_id,1
-5,2,Food and farming,dots_category_id,2
-5,3,Health and well-being,dots_category_id,3
-5,4,Education,dots_category_id,4
-5,5,Gender equality,dots_category_id,5
-5,6,Clean water,dots_category_id,6
-5,7,Energy consumption,dots_category_id,7
-5,8,Work and entrepreneurship,dots_category_id,8
-5,9,Information technology,dots_category_id,9
-5,10,Equal opportunities,dots_category_id,10
-5,11,Housing,dots_category_id,11
-5,12,Sustainable lifestyles,dots_category_id,12
-5,13,Climate action,dots_category_id,13
-5,14,Fishing,dots_category_id,14
-5,15,Biodiversity,dots_category_id,15
-5,16,Justice and legal,dots_category_id,16
-5,17,Partnerships,dots_category_id,17
-6,1,Access to housing and social services,dots_subcategory_id,1
-6,2,Access to economic resources and information technology,dots_subcategory_id,2
-6,3,Access to financial services and microfinance,dots_subcategory_id,3
-6,4,Initiatives to protect against climate-related events,dots_subcategory_id,4
-6,5, Programs alleviating poverty,dots_subcategory_id,5
-6,6,Access to nutritious food,dots_subcategory_id,6
-6,7,Access to agricultural land and other production resources,dots_subcategory_id,7
-6,8,Access to services for small-scale farmers to increase productivity and income,dots_subcategory_id,8
-6,9,Implement resilient agricultural practices and increase productivity,dots_subcategory_id,9
-6,10,Adapt farming practices to climate change and environmental disasters,dots_subcategory_id,10
-6,11,Improve land and soil quality,dots_subcategory_id,11
-6,12,Access to seed and plant banks and other resources for farming,dots_subcategory_id,12
-6,13,"Resources for rural infrastructure, agricultural research, and technology",dots_subcategory_id,13
-6,14,Health prevention programs,dots_subcategory_id,14
-6,15,Disease prevention and treatment,dots_subcategory_id,15
-6,16,Access to mental health services,dots_subcategory_id,16
-6,17,Prevention and treatment of drug abuse,dots_subcategory_id,17
-6,18,"Access to healthcare services, medicines, and vaccines",dots_subcategory_id,18
-6,19,Access to primary and secondary education,dots_subcategory_id,19
-6,20,Access to pre-primary education,dots_subcategory_id,20
-6,21,"Access to affordable technical, vocational and higher education",dots_subcategory_id,21
-6,22,Develop relevant skills for employment and entrepreneurship,dots_subcategory_id,22
-6,23,Education for sustainable development and lifestyle,dots_subcategory_id,23
-6,24,Education for human rights,dots_subcategory_id,24
-6,25,Education for gender equality,dots_subcategory_id,25
-6,26,Programs to end discrimination against women,dots_subcategory_id,26
-6,27,Programs to end violence and exploitation against women,dots_subcategory_id,27
-6,28,Programs empowering women through technology,dots_subcategory_id,28
-6,29,Adopt and strengthen policies and legislation for gender equality,dots_subcategory_id,29
-6,30,Increase economic productivity through technological innovations,dots_subcategory_id,30
-6,31,Access to employment,dots_subcategory_id,31
-6,32,"Access to youth employment, education and training",dots_subcategory_id,32
-6,33,Strengthen capacity of financial institutions,dots_subcategory_id,33
-6,34,Incentivise ending discrimination laws and policies,dots_subcategory_id,34
-6,35,"Ensure safe, orderly and regular migration back home",dots_subcategory_id,35
-6,36,Strengthen national and regional development planning,dots_subcategory_id,36
-6,37,Effective partnership programs,dots_subcategory_id,37
-6,38,Access to justice and legal aid,dots_subcategory_id,38
-6,39,Access to legal identity and registration,dots_subcategory_id,39
-6,40,Access to information and protection of human rights,dots_subcategory_id,40
-1,1,Me,,
-1,2,Other,,
+q_id,a_id,answers,filter,filter_value,translation_key
+2,1,Male,gender,male,male
+2,2,Female,gender,female,female
+2,3,Other,gender,other,other
+3,1,Baby (under 3),age,baby,baby
+3,2,Child (4-12),age,child,child
+3,3,Youth (13-17),age,youth,teen
+3,4,Adult (18+),age,adult,adult
+4,1,Dakar,region,dakar,dakar
+4,2,Saint-Louis,region,saint_louis,saintLouis
+4,3,Louga,region,louga,louga
+4,4,Thies,region,thies,thies
+4,5,Diourbel,region,diourbel,diourbel
+4,6,Matam,region,mattam,matam
+4,7,Fatick,region,fatick,fatick
+4,8,Kaolack,region,kaolack,kaolack
+4,9,Kaffrine,region,kaffrine,kaffrine
+4,10,Tamabacounda,region,tamabacounda,tambacounda
+4,11,Kedougou,region,kedougou,kedougou
+4,12,Kolda,region,kolda,kolda
+4,13,Sedhiou,region,sedhiou,sedhiou
+4,14,Ziguinohor,region,ziguinohor,ziguinchor
+5,1,Social protection,dots_category_id,1,socialProtection
+5,2,Food and farming,dots_category_id,2,food
+5,3,Health and well-being,dots_category_id,3,wellBeing
+5,4,Education,dots_category_id,4,education
+5,5,Gender equality,dots_category_id,5,genderEquality
+5,6,Clean water,dots_category_id,6,cleanWater
+5,7,Energy consumption,dots_category_id,7,energy
+5,8,Work and entrepreneurship,dots_category_id,8,workAndEntrepreneurship
+5,9,Information technology,dots_category_id,9,informationTechnology
+5,10,Equal opportunities,dots_category_id,10,equalOpportunities
+5,11,Housing,dots_category_id,11,housing
+5,12,Sustainable lifestyles,dots_category_id,12,sustainableLifestyles
+5,13,Climate action,dots_category_id,13,climateAction
+5,14,Fishing,dots_category_id,14,fishing
+5,15,Biodiversity,dots_category_id,15,biodiversity
+5,16,Justice and legal,dots_category_id,16,justiceAndLegal
+5,17,Partnerships,dots_category_id,17,partnerships
+6,1,Access to housing and social services,dots_subcategory_id,1,housingAndSocialServices
+6,2,Access to economic resources and information technology,dots_subcategory_id,2,economicResources
+6,3,Access to financial services and microfinance,dots_subcategory_id,3,financialServices
+6,4,Initiatives to protect against climate-related events,dots_subcategory_id,4,protectionClimatEvents
+6,5, Programs alleviating poverty,dots_subcategory_id,5,alleviatePoverty
+6,6,Access to nutritious food,dots_subcategory_id,6,nutritiousFood
+6,7,Access to agricultural land and other production resources,dots_subcategory_id,7,agriculturalLand
+6,8,Access to services for small-scale farmers to increase productivity and income,dots_subcategory_id,8,smallScaleFarmers
+6,9,Implement resilient agricultural practices and increase productivity,dots_subcategory_id,9,resilientAgriculturalPractices
+6,10,Adapt farming practices to climate change and environmental disasters,dots_subcategory_id,10,adaptFarmingPractices
+6,11,Improve land and soil quality,dots_subcategory_id,11,LandAndSoilQuality
+6,12,Access to seed and plant banks and other resources for farming,dots_subcategory_id,12,farmingResources
+6,13,"Resources for rural infrastructure, agricultural research, and technology",dots_subcategory_id,13,ruralInfrastructureResources
+6,14,Health prevention programs,dots_subcategory_id,14,healthPrevention
+6,15,Disease prevention and treatment,dots_subcategory_id,15,diseasePrevention
+6,16,Access to mental health services,dots_subcategory_id,16,mentalHealth
+6,17,Prevention and treatment of drug abuse,dots_subcategory_id,17,drugAbuse
+6,18,"Access to healthcare services, medicines, and vaccines",dots_subcategory_id,18,accessToHealthcare
+6,19,Access to primary and secondary education,dots_subcategory_id,19,primaryAndSecondaryEducation
+6,20,Access to pre-primary education,dots_subcategory_id,20,prePrimaryEducation
+6,21,"Access to affordable technical, vocational and higher education",dots_subcategory_id,21,accessHigherEducation
+6,22,Develop relevant skills for employment and entrepreneurship,dots_subcategory_id,22,skillsForEmployment
+6,23,Education for sustainable development and lifestyle,dots_subcategory_id,23,sustainableDevelopementEducation
+6,24,Education for human rights,dots_subcategory_id,24,humanRightsEducation
+6,25,Education for gender equality,dots_subcategory_id,25,genderEqualityEducation
+6,26,Programs to end discrimination against women,dots_subcategory_id,26,endWomenDiscrimination
+6,27,Programs to end violence and exploitation against women,dots_subcategory_id,27,endViolenceWomen
+6,28,Programs empowering women through technology,dots_subcategory_id,28,empowerWomen
+6,29,Adopt and strengthen policies and legislation for gender equality,dots_subcategory_id,29,legislationForGenderEquality
+6,30,Increase economic productivity through technological innovations,dots_subcategory_id,30,economicProductivity
+6,31,Access to employment,dots_subcategory_id,31,employment
+6,32,"Access to youth employment, education and training",dots_subcategory_id,32,youthEmployment
+6,33,Strengthen capacity of financial institutions,dots_subcategory_id,33,financialInstitutions
+6,34,Incentivise ending discrimination laws and policies,dots_subcategory_id,34,endingDiscriminationLaws
+6,35,"Ensure safe, orderly and regular migration back home",dots_subcategory_id,35,migration
+6,36,Strengthen national and regional development planning,dots_subcategory_id,36,developmentPlanning
+6,37,Effective partnership programs,dots_subcategory_id,37,effectivePartnership
+6,38,Access to justice and legal aid,dots_subcategory_id,38,justiceAndLegalAid
+6,39,Access to legal identity and registration,dots_subcategory_id,39,legalIdentity
+6,40,Access to information and protection of human rights,dots_subcategory_id,40,humanRightsProtection
+1,1,Me,user,1,me
+1,2,Other,gender,2,other

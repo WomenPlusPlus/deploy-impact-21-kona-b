@@ -1,5 +1,5 @@
 q_id,question,format,filter,translation_key
-1,For you or someone else,radio_buttons,,user
+1,For you or someone else,radio_buttons,user,user
 2,Gender,radio_buttons,gender,gender
 3,Age Group,radio_buttons,age,age
 4,Region,multi_select,region,region
