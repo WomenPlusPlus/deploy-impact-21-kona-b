@@ -133,11 +133,10 @@ export default function Quiz() {
                 />
               </div>
             )}
-            {(quiz[step].scope.filter === "gender" ||
-              quiz[step].scope.filter === "age") && (
+            {step > 0 && quiz[step].type !== "multi_select" && (
               <div className="flex justify-end">
                 <Button
-                  text={t("skipButton")}
+                  text={answer ? t("submitButton") : t("skipButton")}
                   onClick={() => handleClickNext()}
                 />
               </div>
