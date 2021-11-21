@@ -24,8 +24,10 @@ export default function Quiz() {
   const numberQuestions = quiz?.length || 0;
   const [step, setStep] = useState(0);
 
-  const resetOrRestoreAnswer = (step) => {
-    setAnswer(allAnswers[quiz[step]?.scope.filter]);
+  const handleStepChange = (newStep) => {
+    setAnswer(allAnswers[quiz[newStep]?.scope.filter]);
+    setStep(newStep);
+    window.scrollTo(0, 0);
   };
 
   // when user can have more than one answer, makes an array with multiple answers
@@ -58,8 +60,7 @@ export default function Quiz() {
     if (allAnswers !== updatedAnswers) {
       setAllAnswers(updatedAnswers);
     }
-    resetOrRestoreAnswer(newStep);
-    setStep(newStep);
+    handleStepChange(newStep);
     if (newStep >= numberQuestions) {
       const searchParams = createSearchParams(updatedAnswers);
       navigate(`/organisations?${searchParams.toString()}`);
@@ -68,8 +69,7 @@ export default function Quiz() {
 
   const handleClickBack = () => {
     const newStep = step - 1;
-    resetOrRestoreAnswer(newStep);
-    setStep(newStep);
+    handleStepChange(newStep);
   };
 
   return (
