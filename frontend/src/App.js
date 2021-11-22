@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { SWRConfig } from "swr";
+import AddToHomescreen from "react-add-to-homescreen";
 
 import Navigation from "./components/navigation";
 import HomePage from "./pages/HomePage";
@@ -17,6 +18,12 @@ import AboutUsPage from "./pages/AboutUsPage";
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
 export default function App() {
+  const handleAddToHomescreenClick = () => {
+    alert(`
+      1. Open Share menu
+      2. Tap on "Add to Home Screen" button`);
+  };
+
   return (
     <SWRConfig
       value={{
@@ -42,6 +49,7 @@ export default function App() {
             </Routes>
           </div>
         </div>
+        <AddToHomescreen onAddToHomescreenClick={handleAddToHomescreenClick} />
       </Suspense>
     </SWRConfig>
   );
