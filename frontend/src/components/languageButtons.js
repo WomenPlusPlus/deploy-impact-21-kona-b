@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 export default function LanguageButtons() {
   const languages = ["en", "fr"];
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -15,7 +15,7 @@ export default function LanguageButtons() {
         return [
           <button
             key={language}
-            className="hover:bg-gray-100 m-1 p-1 text-xs uppercase"
+            className="hover:bg-gray-100 mx-1 px-1 text-xs uppercase"
             type="button"
             onClick={() => changeLanguage(language)}
           >
