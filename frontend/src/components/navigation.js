@@ -11,6 +11,8 @@ export default function Navigation() {
     ["about", "about"],
     ["privacyPolicy", "privacy-policy"],
     ["organisation", "organisation-form"],
+    ["searchAssistant", "quiz"],
+    ["viewAllOrganisations", "organisations"],
   ];
   const [dropDown, setDropDown] = useState(false);
 
