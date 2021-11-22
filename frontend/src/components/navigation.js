@@ -24,9 +24,9 @@ export default function Navigation() {
   return (
     <nav className="border-b border-kona">
       <div className="flex h-20 items-end justify-between pb-2 relative">
-        <div>
+        <Link to={"/"}>
           <img src="/logo.png" className="h-auto w-12" alt="dots-logo" />
-        </div>
+        </Link>
         <div className="flex flex-col">
           <LanguageButtons />
           <button
@@ -41,8 +41,7 @@ export default function Navigation() {
               <div className="absolute flex-col border-b border-kona left-0 sm:left-auto m-px right-0 shadow-2xl top-20">
                 {pages.map(([page, url]) => (
                   <>
-                    {console.log("url", url)}
-                    <Link to={`/${url}`}>
+                    <Link to={`/${url}`} key={page}>
                       <div className="bg-white pb-2 pt-2 px-4 uppercase focus:outline-none hover:text-gray-500">
                         {t(`${page}`)}
                       </div>
