@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DocumentTitle from "react-document-title";
 import { useTranslation } from "react-i18next";
 
@@ -9,9 +10,9 @@ export default function HomePage() {
 
   return (
     <DocumentTitle title="homepage">
-      <div className=" mx-6">
+      <>
         <div className="text-center">
-          <h2 className="font-medium justify-center leading-loose my-2 sm:my-24 md:my-12 text-2xl md:text-4xl">
+          <h2 className="justify-center my-2 sm:my-6 md:my-12 text-2xl md:text-4xl">
             {t("welcome")}
           </h2>
           <p className="text-xs md:text-lg tracking-tight">
@@ -20,7 +21,7 @@ export default function HomePage() {
           <div className="bg-gray-200 flex flex-wrap h-28 my-2 place-content-center">
             Image
           </div>
-          <p className="m-6 lg:my-16 sm:mb-20 text-xl md:text-3xl">
+          <p className="my-6 lg:my-16 sm:mb-20 text-xl md:text-3xl">
             {t("title")}
           </p>
           <p className="m-2 lg:mb-6 sm:mb-12 text-xs md:text-xl">
@@ -33,7 +34,7 @@ export default function HomePage() {
                 url={"quiz"}
                 fontSize={"text-xs"}
                 padding={"px-4 py-4"}
-                margin={"mx-2"}
+                margin={"mx-0"}
               />
             </div>
             <div>
@@ -42,15 +43,15 @@ export default function HomePage() {
                 url={"organisations"}
                 fontSize={"text-xs"}
                 padding={"px-2 py-4"}
-                margin={"mx-2"}
+                margin={"mx-0"}
               />
             </div>
           </div>
         </div>
-        <p className="m-4 text-xs md:text-base text-start">
-          {t("privacyPolicy")}
+        <p className="underline m-4 text-xs md:text-base text-start">
+          <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
         </p>
-      </div>
+      </>
     </DocumentTitle>
   );
 }
