@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 export default function LanguageButtons() {
   const languages = ["en", "fr"];
-  const { i18n } = useTranslation();
+  const { i18n } = useTranslation("navigation");
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
