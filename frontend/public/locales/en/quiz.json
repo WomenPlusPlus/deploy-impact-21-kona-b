@@ -4,15 +4,22 @@
   "skipButton": "Skip",
   "backButton": "Back",
   "privacyPolicy": "We promise to respect your privacy. Find out more.",
+  "start": "Start",
+  "userAge": "Age",
+  "userGender": "Gender",
+  "userRegion": "Region",
+  "userCategories": "SDGs",
+  "userSubCategories": "SubCat.",
+  "end": "End",
   "user": {
     "question": "Who are you seeking help for?",
     "filters": {
       "me": "Me",
-      "other": "Someone else"
+      "other": "Someone Else"
     }
   },
   "gender": {
-    "question": "Please select the gender",
+    "question": "What is your Gender?",
     "filters": {
       "male": "Male",
       "female": "Female",
@@ -20,7 +27,7 @@
     }
   },
   "age": {
-    "question": "Please select the age",
+    "question": "What is your Age group?",
     "filters": {
       "baby": "Baby (0-3)",
       "child": "Child (4-12)",
@@ -30,7 +37,7 @@
     }
   },
   "region": {
-    "question": "Please select the region",
+    "question": "In which Region are you seeking help?",
     "filters": {
       "dakar": "Dakar",
       "saintLouis": "Saint-Louis",
@@ -45,11 +52,11 @@
       "kedougou": "Kédougou",
       "kolda": "Kolda",
       "sedhiou": "Sédhiou",
-      "ziguinchor": "Ziguinchor"      
+      "ziguinchor": "Ziguinchor"
     }
   },
   "dots_categories": {
-    "question": "What do you need help with?",
+    "question": "What topic interest you?",
     "filters": {
       "socialProtection": "Social protection",
       "food": "Food & farming",
@@ -71,7 +78,7 @@
     }
   },
   "dots_subCategories": {
-    "question": "Please select what you need help with?",
+    "question": "What type of help are you looking for?",
     "filters": {
       "housingAndSocialServices": "Access to housing and social services",
       "economicResources": "Access to economic resources and information technology",
