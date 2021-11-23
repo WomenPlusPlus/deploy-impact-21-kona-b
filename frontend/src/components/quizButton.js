@@ -9,7 +9,7 @@ export default function QuizButton({ translationKey, setValue, active, Icon }) {
     <>
       <button
         className={classNames(
-          "sm:mr-6 px-4 py-2 rounded text-xs uppercase",
+          "sm:mr-6 px-4 py-2 rounded-3xl shadow-lg text-xs",
           "border border-gray-600 hover:border-kona",
           { "border-kona bg-yellow-100": active }
         )}
