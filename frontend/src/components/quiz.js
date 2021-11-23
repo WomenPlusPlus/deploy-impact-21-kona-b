@@ -82,16 +82,16 @@ export default function Quiz() {
         </div>
         {step === 0 && (
           <div className="my-2">
-            <div className="bg-two-hands h-32 lg:h-60 bg-cover bg-bottom mr-2"></div>
+            <div className="bg-two-hands h-32 lg:h-60 bg-cover bg-bottom"></div>
           </div>
         )}
       </div>
       {quiz && step < numberQuestions ? (
         <div>
-          <h2 className="my-4 mx-8 text-center text-xl">
+          <h2 className="mt-4 mx-8 mb-8 text-center text-xl">
             {t(`${quiz[step].scope.translation_key}.question`)}
           </h2>
-          <div>
+          <div className="mb-32">
             {/* when the type is checkbox, it display the Checkbox component */}
             {quiz[step].type === "multi_select" ? (
               <div>
@@ -130,7 +130,7 @@ export default function Quiz() {
               </div>
             )}
           </div>
-          <div className="grid grid-cols-2 border-t place-items-center border-black bg-gray-200 sm:bg-white bg-none sticky -mx-2 mt-4 bottom-0 z-50">
+          <div className="grid grid-cols-2 border-t place-items-center border-black bg-lightBlue sm:bg-white bg-none fixed -mx-2 mt-4 bottom-0 z-50 h-24">
             {step > 0 && (
               <div>
                 <Button
@@ -161,9 +161,12 @@ export default function Quiz() {
                 />
               </div>
             )}
-            <div className="my-2 sm:my-12 mx-2 underline text-xs col-span-2">
-              <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
-            </div>
+
+            
+              <div className="m-2 sm:my-12 underline text-xs col-span-2">
+                <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
+              </div>
+         
           </div>
         </div>
       ) : (

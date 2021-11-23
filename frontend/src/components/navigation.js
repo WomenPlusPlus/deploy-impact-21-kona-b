@@ -38,10 +38,10 @@ export default function Navigation() {
           {dropDown && (
             <>
               <div onClick={handleClick} className="fixed inset-0"></div>
-              <div className="absolute flex-col border-b border-kona left-0 sm:left-auto m-px right-0 shadow-2xl top-20 z-50">
+              <div className="absolute bg-white flex-col border-b border-kona left-0 sm:left-auto m-px right-0 shadow-2xl top-20 z-50">
                 {pages.map(([page, url]) => (
                   <Link to={`/${url}`} key={page}>
-                    <div className="bg-white pb-2 pt-2 px-4 uppercase focus:outline-none hover:text-gray-500">
+                    <div className="pb-2 pt-2 px-4 uppercase focus:outline-none hover:text-gray-500">
                       {t(`${page}`)}
                     </div>
                   </Link>
