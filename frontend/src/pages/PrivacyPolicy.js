@@ -29,7 +29,9 @@ export default function PrivacyPolicyPage() {
               {t("title")}
             </h1>
             {paragraphs.map((paragraph) => (
-              <p className="mb-6 leading-relaxed">{t(paragraph)}</p>
+              <p className="mb-6 leading-relaxed" key={paragraph}>
+                {t(paragraph)}
+              </p>
             ))}
           </div>
         </div>

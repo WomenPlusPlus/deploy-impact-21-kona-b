@@ -11,7 +11,7 @@ import OrganisationPage from "./pages/OrganisationPage";
 import QuizPage from "./pages/QuizPage";
 import OrganisationsPage from "./pages/OrganisationsPage";
 import OrganisationFormPage from "./pages/OrganisationFormPage";
-import PrivacyPolicyPage from "./pages/PivacyPolicy";
+import PrivacyPolicyPage from "./pages/PrivacyPolicy";
 import AboutUsPage from "./pages/AboutUsPage";
 
 // used by SWR to make and cache API get request

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 export default function AboutUsPage() {
   const { t } = useTranslation("aboutUs");
+  const paragraphs = ["text.0", "text.1"];
 
   return (
     <DocumentTitle title="Privacy policy">
@@ -16,9 +17,11 @@ export default function AboutUsPage() {
             >
               {t("title")}
             </h1>
-            
-              <p className="mb-6 leading-relaxed">{t('text')}</p>
-          
+            {paragraphs.map((paragraph) => (
+              <p className="mb-6 leading-relaxed" key={paragraph}>
+                {t(paragraph)}
+              </p>
+            ))}
           </div>
         </div>
       </main>
