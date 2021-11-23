@@ -3,6 +3,7 @@
   "submitButtonLast": "Submit",
   "skipButton": "Skip",
   "backButton": "Back",
+  "privacyPolicy": "We promise to respect your privacy. Find out more.",
   "user": {
     "question": "Who are you seeking help for?",
     "filters": {
