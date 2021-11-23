@@ -74,7 +74,11 @@ export default function Quiz() {
 
   return (
     <div>
-      {step === 0 && <p className="my-6 text-sm">{t("presentation")}</p>}
+        {step === 0 && (
+          <div className="my-2">
+            <div className="bg-two-hands h-32 lg:h-60 bg-cover bg-bottom mr-2"></div>
+          </div>
+        )}
       {quiz && step < numberQuestions ? (
         <div>
           <h2 className="my-6 text-lg font-semibold uppercase">
