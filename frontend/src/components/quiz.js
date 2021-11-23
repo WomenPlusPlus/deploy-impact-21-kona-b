@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import useSWR from "swr";
 import "react-loading-skeleton/dist/skeleton.css";
+import { Link } from "react-router-dom";
 
 import QuizButton from "./quizButton";
 import CheckboxButton from "./checkboxButton";
@@ -155,6 +156,11 @@ export default function Quiz() {
               </div>
             )}
           </div>
+          {step === 0 && (
+            <div className="my-4 underline text-xs">
+              <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
+            </div>
+          )}
         </div>
       ) : (
         <div>Hello</div>
