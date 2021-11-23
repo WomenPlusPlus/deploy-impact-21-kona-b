@@ -1,0 +1,118 @@
+{
+  "presentation": "to translate",
+  "submitButton": "Suivant",
+  "submitButtonLast": "Envoyer",
+  "skipButton": "Passer",
+  "backButton": "Retour",
+  "user": {
+    "question": "Pour qui cherchez-vous de l'aide?",
+    "filters": {
+      "me": "Moi",
+      "other": "Quelqu'un d'autre"
+    }
+  },
+  "gender": {
+    "question": "to translate",
+    "filters": {
+      "male": "Homme",
+      "female": "Femme",
+      "other": "Autre"
+    }
+  },
+  "age": {
+    "question": "to translate",
+    "filters": {
+      "baby": "Bébé (0-3)",
+      "child": "Enfant (4-12)",
+      "teen": "Adolescent (13-17)",
+      "youngAdult": "Jeune Adult (18-25)",
+      "adult": "Adulte (18+)"
+    }
+  },
+  "region": {
+    "question": "Please select the region?",
+    "filters": {
+      "dakar": "Dakar",
+      "saintLouis": "Saint-Louis",
+      "louga": "Louga",
+      "thies": "Thiès",
+      "diourbel": "Diourbel",
+      "matam": "Matam",
+      "fatick": "Fatick",
+      "kaolack": "Kaolack",
+      "kaffrine": "Kaffrine",
+      "tambacounda": "Tambacounda",
+      "kedougou": "Kédougou",
+      "kolda": "Kolda",
+      "sedhiou": "Sédhiou",
+      "ziguinchor": "Ziguinchor"   
+    }
+  },
+  "dots_categories": {
+    "question": "What do you need help with?",
+    "filters": {
+      "socialProtection": "Protection social",
+      "food": "Nourriture et agriculture",
+      "wellBeing": "Santé et bien-être",
+      "education": "Éducation",
+      "genderEquality": "Égalité des genres",
+      "cleanWater": "Eau potable",
+      "energy": "Consommation d'énergie",
+      "workAndEntrepreneurship": "Travail et entrepreneuriat",
+      "informationTechnology": "Informatique",
+      "equalOpportunities": "Égalité des chances",
+      "housing": "Logement",
+      "sustainableLifestyles": "Modes de vie durable",
+      "climateAction": "Action climatique",
+      "fishing": "Pêche",
+      "biodiversity": "Biodiversité",
+      "justiceAndLegal": "Justice et juridique",
+      "partnerships": "Partneriats"
+    }
+  },
+  "dots_subCategories": {
+    "question": "Please select what you need help with?",
+    "filters": {
+      "housingAndSocialServices": "Access to housing and social services",
+      "economicResources": "Access to economic resources and information technology",
+      "financialServices": "Access to financial services and microfinance",
+      "protectionClimatEvents": "Initiatives to protect against climate-related events",
+      "alleviatePoverty": "Programs alleviating poverty",
+      "nutritiousFood": "Access to nutritious food",
+      "agriculturalLand": "Access to agricultural land and other production resources",
+      "smallScaleFarmers": "Access to services for small-scale farmers to increase productivity and income",
+      "resilientAgriculturalPractices": "Implement resilient agricultural practices and increase productivity",
+      "adaptFarmingPractices": "Adapt farming practices to climate change and environmental disasters",
+      "LandAndSoilQuality": "Improve land and soil quality",
+      "farmingResources": "Access to seed and plant banks and other resources for farming",
+      "ruralInfrastructureResources": "Resources for rural infrastructure, agricultural research, and technology",
+      "healthPrevention": "Health prevention programs",
+      "diseasePrevention": "Disease prevention and treatment",
+      "mentalHealth": "Access to mental health services",
+      "drugAbuse": "Prevention and treatment of drug abuse",
+      "accessToHealthcare": "Access to healthcare services, medicines, and vaccines",
+      "primaryAndSecondaryEducation": "Access to primary and secondary education",
+      "prePrimaryEducation": "Access to pre-primary education",
+      "accessHigherEducation": "Access to affordable technical, vocational and higher education",
+      "skillsForEmployment": "Develop relevant skills for employment and entrepreneurship",
+      "sustainableDevelopementEducation": "Education for sustainable development and lifestyle",
+      "humanRightsEducation": "Education for human rights",
+      "genderEqualityEducation": "Education for gender equality",
+      "endWomenDiscrimination": "Programs to end discrimination against women",
+      "endViolenceWomen": "Programs to end violence and exploitation against women",
+      "empowerWomen": "Programs empowering women through technology",
+      "legislationForGenderEquality": "Adopt and strengthen policies and legislation for gender equality",
+      "economicProductivity": "Increase economic productivity through technological innovations",
+      "employment": "Access to employment",
+      "youthEmployment": "Access to youth employment, education and training",
+      "financialInstitutions": "Strengthen capacity of financial institutions",
+      "endingDiscriminationLaws": "Incentivise ending discrimination laws and policies",
+      "migration": "Ensure safe, orderly and regular migration back home",
+      "developmentPlanning": "Strengthen national and regional development planning",
+      "effectivePartnership": "Effective partnership programs",
+      "justiceAndLegalAid": "Access to justice and legal aid",
+      "legalIdentity": "Access to legal identity and registration",
+      "humanRightsProtection": "Access to information and protection of human rights"
+    }
+  }
+}
