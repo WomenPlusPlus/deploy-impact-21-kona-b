@@ -10,6 +10,7 @@ import CheckboxButton from "./checkboxButton";
 import Button from "./button";
 import iconMap from "../lib/iconMap";
 import { api } from "../config";
+import ProgressBar from "./progressBar";
 
 export default function Quiz() {
   const { t } = useTranslation("quiz");
@@ -75,11 +76,16 @@ export default function Quiz() {
 
   return (
     <div>
+      <div className='grid grid-row'>
+        <div className="my-2">
+          <ProgressBar step={step} />
+        </div>
         {step === 0 && (
           <div className="my-2">
             <div className="bg-two-hands h-32 lg:h-60 bg-cover bg-bottom mr-2"></div>
           </div>
         )}
+      </div>
       {quiz && step < numberQuestions ? (
         <div>
           <h2 className="my-4 mx-12 text-center text-xl">
