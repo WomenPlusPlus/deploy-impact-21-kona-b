@@ -8,7 +8,7 @@ export default function Navigation() {
   const { t } = useTranslation("navigation");
   const pages = [
     ["home", ""],
-    ["about", "about"],
+    ["about", "about-us"],
     ["privacyPolicy", "privacy-policy"],
     ["organisation", "organisation-form"],
     ["searchAssistant", "quiz"],
