@@ -82,7 +82,7 @@ export default function Quiz() {
         )}
       {quiz && step < numberQuestions ? (
         <div>
-          <h2 className="my-6 text-lg font-semibold uppercase">
+          <h2 className="my-4 mx-12 text-center text-xl">
             {t(`${quiz[step].scope.translation_key}.question`)}
           </h2>
           <div>
@@ -106,7 +106,7 @@ export default function Quiz() {
               </div>
             ) : (
               // else it display the Quizbutton component
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 gap-4 mx-8">
                 {quiz[step].answers.map((filterKey) => {
                   return (
                     <QuizButton
