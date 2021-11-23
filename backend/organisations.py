@@ -48,7 +48,7 @@ def add(data):
     df2 = pd.DataFrame([values],
                        columns=keys)
     df = pd.concat([df, df2]).reset_index(drop=True)
-    df.to_json(filename, orient='records', lines=True)
+    df.to_json(strings.ORGANISATION_DISPLAY, orient='records', lines=True)
 
 
 def delete(org_id):

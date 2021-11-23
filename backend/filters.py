@@ -49,6 +49,7 @@ def get_filters():
 
 
 def get_filtered_orgs(filters):
+    df_dots_subcategories_keys = pd.read_csv(strings.DOTS_SUBCATEGORIES_KEYS)
     df_display = pd.read_json(strings.ORGANISATION_DISPLAY, lines=True)
     df_age_filters = pd.read_csv(strings.AGE_FILTER)
     df_age_gender_filters = pd.read_csv(strings.GENDER_AGE_FILTER)
@@ -62,6 +63,13 @@ def get_filtered_orgs(filters):
     orgs = []
     # check for filters and add organisation ids matching filters to orgs list
     for filter_type, filter_value in filters['filters'].items():
+        if filter_type == strings.CATEGORIES:
+            sub_cat_ids = utils.get_subcat_value(df_dots_subcategories_keys,filter_value)
+            for id in sub_cat_ids:
+                print(id)
+                res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[str(id)] == 1]
+                orgs.extend(list(res["organization_id"]))
+
         if filter_type == strings.SUB_CATEGORIES:
             res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[filter_value] == 1]
             orgs.extend(list(res["organization_id"]))
@@ -76,11 +84,11 @@ def get_filtered_orgs(filters):
             age_flag = True
             age = filter_value
 
-    if filter_type == strings.GENDER:
-        res = df_gender_filters.loc[df_gender_filters[filter_value] == 1]
-        orgs.extend(list(res["id"]))
-        gender_flag = True
-        gender = filter_value
+        if filter_type == strings.GENDER:
+            res = df_gender_filters.loc[df_gender_filters[filter_value] == 1]
+            orgs.extend(list(res["id"]))
+            gender_flag = True
+            gender = filter_value
 
     if age_flag and gender_flag:
         res = df_age_gender_filters.loc[df_age_gender_filters[age] == 1]
@@ -89,6 +97,7 @@ def get_filtered_orgs(filters):
 
     # get a list of unique organisation ids, sorted by their no. of occurence
     sorted_orgs = sorted(set(orgs), key=lambda x: orgs.count(x), reverse=True)
+    counts = [orgs.count(i) for i in sorted_orgs]
 
     # get full orgainsation data corresponding to ids
     df = pd.DataFrame(columns=df_display.columns)
@@ -96,6 +105,7 @@ def get_filtered_orgs(filters):
         filtered_df = df_display.loc[df_display["id"] == i]
         df = df.append(filtered_df)
 
+    df['score'] = counts
     df = df.astype(str).reset_index(drop=True)
     df = utils.str_to_list(df)
     js = df.to_json(orient='index')
