@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         "tree-made-with-hands": "url('images/hands-tree-colours.jpg')",
+        "two-hands": "url('images/hands.jpg')",
       },
     },
   },
