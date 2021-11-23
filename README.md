@@ -19,6 +19,7 @@
 
 ## 📝 Table of Contents
 - [Problem Statement](#problem_statement)
+- [Mission](#mission)
 - [Solution](#idea)
 - [The web app](#web_app)
 - [For developers](#for_developers)
@@ -40,6 +41,11 @@ Access to tailored and trustworthy information is essential for individuals in p
 
 One of the main factors that contributes to the increase of people living in precarious situations is statelessnes. A stateless person is someone who is "not considered as a national by any state under the operation of its law" [1](https://en.wikipedia.org/wiki/Statelessness). UNHCR estimates that statelesness affects millions of people worldwide, and at least 700.000 are in West and Central Affrica [2](https://data2.unhcr.org/en/situations/statelesswa). Being statelessnes is just one of the many reasons that causes people to be in vulnerable situations, being of high importance to provide a tool that eases the search for help.
 
+## :boom: Mission <a name = "mission"></a>
+Our mission is to:
+* Develop a trustworthy and unified NGO database.
+* Empower people to know their human rights.
+* Facilitate access to NGO   information to fulfill user's needs using intelligent technologies, i.e. Dots.
 
 ## 💡 Solution <a name = "idea"></a>
 The solution is provided by Konna Connect by means of the platform "Dots", a web app used for searching help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
@@ -81,7 +87,6 @@ Find the instructions on how to run it [here](/frontend).
 ####  Backend (Server) <a name = "backend"></a>
 - Developped using Python 3.8
 - Processes database using pandas and SQL
-- ...
 
 Find the instructions on how to run it [here](/backend).
 
@@ -96,13 +101,39 @@ Find the instructions on how to run it [here](/backend).
 - __LICENSE:__ File containing the license information.
 
 ## :bar_chart: The database <a name = "database"></a>
-Explanation about the database
+The data base information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
+
+To make the database more machine readable, it was processed and divided into the following datasets:
+
+* [age and gender](/backend/csv/filters/gender_and_age_filters.csv): In this dataset the organisations are categorized in a machine readable format according to the age and gender of the people to whom they offer their help. In the following table you can find the categories assigned to the NGOs.
+
+    | Categories  | Options |
+    | ------------- | ------------- |
+    | gender  | male, female, other  |
+    | age | baby, child, youth, adult  |
+    
+  
+* [region](/backend/csv/filters/region_filters.csv): To provide as much information as possible to the user, the database also contains the specific region where each NGO is located. Find below the available options:
+
+  | Categories  | Options |
+  | ------------- | ------------- |
+  | location  | dakar,	saint_louis, louga,	thies,	diourbel,	mattam,	fatick,	kaolack,	kaffrine,	tamabacounda,	kedougou,	kolda,	sedhiou,	ziguinohor|
+  
+* [SDG subcategory](/backend/csv/filters/dots_subcategories_filters.csv): One of the strengths of our database is that each NGO is linked to the Sustainable Development Goals (SDG) subcategories. This allow us to filter the database according to the user specific needs, allowing them to find the help they need in a shorter time and more effectively.
+  | Categories  | Options |
+  | ------------- | ------------- |
+  | sdg  | 1-40|
+
 
 ### Maintenance <a name = "maintenance"></a>
-Database maintenance
+This app is just as powerful as the information it contains, thefore it is very important to increase and enrich the database. 
 
 ## :books: App translation <a name = "translation"></a>
-Explain how the app can be translated using .json files
+Currently the app is available in English and French, but it has been specially developped so that it can be easily translated to any language. The tranlation files are handled by the front-end and can be found in [/frontend/public/locales/](/frontend/public/locales/). These are the steps to add a translation:
+
+1. Create a new folder named with the abbreviation of the language, i.e. fr for French.
+2. [/frontend/public/locales/fr](/frontend/public/locales/fr), copy all the files, and paste them in the directory you just created.
+3. Add the translation on the right side of the colon (:) between comas (" "), i.e. "female": "Female" --> "female":"Femme"
 
 ## :postal_horn: Troubleshooting <a name = "troubleshooting"></a>
 If you find any error or weird behaviour when using Dots, please open an issue and we will try to address it ass soon as possible.
@@ -114,7 +145,7 @@ This repository is licensed under the GPL - 3 license. This guarantees the end u
 - [@bcabgil](https://github.com/bcabgil) - Project management and data science
 - [@gildafc](https://github.com/gildafc) - Project management and data science
 - [@lorna-mn](https://github.com/lorna-mn) - UX / UI
-- [@andrew](https://github.com/lorna-mn) - UX / UI
+- [@andrew]() - UX / UI
 - [@heba0](https://github.com/heba0) - Fullstack
 - [@EmilieHumbert](https://github.com/EmilieHumbert) - Frontend Web developer
 - [@jacksondieter](https://github.com/jacksondieter) - Frontend and backend lead
