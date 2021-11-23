@@ -1,5 +1,9 @@
 {
-  "welcome": "Welcome to Dots.",
+  "welcome": [
+    "Welcome",
+    "to",
+    "Dots."
+  ],
   "presentation": "We are your alternative legal aid app responsibly connecting you to the right organisations",
   "title": "How can we help?",
   "subTitle": "We selected a list of trusted organisations, to find the right one for your need:",

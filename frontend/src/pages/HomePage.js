@@ -12,14 +12,16 @@ export default function HomePage() {
     <DocumentTitle title="homepage">
       <>
         <div className="text-center">
-          <h2 className="justify-center my-2 sm:my-6 md:my-12 text-2xl md:text-4xl">
-            {t("welcome")}
-          </h2>
-          <p className="text-xs md:text-lg tracking-tight">
+          <p className="my-2 text-xs md:text-lg tracking-tight">
             {t("presentation")}
           </p>
-          <div className="bg-gray-200 flex flex-wrap h-28 my-2 place-content-center">
-            Image
+          <div className="flex bg-tree-made-with-hands bg-cover h-28 lg:h-60 justify-end md:justify-center">
+            <h2 className="sm:my-6 md:my-12 mr-8 sm:ml-96 self-center text-2xl md:text-5xl z-40">
+              {t("welcome.0")} <br />
+              {t("welcome.1")}
+              <br />
+              {t("welcome.2")}
+            </h2>
           </div>
           <p className="my-6 lg:my-16 sm:mb-20 text-xl md:text-3xl">
             {t("title")}
