@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       colors: {
         kona: "#8F20B2",
+        orangeLight: "#f8edeb",
+        orangeMiddle: "#fec5bb",
+        orangeDark: "#e8a598",
       },
       backgroundImage: {
         "tree-made-with-hands": "url('images/hands-tree-colours.jpg')",
@@ -14,8 +17,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: ['active'],
-    }
+      backgroundColor: ["active"],
+    },
   },
   plugins: [],
 };

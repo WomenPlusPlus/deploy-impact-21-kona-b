@@ -32,7 +32,7 @@ export default function App() {
       }}
     >
       <Suspense fallback={<Skeleton />}>
-        <div className="grid grid-cols-9 sm:grid-cols-7 max-w-xl lg:max-w-4xl mx-auto w-mobile mb-8 sm:mb-20">
+        <div className="grid grid-cols-9 sm:grid-cols-7 max-w-xl lg:max-w-4xl mx-auto w-mobile">
           <div className="col-start-1 sm:col-start-1 col-span-9 sm:col-span-7 mx-2 sm:mx-0">
             <Navigation />
             <Routes>
