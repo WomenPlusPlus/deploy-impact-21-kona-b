@@ -1,5 +1,9 @@
 {
-  "welcome": "Bienvenue chez Dots.",
+  "welcome": [
+    "Bienvenue",
+    "chez",
+    "Dots."
+  ],
   "presentation": "TO TRANSLATE AGAIN. Votre alternative à l'aide juridique - vous mettant en contact de manière responsable avec les organisations qui vous conviennent",
   "title": "Comment pouvons-nous vous aider?",
   "subTitle": "TO TRANSLATE",

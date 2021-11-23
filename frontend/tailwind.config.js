@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         kona: "#8F20B2",
       },
+      backgroundImage: {
+        "tree-made-with-hands": "url('images/hands-tree-colours.jpg')",
+      },
     },
   },
   variants: {
