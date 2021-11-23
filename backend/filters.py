@@ -62,34 +62,36 @@ def get_filtered_orgs(filters):
     gender = ""
     orgs = []
     # check for filters and add organisation ids matching filters to orgs list
-    for filter_type, filter_value in filters['filters'].items():
-        if filter_type == strings.CATEGORIES:
-            sub_cat_ids = utils.get_subcat_value(df_dots_subcategories_keys,filter_value)
-            for id in sub_cat_ids:
-                print(id)
-                res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[str(id)] == 1]
+    for filter_type, filter_values in filters['filters'].items():
+        for filter_value in filter_values:
+            if filter_type == strings.CATEGORIES:
+                sub_cat_ids = utils.get_subcat_value(df_dots_subcategories_keys,filter_value)
+                for id in sub_cat_ids:
+                    print(id)
+                    res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[str(id)] == 1]
+                    orgs.extend(list(res["organization_id"]))
+
+            if filter_type == strings.SUB_CATEGORIES:
+                res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[filter_value] == 1]
                 orgs.extend(list(res["organization_id"]))
 
-        if filter_type == strings.SUB_CATEGORIES:
-            res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[filter_value] == 1]
-            orgs.extend(list(res["organization_id"]))
+            if filter_type == strings.REGION:
+                res = df_region_filters.loc[df_region_filters[filter_value] == 1]
+                orgs.extend(list(res["id"]))
 
-        if filter_type == strings.REGION:
-            res = df_region_filters.loc[df_region_filters[filter_value] == 1]
-            orgs.extend(list(res["id"]))
+            if filter_type == strings.AGE:
+                res = df_age_filters.loc[df_age_filters[filter_value] == 1]
+                orgs.extend(list(res["id"]))
+                age_flag = True
+                age = filter_value
 
-        if filter_type == strings.AGE:
-            res = df_age_filters.loc[df_age_filters[filter_value] == 1]
-            orgs.extend(list(res["id"]))
-            age_flag = True
-            age = filter_value
+            if filter_type == strings.GENDER:
+                res = df_gender_filters.loc[df_gender_filters[filter_value] == 1]
+                orgs.extend(list(res["id"]))
+                gender_flag = True
+                gender = filter_value
 
-        if filter_type == strings.GENDER:
-            res = df_gender_filters.loc[df_gender_filters[filter_value] == 1]
-            orgs.extend(list(res["id"]))
-            gender_flag = True
-            gender = filter_value
-
+    # assumes gender and age will have only one parameter
     if age_flag and gender_flag:
         res = df_age_gender_filters.loc[df_age_gender_filters[age] == 1]
         res = res.loc[res[gender] == 1]
