@@ -23,16 +23,18 @@ export default function Quiz() {
   const [answer, setAnswer] = useState();
   const [allAnswers, setAllAnswers] = useState({});
 
+  // step tells you at which question you are at
   const numberQuestions = quiz?.length || 0;
   const [step, setStep] = useState(0);
 
+  // when the step changes, save the answer, go to the next step and scroll top
   const handleStepChange = (newStep) => {
     setAnswer(allAnswers[quiz[newStep]?.scope.filter]);
     setStep(newStep);
     window.scrollTo(0, 0);
   };
 
-  // when user can have more than one answer, makes an array with multiple answers
+  // when mutli answer questions, makes an array with multiple answers
   // which will be deleted when they untick the answer
   // when user can only have one answer, save the value and go to the next question
   const handleClickAnswer = (type, value) => {
@@ -49,7 +51,7 @@ export default function Quiz() {
     }
   };
 
-  // on click update the array of all answers (will be send to backend)
+  // onClick update the array of all answers (will be send to backend)
   // and increment step by 1 to get the next question
   const handleClickNext = (value = answer) => {
     const newStep = step + 1;
@@ -69,6 +71,7 @@ export default function Quiz() {
     }
   };
 
+  // handles back button click. Decrement step.
   const handleClickBack = () => {
     const newStep = step - 1;
     handleStepChange(newStep);
@@ -88,7 +91,7 @@ export default function Quiz() {
       </div>
       {quiz && step < numberQuestions ? (
         <div>
-          <h2 className="mt-4 mx-8 mb-8 text-center text-xl">
+          <h2 className="mt-4 mx-8 mb-8 sm:my-12 text-center text-xl sm:text-3xl">
             {t(`${quiz[step].scope.translation_key}.question`)}
           </h2>
           <div className="mb-32">
@@ -112,7 +115,7 @@ export default function Quiz() {
               </div>
             ) : (
               // else it display the Quizbutton component
-              <div className="grid grid-cols-1 gap-4 mx-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-8">
                 {quiz[step].answers.map((filterKey) => {
                   return (
                     <QuizButton
@@ -130,7 +133,7 @@ export default function Quiz() {
               </div>
             )}
           </div>
-          <div className="grid grid-cols-2 border-t place-items-center border-black bg-lightBlue sm:bg-white bg-none fixed -mx-2 mt-4 bottom-0 z-50 h-24">
+          <div className="grid grid-cols-2 bg-lightBlue sm:bg-white bg-none border-t border-blueDark sm:border-0 place-items-center fixed sm:static -mx-2 mt-4 bottom-0 z-50 h-24">
             {step > 0 && (
               <div>
                 <Button
@@ -161,12 +164,9 @@ export default function Quiz() {
                 />
               </div>
             )}
-
-            
-              <div className="m-2 sm:my-12 underline text-xs col-span-2">
-                <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
-              </div>
-         
+            <div className="m-2 sm:pb-24 underline text-xs col-span-2">
+              <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
+            </div>
           </div>
         </div>
       ) : (
