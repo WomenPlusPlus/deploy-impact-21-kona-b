@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
 
+import { useLocation, useSearchParams } from "react-router-dom";
+
+import { api } from "../config";
 import organisationsFilter from "../lib/organisationsFilter.json";
 import LinkButton from "../components/LinkButton";
 import iconMap from "../lib/iconMap";
@@ -10,7 +13,47 @@ import iconMap from "../lib/iconMap";
 export default function QuizResultsPage() {
   const { t } = useTranslation("quizResults");
   const numberOfQuestions = 6;
+  // const [relevant, setRelevant] = useState();
+  // const [score, setScore] = useState(0)
   const [organisations, setOrganisations] = useState(organisationsFilter);
+  const search = useLocation().search;
+  const user = new URLSearchParams(search).get("user");
+  // const gender = new URLSearchParams(search).get("gender");
+  // const age = new URLSearchParams(search).get("age");
+  // const region = new URLSearchParams(search).getAll("region");
+  // console.log({searchKey, searchParam}))
+  const [searchParams, setSearchParams] = useSearchParams();
+  console.log("search", search);
+
+  // if (score > 80) {
+  //   setRelevant("very relevant");
+  // } else if (score < 40) {
+  //   setRelevant("less relevant");
+  // } else {
+  //   setRelevant("possibly relevant");
+  // }
+
+  // searchParams.forEach((searchParam, searchKey) => {
+  //   const post = {  searchKey, searchParam};
+  //   console.log(post);
+  //   return post;
+  // });
+  // const datasend = {
+  //   filters: { gender: ["female"], region: ["saint_louis", "dakar"] },
+  // };
+
+  useEffect(() => {
+    const requestOptions = {
+      method: "POST",
+      body: JSON.stringify({ user: 'me' }),
+    };
+    fetch(`${api}/organisations/filter`, requestOptions).then((response) =>
+      response.json().then((data) => {
+        setOrganisations(data);
+      })
+    );
+  }, []);
+
   return (
     <div>
       <h1 className="mt-4 text-xl text-center">{t("title")}</h1>
@@ -42,7 +85,9 @@ export default function QuizResultsPage() {
               )}
               key={organisation.name}
             >
-              <div className="flex flex-wrap content-center bg-gray-200 text-sm h-13">LOGO</div>
+              <div className="flex flex-wrap content-center bg-gray-200 text-sm h-13">
+                LOGO
+              </div>
               <div className="col-span-4 ">
                 <div className="font-bold text-blueDark text-left leading-snug ml-2">
                   {organisation.name}
@@ -73,7 +118,9 @@ export default function QuizResultsPage() {
                   ))}
                 </div>
               </div>
-              <div className="col-span-5 font-light text-xs mb-2 leading-relaxed">{organisation.objective}</div>
+              <div className="col-span-5 font-light text-xs mb-2 leading-relaxed">
+                {organisation.objective}
+              </div>
             </div>
           </Link>
         );

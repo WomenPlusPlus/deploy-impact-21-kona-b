@@ -9,7 +9,7 @@ export default function OrganisationFilters({
   setFilteredOrganisations,
 }) {
   const allRegions = [
-    ...new Set(organisations.map(({ region }) => region || [])),
+    ...new Set(organisations.flatMap(({ region }) => region || [])),
   ];
   const [selectedRegions, setSelectedRegions] = useState([]);
 
@@ -19,7 +19,10 @@ export default function OrganisationFilters({
   useEffect(() => {
     const filteredOrganisations = organisations.filter(
       ({ region, sdg }) =>
-        (selectedRegions.length === 0 || selectedRegions.includes(region)) &&
+        (selectedRegions.length === 0 ||
+          selectedRegions.some((selectedRegion) =>
+            region.includes(selectedRegion)
+          )) &&
         (selectedSdgs.length === 0 ||
           selectedSdgs.some((selectedSdg) => sdg.includes(selectedSdg)))
     );
