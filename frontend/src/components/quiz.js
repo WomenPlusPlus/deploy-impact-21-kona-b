@@ -17,6 +17,7 @@ export default function Quiz() {
   const navigate = useNavigate();
 
   // API quiz request
+  console.log('api', api)
   const { data: quiz } = useSWR(`${api}/quiz`);
 
   // answer saves the answer picked by the user
@@ -67,7 +68,7 @@ export default function Quiz() {
     handleStepChange(newStep);
     if (newStep >= numberQuestions) {
       const searchParams = createSearchParams(updatedAnswers);
-      navigate(`/organisations?${searchParams.toString()}`);
+      navigate(`/quiz/results?${searchParams.toString()}`);
     }
   };
 
