@@ -37,6 +37,7 @@ export default function HomePage() {
                 fontSize={"text-xs"}
                 padding={"px-4 py-4"}
                 margin={"mx-0"}
+                uppercase={"uppercase"}
               />
             </div>
             <div>
@@ -46,6 +47,7 @@ export default function HomePage() {
                 fontSize={"text-xs"}
                 padding={"px-2 py-4"}
                 margin={"mx-0"}
+                uppercase={"uppercase"}
               />
             </div>
           </div>

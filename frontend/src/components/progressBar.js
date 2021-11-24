@@ -6,7 +6,7 @@ import "././../../src/progressBar.css";
 
 export default function ProgressBar({ step }) {
   const { t } = useTranslation("quiz");
-  console.log('step', step)
+  
   return (
     <div class="container">
       <ul class="progressbar">
