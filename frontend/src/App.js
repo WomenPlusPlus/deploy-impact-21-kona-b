@@ -13,6 +13,7 @@ import OrganisationsPage from "./pages/OrganisationsPage";
 import OrganisationFormPage from "./pages/OrganisationFormPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicy";
 import AboutUsPage from "./pages/AboutUsPage";
+import QuizResultsPage from "./pages/QuizResultsPage";
 
 // used by SWR to make and cache API get request
 const fetcher = (url) => fetch(url).then((response) => response.json());
@@ -37,6 +38,12 @@ export default function App() {
             <Navigation />
             <Routes>
               <Route exact path="/" element={<HomePage />} />
+              <Route path="/quiz" element={<QuizPage />} />
+              <Route path="/quiz/results" element={<QuizResultsPage />} />
+              <Route
+                path="/organisations"
+                element={<OrganisationsPage />}
+              />
               <Route path="/organisations/:id" element={<OrganisationPage />} />
               <Route path="/quiz" element={<QuizPage />} />
               <Route path="/organisations" element={<OrganisationsPage />} />

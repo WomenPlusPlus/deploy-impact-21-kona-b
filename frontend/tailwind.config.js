@@ -12,6 +12,9 @@ module.exports = {
         blueMiddle: "#5998C5",
         blueDark: "#20425B",
         cream: "#F8F8F8",
+        greenRelevantDark: "#315C2B",
+        greenRelevantMiddle: "#BEDEBA",
+        greenRelevantLight: "E6F1E4",
       },
       backgroundImage: {
         "tree-made-with-hands": "url('images/hands-tree-colours.jpg')",
