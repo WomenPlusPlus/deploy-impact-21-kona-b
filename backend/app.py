@@ -145,4 +145,6 @@ def internal_server_error(error):
     }, 500)
 
 
-app.run()
+# allows running with Flask or Python
+if __name__ == "__main__":
+    app.run()
