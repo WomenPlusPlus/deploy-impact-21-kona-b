@@ -129,11 +129,42 @@ To make the database more machine readable, it was processed and divided into th
 This app is just as powerful as the information it contains, thefore it is very important to increase and enrich the database. 
 
 ## :books: App translation <a name = "translation"></a>
-Currently the app is available in English and French, but it has been specially developped so that it can be easily translated to any language. The tranlation files are handled by the front-end and can be found in [/frontend/public/locales/](/frontend/public/locales/). These are the steps to add a translation:
+Currently the app is available in English and French, but it has been specially developped so that it can be easily translated to any language. The tranlation files are handled by the front-end and can be found in [/frontend/public/locales/](/frontend/public/locales/). To add your translation you should follow these steps:
+### Requirements
+The library used to translate the app is **i18next**, if it is not installed in your environment you can download it from [here](https://www.i18next.com/).
+
+
+### Create your translation
 
 1. Create a new folder named with the abbreviation of the language, i.e. fr for French.
-2. [/frontend/public/locales/fr](/frontend/public/locales/fr), copy all the files, and paste them in the directory you just created.
-3. Add the translation on the right side of the colon (:) between comas (" "), i.e. "female": "Female" --> "female":"Femme"
+2. Go to [/frontend/public/locales/fr](/frontend/public/locales/fr), copy all the files, and paste them in the directory you just created. The files that you have just copy-pasted correspond to the .json files having the french translation for each page in the website. Keep in mind that each language will have a dedicated translation file (.json) for each page. The page that correspond to each translation file is indicated in the filename, i.e. aboutUs.json contains the translation keys for the page "About Us". In case that you want to change the name of the given translation files, you should also change the call to these files in each page.
+4. Add the translation on the right side of the colon (:) between comas (" "), i.e. "female": "Female" --> "female":"Femme". This translation key will be used when the new language is selected.
+
+### Translating a new page
+Whenever you create a new page, you will need to create a new translation file and add adequate the page so that it can be translated. Follow this steps to know how to translate your new page:
+
+1. Add the new supported language: Go to [/frontend/src/i18n.js ](/frontend/src/i18n.js ), this is the i18next configuration file. Add language abbreviation (the name of the directory you have created in step *1* of the section _Create your translation_) in the i18.js file:
+
+```
+23     supportedLngs: ["en", "fr", "new_abbreviation"],
+```
+
+2. Go to the page where you want to add the translation.
+3. Import the i18next library:
+```
+import { useTranslation } from "react-i18next")
+```
+4. Import the translation keys corresponding to the page to translate:
+```
+const { t } = useTranslation("the page you want to translate")
+```
+
+5. Add the translation key for the string to translate:
+```
+{t("translation key")}
+```
+
+For any question, you can refer to [this file](/frontend/src/pages/AboutUsPage.js) and use it as an example.
 
 ## :postal_horn: Troubleshooting <a name = "troubleshooting"></a>
 If you find any error or weird behaviour when using Dots, please open an issue and we will try to address it ass soon as possible.
