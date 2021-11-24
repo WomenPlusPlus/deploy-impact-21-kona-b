@@ -4,6 +4,7 @@ import organisations
 import quiz
 import ast
 import filters
+from models import setup_db
 
 # ----------------------------------------------------------------------------#
 # App Config.
@@ -11,6 +12,8 @@ import filters
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
+setup_db(app)
+
 CORS(app)
 
 
