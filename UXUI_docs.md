@@ -13,6 +13,8 @@ A significant challenge for the UX team was to know and understand the different
 ![image](https://user-images.githubusercontent.com/91188889/143379272-60c6a742-0dde-49f5-9ca5-5f6de72cae0a.png)
 ## User interviews
 
+## Sketches
+
 ## Wireframes
 
 ## App color selection
