@@ -8,10 +8,9 @@ One of the first team exercises we did was a brainstorming session on the user n
 ![image](https://user-images.githubusercontent.com/91188889/143376404-e30f5e24-c644-48e1-b52e-976023963fc2.png)
 ## User research
 A significant challenge for the UX team was to know and understand the different types of users that would be interacting with Dots. A typical UX sprint involves conducting user interviews. However, this was not possible, at least in the beginning of the project. One of the ways we tried to overcome this knowledge gap was by researching the experience of refugees and migrants and, in particular, how they might use technology to access support services. The following research paper https://www.rand.org/pubs/research_reports/RR4322.html discusses the role that technology plays in the lives of displaced people and included interviews with 6 different focus groups of refugees. It offered some interesting insights into how people in vulnerable situations interact with technology (e.g. privacy/data concerns, connectivity issues). We also did some research on mobile apps with similar objectives/mission to Dots. (e.g. RefAid, I-Need Switzerland). 
-## User personas
-
+## User personas & user journey
+Initially we created a user persona (based on our research and brainstorming) using a fictional character "Khady". We also mapped out a user journey for Khady, which was a useful exercise in the sense that it brought up some questions 
 ![image](https://user-images.githubusercontent.com/91188889/143379272-60c6a742-0dde-49f5-9ca5-5f6de72cae0a.png)
-## User journey
 
 ![image](https://user-images.githubusercontent.com/91188889/143379662-0e6b928b-b321-4e88-a8f5-fb1c54a93b67.png)
 ## Sketches
@@ -19,6 +18,10 @@ A significant challenge for the UX team was to know and understand the different
 ![image](https://user-images.githubusercontent.com/91188889/143379597-92949ffa-03a9-4f21-99be-40c372db08ca.png)
 ## Wireframes & Mockups
 
+## Logo
+
+![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png)
 ## App colour palette selection
 
 ![image](https://user-images.githubusercontent.com/91188889/143380477-aeb8c904-e666-4cfb-81fe-2911024a6d86.png)
+![image](https://user-images.githubusercontent.com/91188889/143412642-ea3a8383-ca77-4cc4-be0c-9a69b30d19ac.png)
