@@ -24,7 +24,8 @@ Before building the wireframes and mockups, we decided to do some basic sketches
 
 ![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png)
 ## App colour palette selection
-![image](https://user-images.githubusercontent.com/91188889/143414817-582a1cc5-7e37-4a74-bb09-e7114b68f63b.png) extra &nbsp;&nbsp; space ![image](https://user-images.githubusercontent.com/91188889/143420402-ef4011d5-6b8b-4607-a544-6225d770e6ba.png)
+![image](https://user-images.githubusercontent.com/91188889/143414817-582a1cc5-7e37-4a74-bb09-e7114b68f63b.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143420663-fadb1ebd-6d07-49ee-b74b-cfeafabc5ba3.png)
+
 
 
 
