@@ -1,13 +1,12 @@
 import pandas as pd
 import json
 import strings
+import data_frames as dfs
 
 def get_questions():
-    questions = pd.read_csv(strings.QUESTIONS)
-    answers = pd.read_csv(strings.ANSWERS)
-    q_js = questions.to_json(orient='index')
+    q_js = dfs.df_questions.to_json(orient='index')
     q_js = json.loads(q_js)
-    a_js = answers.to_json(orient='index')
+    a_js = dfs.df_answers.to_json(orient='index')
     a_js = json.loads(a_js)
     quiz = []
     for i in q_js:

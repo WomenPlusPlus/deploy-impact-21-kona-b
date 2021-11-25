@@ -88,14 +88,6 @@ def search_organisations():
     return jsonify(res), 201
 
 
-# tools
-
-# @app.route('/api/v0/subcategorymap', methods=['GET'])
-# def get_filters():
-#     res = filters.get_filters()
-#     return jsonify(res), 201
-
-
 # ----------------------------------------------------------------------------#
 # Error Handling.
 # ----------------------------------------------------------------------------#

@@ -10,12 +10,14 @@ def get_filters():
 
     :return: list of all filters, filter values and corresponding display value
     '''
-    # load daata
-    df_age_keys = pd.read_csv( strings.AGE_KEYS)[['key', 'value','translation_key','icon']]
-    df_dots_categories_keys = pd.read_csv(strings.DOTS_CATEGORIES_KEYS)[['key', 'value','translation_key','icon']]
-    df_dots_subcategories_keys = pd.read_csv(strings.DOTS_SUBCATEGORIES_KEYS)[['key', 'value','translation_key','icon']]
-    df_gender_keys = pd.read_csv(strings.GENDER_KEYS)[['key', 'value','translation_key','icon']]
-    df_region_key = pd.read_csv(strings.REGION_KEYS)[['key', 'value','translation_key','icon']]
+
+    header = ['key', 'value','translation_key','icon']
+    # load data
+    df_age_keys = pd.read_csv( strings.AGE_KEYS)[header]
+    df_dots_categories_keys = pd.read_csv(strings.DOTS_CATEGORIES_KEYS)[header]
+    df_dots_subcategories_keys = pd.read_csv(strings.DOTS_SUBCATEGORIES_KEYS)[header]
+    df_gender_keys = pd.read_csv(strings.GENDER_KEYS)[header]
+    df_region_key = pd.read_csv(strings.REGION_KEYS)[header]
 
     # get data for each filter group
     age = df_age_keys.to_json(orient='index')
@@ -67,7 +69,6 @@ def get_filtered_orgs(filters):
             if filter_type == strings.CATEGORIES:
                 sub_cat_ids = utils.get_subcat_value(df_dots_subcategories_keys,filter_value)
                 for id in sub_cat_ids:
-                    print(id)
                     res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[str(id)] == 1]
                     orgs.extend(list(res["organization_id"]))
 

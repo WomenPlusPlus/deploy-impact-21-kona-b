@@ -8,7 +8,7 @@ QUIZ_PATH = "csv/quiz/"
 # extra filters / column headers
 AGE = "age"
 GENDER = "gender"
-SUB_CATEGORIES = "dots_subcategories"
+SUB_CATEGORIES = "dots_subCategories"
 REGION = "region"
 CATEGORIES = "dots_categories"
 AGE_GENDER = "age_gender"

@@ -7,7 +7,7 @@ def str_to_list(df):
     '''
 
     :param df: dataframe to be modified
-    :return: modified dataframe with columns of lists instead of string list
+    :return: modified dataframe with columns of lists instead of columns of strings
     '''
     # convert lists string  to list objects
     for i in range(len(df[strings.CATEGORIES])):
