@@ -8,13 +8,13 @@ export default function Button({
   fontSize,
   padding,
   margin,
-  uppercase,
+  border,
 }) {
   return (
     <Link to={`/${url}`}>
       <div
         className={classNames(
-          `border border-konaInspiredDark rounded hover:bg-gray-100 ${uppercase} ${fontSize} ${padding} ${margin}`
+          `rounded hover:bg-gray-100 ${border} ${fontSize} ${padding} ${margin}`
         )}
         type="button"
       >
