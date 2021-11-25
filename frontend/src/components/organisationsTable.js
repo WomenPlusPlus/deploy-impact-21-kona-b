@@ -2,12 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+import { useTranslation } from "react-i18next";
 
 import { api } from "../config";
 import OrganisationFilters from "./organisationFilters";
 import iconMap from "../lib/iconMap";
 
 export default function OrganisationsTable() {
+  const { t } = useTranslation("quiz");
+
   const [organisations, setOrganisations] = useState([]);
   const [filteredOrganisations, setFilteredOrganisations] = useState([]);
   useEffect(() => {
@@ -19,7 +22,7 @@ export default function OrganisationsTable() {
   }, []);
 
   const [active, setActive] = useState(false);
-
+  
   return (
     <div className="grid lg:grid-cols-3 gap-2 lg:gap-6">
       <button
@@ -64,15 +67,17 @@ export default function OrganisationsTable() {
                   className="border-b border-konaInspired rounded-lg mb-2"
                   key={organisation.id}
                 >
-                  <Td className="py-2 pr-10">
+                  <Td className="py-2 pr-4">
                     <Link to={`/organisations/${organisation.id}`}>
                       {organisation.name}
                     </Link>
                   </Td>
-                  <Td className="pr-10">{organisation.region}</Td>
-                  <Td className="grid grid-cols-2 sm:grid sm:grid-cols-3">
+                  <Td className="pr-4">
+                    {t(`region.filters.${organisation.region}`)}
+                  </Td>
+                  <Td className="grid grid-cols-3">
                     {IconCategories.map((Icon) => {
-                      return <div className="p-2">{Icon && <Icon />}</div>;
+                      return <div className="mx-2">{Icon && <Icon />}</div>;
                     })}
                   </Td>
                 </Tr>
