@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 
-import "././../../src/progressBar.css";
+import "../progressBar.css";
 
 export default function ProgressBar({ step }) {
   const { t } = useTranslation("quiz");
