@@ -15,6 +15,8 @@ AGE_GENDER = "age_gender"
 
 # key-value files
 AGE_KEYS = KEYS_PATH + "age_key_value.csv"
+SDG_KEYS = KEYS_PATH + "sdg_key.csv"
+SDG_TARGET_KEYS = KEYS_PATH + "sdg_target.csv"
 DOTS_CATEGORIES_KEYS = KEYS_PATH + "dots_categories_key_value.csv"
 DOTS_SUBCATEGORIES_KEYS = KEYS_PATH + "dots_subcategories_key_value.csv"
 GENDER_KEYS = KEYS_PATH + "gender_key_value.csv"
