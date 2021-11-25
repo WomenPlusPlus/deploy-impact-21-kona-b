@@ -17,6 +17,8 @@ A significant challenge for the UX team was to know and understand the different
 ## Sketches
 
 ![image](https://user-images.githubusercontent.com/91188889/143379597-92949ffa-03a9-4f21-99be-40c372db08ca.png)
-## Wireframes
+## Wireframes & Mockups
 
 ## App colour palette selection
+
+![image](https://user-images.githubusercontent.com/91188889/143380477-aeb8c904-e666-4cfb-81fe-2911024a6d86.png)
