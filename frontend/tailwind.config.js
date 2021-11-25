@@ -4,17 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        kona: "#8F20B2",
-        orangeLight: "#f8edeb",
-        orangeMiddle: "#fec5bb",
+        konaInspired: "#BF7FB7",
+        konaInspiredDark: "#6052A3",
         orangeDark: "#e8a598",
-        lightBlue: "#C3D9EA",
-        blueMiddle: "#5998C5",
-        blueDark: "#20425B",
         cream: "#F8F8F8",
         greenRelevantDark: "#315C2B",
-        greenRelevantMiddle: "#BEDEBA",
-        greenRelevantLight: "E6F1E4",
       },
       backgroundImage: {
         "tree-made-with-hands": "url('images/hands-tree-colours.jpg')",

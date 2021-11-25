@@ -12,7 +12,7 @@
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
-  color: #7d7d7d;
+  color: #BF7FB7;
 }
 .progressbar li:before {
   width: 25px;
@@ -20,7 +20,7 @@
   content: counter(step);
   counter-increment: step;
   line-height: 21px;
-  border: 2px solid #7d7d7d;
+  border: 2px solid #BF7FB7;
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -32,7 +32,7 @@
   height: 2px;
   content: "";
   position: absolute;
-  background-color: #7d7d7d;
+  background-color: #BF7FB7;
   top: 12px;
   left: -50%;
   z-index: -1;
@@ -41,11 +41,11 @@
   content: none;
 }
 .progressbar li.active {
-  color: #e8a598;
+  color: #6052A3;
 }
 .progressbar li.active:before {
-  border-color: #e8a598;
+  border-color: #6052A3;
 }
 .progressbar li.active + li:after {
-  background-color: #e8a598;
+  background-color: #6052A3;
 }
