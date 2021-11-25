@@ -1,5 +1,7 @@
 # UX/UI docs
 
+## Introduction
+
 ## Brainstorming
 
 ## User personas
