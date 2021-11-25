@@ -10,6 +10,7 @@ One of the first team exercises we did was a brainstorming session on the user n
 A significant challenge for the UX team was to know and understand the different types of users that would be interacting with Dots. A typical UX sprint involves conducting user interviews. However, this was not possible, at least in the beginning of the project. One of the ways we tried to overcome this knowledge gap was by researching the experience of refugees and migrants and, in particular, how they might use technology to access support services. The following research paper https://www.rand.org/pubs/research_reports/RR4322.html discusses the role that technology plays in the lives of displaced people and included interviews with 6 different focus groups of refugees. It offered some interesting insights into how people in vulnerable situations interact with technology (e.g. privacy/data concerns, connectivity issues). We also did some research on mobile apps with similar objectives/mission to Dots. (e.g. RefAid, I-Need Switzerland). 
 ## User personas
 
+![image](https://user-images.githubusercontent.com/91188889/143379272-60c6a742-0dde-49f5-9ca5-5f6de72cae0a.png)
 ## User interviews
 
 ## Wireframes
