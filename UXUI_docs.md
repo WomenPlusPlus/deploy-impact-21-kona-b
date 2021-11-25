@@ -12,8 +12,7 @@ A significant challenge for the UX team was to know and understand the different
 Initially we created a user persona (based on our research and brainstorming) using a fictional character "Khady", a domestic abuse survivor. We mapped out a user journey for Khady, which was a useful exercise in the sense that it brought up some questions regarding how a vulnerable person like Khady might perceive the app and the importance of having reassuring messaging and/or visual imagery to build trust and make her feel secure when using it. Later on we were fortunate to interview Loua, a refugee living in Senegal, who was able to give us his lived experience as a vulnerable person trying to access basic services for himself and for his family. 
 
 ![image](https://user-images.githubusercontent.com/91188889/143379272-60c6a742-0dde-49f5-9ca5-5f6de72cae0a.png)
-![image](https://user-images.githubusercontent.com/91188889/143461546-323fdc12-8317-4da7-9ed3-44956d218e98.png)
-
+![image](https://user-images.githubusercontent.com/91188889/143461971-c495cb63-4ef4-46c9-9ef0-794befcac124.png)
 ## User interviews 
 [Interview with Loua.txt](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7603716/Interview.with.Loua.txt)
 
