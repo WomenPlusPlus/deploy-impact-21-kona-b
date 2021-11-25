@@ -15,7 +15,8 @@ Initially we created a user persona (based on our research and brainstorming) us
 
 ![image](https://user-images.githubusercontent.com/91188889/143379662-0e6b928b-b321-4e88-a8f5-fb1c54a93b67.png)
 ## Sketches
-Before building the wireframes and mockups, we decided to do some basic sketches of what we thought the web app could look like, in particular, the homepage, the quiz, and the table of organisations. It was a useful way to visualise key features and functionalities of the web app. 
+Before building the wireframes and mockups, we decided to do some basic sketches of what we thought the web app could look like, in particular, the homepage, the quiz, and the table of organisations. It was a helpful way to visualise key features and functionalities of the web app (e.g. for the quiz, having a progress bar and a back button). 
+
 ![image](https://user-images.githubusercontent.com/91188889/143379597-92949ffa-03a9-4f21-99be-40c372db08ca.png)
 ## Wireframes & Mockups
 
