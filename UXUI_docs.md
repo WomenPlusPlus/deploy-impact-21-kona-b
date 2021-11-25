@@ -19,7 +19,7 @@ Initially we created a user persona (based on our research and brainstorming) us
 
 [Interview with Abdou.txt](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7602281/Interview.with.Abdou.txt)
 ## Sketches
-Before building the wireframes and mockups, we decided to do some basic sketches of what we thought the web app could look like, in particular, the homepage, the quiz, and the table of organisations. It was a helpful way to visualise key features and functionalities of the web app (e.g. for the quiz, having a progress bar and a back button). 
+Before building the wireframes and mockups, we decided to do some basic sketches of what we thought the web app could look like, in particular, the homepage, the quiz, and the table of organisations. It was a helpful way to visualise key features and functionalities of the web app (e.g. for the quiz, having a progress bar and a back button). For a closer look, check out our Figma design page https://www.figma.com/file/F0nGn8xVPq6rsHqWRG5SPg/UX-Design-Sprint?node-id=2%3A185
 
 ![image](https://user-images.githubusercontent.com/91188889/143379597-92949ffa-03a9-4f21-99be-40c372db08ca.png)
 ## Wireframes & Mockups
