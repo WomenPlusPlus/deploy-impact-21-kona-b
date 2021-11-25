@@ -1,9 +1,9 @@
 # UX/UI documentation
 
 ## Introduction
-The main goal of the UX/UI team was to understand the user and try to define their needs and frustrations, as well as their motivation to use our Dots. web app. We did this, for example, by organising a brainstorming session with the Kona B team, conducting research on the experience of refugees, creating user personas, user journies and wireframes, and interviewing different kinds of people that had connections to Senegal (e.g. we spoke to a Senegalese citizen based in Geneva, Abdou, and a refugee living in Senegal, Loua). The real life experiences in particular, provided us with valuable insights into Senegal's socio-economic landscape, and brought us closer to the type of user that might interact with Dots. These exercises formed the basis for our final design decisions (i.e. features, colour palette, etc.). Included below are images of our brainstorming, users personas, and user journey - these can all be viewed in more detail on our Figma "inspiration" board https://www.figma.com/file/9pduIVje8vDdGgXf4DkydV/Inspiration?node-id=0%3A1 
+The main goal of the UX/UI team was to understand the user and try to define their needs and frustrations, as well as their motivation to use our Dots. web app. We did this, for example, by organising a brainstorming session with the Kona B team, conducting research on the experience of refugees, creating user personas, user journies and wireframes, and interviewing different kinds of people that had connections to Senegal (e.g. we spoke to a Senegalese citizen based in Geneva, Abdou, and a refugee living in Senegal, Loua). The real life experiences in particular, provided us with valuable insights into Senegal's socio-economic landscape, and brought us closer to the type of user that might interact with Dots. These exercises formed the basis for our final design decisions (i.e. features, colour palette, etc.). The images included in this file can be accessed and viewed in more detail on Figma https://www.figma.com/file/F0nGn8xVPq6rsHqWRG5SPg/UX-Design-Sprint?node-id=0%3A1
 ## Brainstorming
-One of the first team exercises we did was a brainstorming session on the user needs, motivations, and frustrations - not only was it a useful way to understand and define the types of users that might interact with our web app, it was also a great team building activity. Our Figma jam "inspiration" board was the main tool for this. 
+One of the first team exercises we did was a brainstorming session on the user needs, motivations, and frustrations - not only was it a useful way to understand and define the types of users that might interact with our web app, it was also a great team building activity. Our Figma jam "inspiration" board was the main tool for this.
 
 ![image](https://user-images.githubusercontent.com/91188889/143376404-e30f5e24-c644-48e1-b52e-976023963fc2.png)
 ## User research
@@ -34,5 +34,3 @@ https://www.figma.com/file/F7R0hfMA46SMYNVa8MnPHV/Wireframes?node-id=0%3A1
 Using Figma, we created an "inspiration" board to share ideas, brainstorm, and document some of our designs.
 https://www.figma.com/file/9pduIVje8vDdGgXf4DkydV/Inspiration?node-id=0%3A1
 
-
-https://www.figma.com/file/F7R0hfMA46SMYNVa8MnPHV/Wireframes?node-id=294%3A1026
