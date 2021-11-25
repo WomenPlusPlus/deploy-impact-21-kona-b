@@ -84,8 +84,10 @@ export default function QuizResultsPage() {
                 )}
                 key={organisation.name}
               >
-                <div className="flex flex-wrap content-center bg-gray-200 text-sm h-13">
-                  LOGO
+                <div className="flex justify-center">
+                  <div className="flex flex-wrap bg-gray-200 content-center h-12 justify-center text-sm text-center w-12">
+                    LOGO
+                  </div>
                 </div>
                 <div className="col-span-4 ml-2">
                   <div className="font-bold text-left leading-snug">
@@ -111,13 +113,13 @@ export default function QuizResultsPage() {
                   </div>
                   <div className="flex flex-row">
                     {Icons.map((Icon, index) => (
-                      <div className="mr-1" key={Icon + index}>
+                      <div className="mr-2" key={Icon + index}>
                         <Icon />
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="col-span-5 font-light text-xs mb-2 leading-relaxed">
+                <div className="col-span-5 font-light text-xs my-3 leading-relaxed">
                   {organisation.objective}
                 </div>
               </div>
