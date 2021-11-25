@@ -1,5 +1,5 @@
 # UX/UI documentation
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F9pduIVje8vDdGgXf4DkydV%2FInspiration%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+
 ## Introduction
 The main goal of the UX/UI team was to understand the user and try to define their needs and frustrations, as well as their motivation to use our Dots. web app. We did this, for example, by organising a brainstorming session with the Kona B team, conducting research on the experience of refugees, creating user personas, user journies and wireframes, and interviewing different kinds of people that had connections to Senegal (e.g. we spoke to a Senegalese citizen based in Geneva, Abdou, and a refugee living in Senegal, Loua). The real life experiences in particular, provided us with valuable insights into Senegal's socio-economic landscape, and brought us closer to the type of user that might interact with Dots. These exercises formed the basis for our final design decisions (i.e. features, colour palette, etc.).
 ## Brainstorming
@@ -31,6 +31,9 @@ Before building the wireframes and mockups, we decided to do some basic sketches
 ## App colour palette selection
 ![image](https://user-images.githubusercontent.com/91188889/143414817-582a1cc5-7e37-4a74-bb09-e7114b68f63b.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143420663-fadb1ebd-6d07-49ee-b74b-cfeafabc5ba3.png)
 
+## Tools 
+Figma: We created an "inspiration" board to share ideas, brainstorm, and document some of our designs.
 
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F9pduIVje8vDdGgXf4DkydV%2FInspiration%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 
 
