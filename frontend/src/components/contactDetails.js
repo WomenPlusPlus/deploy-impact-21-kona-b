@@ -17,7 +17,7 @@ export default function ContactDetails({ organisation }) {
 
   return (
     <>
-      <h2 className="font-bold mt-4 tracking-wide uppercase">{t("contact")}</h2>
+      <h2 className="mt-8 tracking-wide uppercase text-lg">{t("contact")}</h2>
       {details.map(([Icon, detail]) => {
         return (
           <div className="flex flex-row my-1 text-sm" key={Icon}>
