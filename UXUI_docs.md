@@ -14,6 +14,9 @@ Initially we created a user persona (based on our research and brainstorming) us
 ![image](https://user-images.githubusercontent.com/91188889/143379272-60c6a742-0dde-49f5-9ca5-5f6de72cae0a.png)
 
 ![image](https://user-images.githubusercontent.com/91188889/143379662-0e6b928b-b321-4e88-a8f5-fb1c54a93b67.png)
+## User interviews 
+[Interview with Loua Diomande.txt](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7602237/Interview.with.Loua.Diomande.txt)
+
 ## Sketches
 Before building the wireframes and mockups, we decided to do some basic sketches of what we thought the web app could look like, in particular, the homepage, the quiz, and the table of organisations. It was a helpful way to visualise key features and functionalities of the web app (e.g. for the quiz, having a progress bar and a back button). 
 
