@@ -6,79 +6,91 @@ import { useTranslation } from "react-i18next";
 
 import ContactDetails from "../components/contactDetails";
 import RatingForm from "../components/ratingForm";
+import iconMap from "../lib/iconMap";
 
 export default function OrganisationPage() {
-  const { t } = useTranslation("organisationPage");
+  const { t } = useTranslation(["organisationPage", "quiz"]);
 
-  // Organisation example to used until we can access the database
-  const [organisation, setOrganisation] = useState({
-    contactable: "True",
-    description:
-      "Suspendisse non congue arcu. Aliquam gravida augue vel orci ultricies, vitae facilisis lectus laoreet. Aliquam lorem eros, porttitor ac euismod vulputate, consectetur sit amet nunc. Ut sit amet velit est.",
-    id: "1",
-    name: "La Liane",
-    region: "Saint-Louis",
-    subCategories: ["Shelter", "Food bank"],
-    targetGroups: ["Children", "Women"],
-    objective: "Better living conditions for women and children",
-    email: "email@example.com",
-    address: "12 rue principale, Dakar",
-    phone: "012 234 12 12",
-    website: "https://example.com",
-    socialMedias: ["https://facebook.com", "https://twitter.com"],
-  });
+  const [organisation, setOrganisation] = useState({});
 
+  // API fetch request get info about each organisation
   const { id } = useParams();
   useEffect(() => {
     fetch(`${api}/organisations/${id}`).then((response) =>
       response.json().then((data) => {
-        // API request to be used when the database will be updated
         setOrganisation({
-          ...organisation,
           ...data[0],
         });
       })
     );
   }, []);
-  console.log(organisation);
 
   return (
-    <DocumentTitle title={organisation.name || "Organisation page"}>
+    <DocumentTitle title={organisation?.name || "Organisation page"}>
       <main className="mx-7px">
         <div className="grid grid-cols-7 sm:grid-cols-5 max-w-xl lg:max-w-4xl mx-auto w-mobile mb-8 sm:mb-20">
           <div className="col-start-1 sm:col-start-2 sm:col-span-3 col-span-7">
             <h1 className="border-b border-konaInspired col-span-3 my-8 text-2xl uppercase">
-              {organisation.name}
+              {organisation?.name}
             </h1>
-            <h2 className="font-bold mt-4 tracking-wide uppercase">
-              Brief Description
-            </h2>
             <p className="mb-4 text-justify text-sm">
-              {organisation.objective}
+              {organisation?.objective}
             </p>
-            <h2 className="font-bold mt-4 tracking-wide uppercase">
+            <h2 className="mt-8 tracking-wide uppercase text-lg">
               {t("whatTheyOffer")}
             </h2>
             <div className="mb-4">
-              {organisation.subCategories.map((subCategory) => {
-                console.log("subcategory", subCategory);
-                return (
-                  <ul key={subCategory}>
-                    <li className="flex text-sm">{subCategory}</li>
-                  </ul>
-                );
-              })}
+              <ul className="list-disc list-inside text-sm">
+                {organisation.dots_subCategories?.map((subCategory) => {
+                  return (
+                    <li key={subCategory} className="ml-2">
+                      {t(`dots_subCategories.filters.${subCategory}`, {
+                        ns: "quiz",
+                      })}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
-            <h2 className="font-bold mt-4 tracking-wide uppercase">
+            <h2 className="mt-8 tracking-wide uppercase text-lg">
               {t("targetGroups")}
             </h2>
-            {organisation.targetGroups.map((targetGroup) => {
-              return (
-                <ul key={targetGroup}>
-                  <li className="flex text-sm">{targetGroup}</li>
-                </ul>
-              );
-            })}
+            <div>
+              <ul className="ml-2">
+                {organisation.gender?.map((eachGender) => {
+                  // checking which icons to use depending on the gender
+                  const IconsGender = iconMap[eachGender];
+
+                  return (
+                    <li key={eachGender} className="flex text-sm">
+                      {t(`gender.filters.${eachGender}`, {
+                        ns: "quiz",
+                      })}
+                      {/* if there is an icon display it */}
+                      <div className="ml-1">
+                        {IconsGender && <IconsGender />}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div>
+              <ul className="ml-2">
+                {organisation.age?.map((eachAge) => {
+                  const IconsAge = iconMap[eachAge];
+                  return (
+                    <li key={eachAge} className="flex text-sm">
+                      {t(`age.filters.${eachAge}`, {
+                        ns: "quiz",
+                      })}
+                      {/* if there is an icon display it */}
+                      <div className="ml-1">{IconsAge && <IconsAge />}</div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
             <ContactDetails organisation={organisation} />
             <RatingForm />
           </div>
