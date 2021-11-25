@@ -165,8 +165,10 @@ export default function Quiz() {
                 />
               </div>
             )}
-            <div className="m-2 sm:pb-24 underline text-xs col-span-2">
-              <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
+
+            <div className="p-2 sm:pb-24 w-full text-xs col-span-2 text-center">
+              <div>{t("privacyPolicy.0")}</div>
+              <Link  className="underline" to="/privacy-policy">{t("privacyPolicy.1")}</Link>
             </div>
           </div>
         </div>
