@@ -6,10 +6,10 @@
   ],
   "presentation": "We are your alternative legal aid app responsibly connecting you to the right organisations",
   "title": "How can we help?",
-  "subTitle": "We selected a list of trusted organisations, to find the right one for your need:",
-  "textListOrganisations": "Search for different organisations depending on your needs",
   "listOrganisationButton": "View all organisations",
-  "textQuiz": "Answer a few simple questions to find the right organisation",
   "quizButton": "Use our search assistant",
-  "privacyPolicy": "We promise to respect your privacy. Find out more."
+  "privacyPolicy": [
+    "We promise to respect your privacy.",
+    "Find out more."
+  ]
 }

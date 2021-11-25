@@ -16,7 +16,7 @@ export default function HomePage() {
             {t("presentation")}
           </p>
           <div className="flex bg-tree-made-with-hands bg-cover h-28 lg:h-60 justify-end md:justify-center">
-            <h2 className="sm:my-6 md:my-12 mr-8 sm:ml-96 self-center text-2xl md:text-5xl z-40">
+            <h2 className="sm:my-6 md:my-12 mr-8 sm:ml-96 self-center text-2xl lg:text-5xl z-40">
               {t("welcome.0")} <br />
               {t("welcome.1")}
               <br />
@@ -25,9 +25,6 @@ export default function HomePage() {
           </div>
           <p className="my-6 lg:my-16 sm:mb-20 text-xl md:text-3xl">
             {t("title")}
-          </p>
-          <p className="m-2 lg:mb-6 sm:mb-12 text-xs md:text-xl">
-            {t("subTitle")}
           </p>
           <div className="gap-4 sm:gap-16 grid sm:grid-cols-2">
             <div>
@@ -52,9 +49,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <p className="underline m-4 text-xs md:text-base text-start">
-          <Link to="/privacy-policy">{t("privacyPolicy")}</Link>
-        </p>
+        <div className="p-6 sm:pb-24 w-full text-xs text-center">
+              <div>{t("privacyPolicy.0")}</div>
+              <Link  className="underline" to="/privacy-policy">{t("privacyPolicy.1")}</Link>
+            </div>
       </>
     </DocumentTitle>
   );
