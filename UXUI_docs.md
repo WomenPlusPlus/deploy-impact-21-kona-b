@@ -11,10 +11,12 @@ A significant challenge for the UX team was to know and understand the different
 ## User personas
 
 ![image](https://user-images.githubusercontent.com/91188889/143379272-60c6a742-0dde-49f5-9ca5-5f6de72cae0a.png)
-## User interviews
+## User journey
 
+![image](https://user-images.githubusercontent.com/91188889/143379662-0e6b928b-b321-4e88-a8f5-fb1c54a93b67.png)
 ## Sketches
 
+![image](https://user-images.githubusercontent.com/91188889/143379597-92949ffa-03a9-4f21-99be-40c372db08ca.png)
 ## Wireframes
 
-## App color selection
+## App colour palette selection
