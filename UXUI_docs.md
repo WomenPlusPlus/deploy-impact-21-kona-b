@@ -22,6 +22,4 @@ Initially we created a user persona (based on our research and brainstorming) us
 
 ![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png)
 ## App colour palette selection
-
-![image](https://user-images.githubusercontent.com/91188889/143380477-aeb8c904-e666-4cfb-81fe-2911024a6d86.png)
-![image](https://user-images.githubusercontent.com/91188889/143412642-ea3a8383-ca77-4cc4-be0c-9a69b30d19ac.png)
+![image](https://user-images.githubusercontent.com/91188889/143414172-ea8486a5-b2ce-4b6c-88b5-e0546ee57709.png)
