@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function OrganisationFilters({ title, allValues, setSelected }) {
+  const { t } = useTranslation("quiz");
+
   const [selectedValues, setSelectedValues] = useState([]);
+
   const handleRegionsChange = (event) => {
     if (selectedValues.includes(event.target.name)) {
       // if value is already selected, remove it
@@ -36,7 +40,7 @@ export default function OrganisationFilters({ title, allValues, setSelected }) {
             className="cursor-pointer select-none"
             htmlFor={`filter-${title}-${value}`}
           >
-            {value}
+            {t(`region.filters.${value}`)}
           </label>
         </div>
       ))}
