@@ -8,13 +8,13 @@ export default function Button({
   fontSize,
   padding,
   margin,
-  uppercase
+  uppercase,
 }) {
   return (
     <Link to={`/${url}`}>
       <div
         className={classNames(
-          `border border-orangeDark rounded ${uppercase} ${fontSize} ${padding} ${margin}`
+          `border border-blueDark rounded ${uppercase} ${fontSize} ${padding} ${margin}`
         )}
         type="button"
       >
