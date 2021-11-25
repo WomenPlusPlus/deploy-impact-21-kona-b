@@ -16,9 +16,10 @@ export default function CheckboxButton({
     <div>
       <label
         className={classNames(
-          "flex flex-row border border-border-gray-600",
+          "flex flex-row ",
           "items-start my-3 p-2 rounded-lg mx-4",
-          { "border-orangeMiddle bg-orangeLight": active }
+          { "border-2 border-konaInspiredDark": active },
+          { "border border-gray-600": !active }
         )}
       >
         <div className="pt-1">
@@ -30,14 +31,14 @@ export default function CheckboxButton({
                 style={{
                   display: "flex",
                   flex: 1,
-                  backgroundColor: "#e8a598",
+                  backgroundColor: "#6052A3",
                   alignSelf: "stretch",
                 }}
               >
                 <FiCheck color="white" size={16} />
               </div>
             }
-            borderColor="#e8a598"
+            borderColor="#6052A3"
             borderRadius={20}
             style={{ overflow: "hidden" }}
             size={20}

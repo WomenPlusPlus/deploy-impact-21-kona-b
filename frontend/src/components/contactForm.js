@@ -89,7 +89,7 @@ export default function ContactForm() {
             </div>
             {errorMessage && <Error message={errorMessage} />}
             <button
-              className="border border-kona px-4 py-2 rounded uppercase"
+              className="border border-konaInspired px-4 py-2 rounded uppercase"
               type="submit"
             >
               Submit

@@ -44,7 +44,7 @@ export default function OrganisationsTable() {
       <div className="lg:col-span-2 mt-6">
         <Table>
           <Thead>
-            <Tr className="border-b-2 border-kona pb-5 text-left">
+            <Tr className="border-b-2 border-konaInspired pb-5 text-left">
               <Th className="pb-5">Name</Th>
               <Th className="pb-5">Region</Th>
             </Tr>
@@ -52,7 +52,10 @@ export default function OrganisationsTable() {
           <Tbody>
             {filteredOrganisations.map((organisation) => {
               return (
-                <Tr className="border-b border-kona" key={organisation.id}>
+                <Tr
+                  className="border-b border-konaInspired"
+                  key={organisation.id}
+                >
                   <Td className="pb-5">
                     <Link to={`/organisations/${organisation.id}`}>
                       {organisation.name}
