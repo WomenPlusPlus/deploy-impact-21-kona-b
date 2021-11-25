@@ -29,7 +29,8 @@ https://www.figma.com/file/F7R0hfMA46SMYNVa8MnPHV/Wireframes?node-id=0%3A1
 ![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143424073-e174c93f-1b0b-470c-8758-c3a815afba16.png)
 
 ## App colour palette selection
-![image](https://user-images.githubusercontent.com/91188889/143414817-582a1cc5-7e37-4a74-bb09-e7114b68f63b.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143420663-fadb1ebd-6d07-49ee-b74b-cfeafabc5ba3.png)
+![image](https://user-images.githubusercontent.com/91188889/143414817-582a1cc5-7e37-4a74-bb09-e7114b68f63b.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143420663-fadb1ebd-6d07-49ee-b74b-cfeafabc5ba3.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143466924-c4fc02cc-87c1-4d27-a8eb-a753476fb34c.png)
+
 
 ## Tools & Resources
 Using Figma, we created an "inspiration" board to share ideas, brainstorm, and document some of our designs.
