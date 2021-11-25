@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { useSearchParams } from "react-router-dom";
 
 import { api } from "../config";
-import LinkButton from "../components/LinkButton";
+import LinkButton from "../components/linkButton";
 import iconMap from "../lib/iconMap";
 
 export default function QuizResultsPage() {
@@ -62,6 +62,7 @@ export default function QuizResultsPage() {
             fontSize={"text-xs"}
             padding={"px-6 py-1"}
             margin={"mx-0"}
+            border={"border border-konaInspiredDark"}
           />
         </div>
       </div>
@@ -105,9 +106,7 @@ export default function QuizResultsPage() {
                         </div>
                       )
                     ) : (
-                      <div className="text-red-800">
-                        {t("less relevant")}
-                      </div>
+                      <div className="text-red-800">{t("less relevant")}</div>
                     )}
                   </div>
                   <div className="flex flex-row">
