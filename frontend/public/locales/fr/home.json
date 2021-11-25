@@ -4,12 +4,12 @@
     "chez",
     "Dots."
   ],
-  "presentation": "TO TRANSLATE AGAIN. Votre alternative à l'aide juridique - vous mettant en contact de manière responsable avec les organisations qui vous conviennent",
+  "presentation": "Nous sommes votre application d'aide juridique alternative, vous mettant en contact de manière responsable avec les organisations qui vous conviennent",
   "title": "Comment pouvons-nous vous aider?",
-  "subTitle": "TO TRANSLATE",
-  "textListOrganisations": "TO TRANSLATE",
   "listOrganisationButton": "Voir toutes les organisations",
-  "textQuiz": "TO TRANSLATE",
   "quizButton": "Utiliser notre assistant de recherche",
-  "privacyPolicy": "TO TRANSLATE"
+  "privacyPolicy": [
+    "Nous nous engageons à respecter votre vie privée.",
+    "En savoir plus."
+  ]
 }
