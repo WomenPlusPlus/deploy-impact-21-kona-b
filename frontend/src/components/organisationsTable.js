@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+
 import { api } from "../config";
 import OrganisationFilters from "./organisationFilters";
+import iconMap from "../lib/iconMap";
 
 export default function OrganisationsTable() {
   const [organisations, setOrganisations] = useState([]);
@@ -47,21 +49,32 @@ export default function OrganisationsTable() {
             <Tr className="border-b-2 border-konaInspired pb-5 text-left">
               <Th className="pb-5">Name</Th>
               <Th className="pb-5">Region</Th>
+              <Th className="pb-5">SDGs</Th>
             </Tr>
           </Thead>
           <Tbody>
             {filteredOrganisations.map((organisation) => {
+              // checking which icons to use depending on the categories
+              const IconCategories = organisation.dots_categories
+                .map((category) => iconMap[category])
+                .filter(Boolean);
+
               return (
                 <Tr
-                  className="border-b border-konaInspired"
+                  className="border-b border-konaInspired rounded-lg mb-2"
                   key={organisation.id}
                 >
-                  <Td className="pb-5">
+                  <Td className="py-2 pr-10">
                     <Link to={`/organisations/${organisation.id}`}>
                       {organisation.name}
                     </Link>
                   </Td>
-                  <Td className="">{organisation.region}</Td>
+                  <Td className="pr-10">{organisation.region}</Td>
+                  <Td className="grid grid-cols-2 sm:grid sm:grid-cols-3">
+                    {IconCategories.map((Icon) => {
+                      return <div className="p-2">{Icon && <Icon />}</div>;
+                    })}
+                  </Td>
                 </Tr>
               );
             })}
