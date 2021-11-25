@@ -3,7 +3,10 @@
   "submitButtonLast": "Submit",
   "skipButton": "Skip >",
   "backButton": "< Back",
-  "privacyPolicy": "We promise to respect your privacy. Find out more.",
+  "privacyPolicy": [
+    "We promise to respect your privacy.",
+    "Find out more."
+  ],
   "start": "Start",
   "userAge": "Age",
   "userGender": "Gender",
