@@ -23,7 +23,8 @@ Before building the wireframes and mockups, we decided to do some basic sketches
 
 ![image](https://user-images.githubusercontent.com/91188889/143379597-92949ffa-03a9-4f21-99be-40c372db08ca.png)
 ## Wireframes & Mockups
-
+The primary tool we used for this part of the design phase was Figma. Our wireframes and mockups can be viewed at the below link.
+https://www.figma.com/file/F7R0hfMA46SMYNVa8MnPHV/Wireframes?node-id=0%3A1
 ## Logo
 
 ![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143424073-e174c93f-1b0b-470c-8758-c3a815afba16.png)
