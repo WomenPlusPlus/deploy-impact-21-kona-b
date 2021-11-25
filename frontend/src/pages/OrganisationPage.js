@@ -9,7 +9,7 @@ import RatingForm from "../components/ratingForm";
 import iconMap from "../lib/iconMap";
 
 export default function OrganisationPage() {
-  const { t } = useTranslation(["organisationPage", "quiz"]);
+  const { t } = useTranslation(["organisation", "quiz"]);
 
   const [organisation, setOrganisation] = useState({});
 
