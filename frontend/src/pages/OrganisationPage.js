@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import DocumentTitle from "react-document-title";
 import { api } from "../config";
+import { useTranslation } from "react-i18next";
+
 import ContactDetails from "../components/contactDetails";
 import RatingForm from "../components/ratingForm";
 
 export default function OrganisationPage() {
+  const { t } = useTranslation("organisationPage");
+
   // Organisation example to used until we can access the database
   const [organisation, setOrganisation] = useState({
     contactable: "True",
@@ -36,6 +40,7 @@ export default function OrganisationPage() {
       })
     );
   }, []);
+  console.log(organisation);
 
   return (
     <DocumentTitle title={organisation.name || "Organisation page"}>
@@ -52,10 +57,11 @@ export default function OrganisationPage() {
               {organisation.objective}
             </p>
             <h2 className="font-bold mt-4 tracking-wide uppercase">
-              What do we offer
+              {t("whatTheyOffer")}
             </h2>
             <div className="mb-4">
               {organisation.subCategories.map((subCategory) => {
+                console.log("subcategory", subCategory);
                 return (
                   <ul key={subCategory}>
                     <li className="flex text-sm">{subCategory}</li>
@@ -64,7 +70,7 @@ export default function OrganisationPage() {
               })}
             </div>
             <h2 className="font-bold mt-4 tracking-wide uppercase">
-              Target Groups
+              {t("targetGroups")}
             </h2>
             {organisation.targetGroups.map((targetGroup) => {
               return (

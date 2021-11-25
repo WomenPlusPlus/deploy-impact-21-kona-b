@@ -18,7 +18,6 @@ export default function ContactForm() {
   const onSubmit = (data) => {
     setErrorMessage("");
     setcomplete(true);
-    console.log(data);
   };
 
   return (

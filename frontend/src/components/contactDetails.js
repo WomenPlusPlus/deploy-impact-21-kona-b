@@ -1,10 +1,13 @@
 import React from "react";
 import { MdLocationOn, MdEmail, MdPhone, MdLanguage } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 import SocialMedias from "./socialMedias";
 import Map from "./map";
 
 export default function ContactDetails({ organisation }) {
+  const { t } = useTranslation("organisationPage");
+
   const details = [
     [MdLocationOn, organisation.address],
     [MdEmail, organisation.email],
@@ -14,7 +17,7 @@ export default function ContactDetails({ organisation }) {
 
   return (
     <>
-      <h2 className="font-bold mt-4 tracking-wide uppercase">Contact</h2>
+      <h2 className="font-bold mt-4 tracking-wide uppercase">{t("contact")}</h2>
       {details.map(([Icon, detail]) => {
         return (
           <div className="flex flex-row my-1 text-sm" key={Icon}>
