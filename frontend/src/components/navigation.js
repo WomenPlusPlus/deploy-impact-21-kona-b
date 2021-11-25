@@ -25,7 +25,7 @@ export default function Navigation() {
     <nav className="border-b border-kona">
       <div className="flex h-20 items-end justify-between pb-2 relative">
         <Link to={"/"}>
-          <img src="/logo.png" className="h-auto w-12" alt="dots-logo" />
+          <img src="/logo.svg" className="h-auto w-12" alt="dots-logo" />
         </Link>
         <div className="flex flex-col">
           <LanguageButtons />

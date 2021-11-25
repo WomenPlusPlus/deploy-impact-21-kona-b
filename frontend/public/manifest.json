@@ -16,6 +16,6 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "description": "Dots is a tool to connect people in need to the organisations best equipped to help them.",
-    "display": "fullscreen",
+    "display": "standalone",
     "start_url": "/index.html"
 }
