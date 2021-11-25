@@ -31,9 +31,8 @@ Before building the wireframes and mockups, we decided to do some basic sketches
 ## App colour palette selection
 ![image](https://user-images.githubusercontent.com/91188889/143414817-582a1cc5-7e37-4a74-bb09-e7114b68f63b.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143420663-fadb1ebd-6d07-49ee-b74b-cfeafabc5ba3.png)
 
-## Tools 
-Figma: We created an "inspiration" board to share ideas, brainstorm, and document some of our designs.
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F9pduIVje8vDdGgXf4DkydV%2FInspiration%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+## Tools & Resources
+Using Figma, we created an "inspiration" board to share ideas, brainstorm, and document some of our designs.
+https://www.figma.com/file/9pduIVje8vDdGgXf4DkydV/Inspiration?node-id=0%3A1
 
 
