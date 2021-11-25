@@ -13,9 +13,9 @@ Initially we created a user persona (based on our research and brainstorming) us
 
 ![image](https://user-images.githubusercontent.com/91188889/143379272-60c6a742-0dde-49f5-9ca5-5f6de72cae0a.png)
 
-<img width="3715" alt="User journey" src="https://user-images.githubusercontent.com/91188889/143454713-68f87e30-903e-49ed-988e-37512df0ed30.png">
+
 ## User interviews 
-[Interview with Loua.txt](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7602237/Interview.with.Loua.Diomande.txt)
+[Interview with Loua.txt](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7603716/Interview.with.Loua.txt)
 
 [Interview with Abdou.txt](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7602281/Interview.with.Abdou.txt)
 ## Sketches
