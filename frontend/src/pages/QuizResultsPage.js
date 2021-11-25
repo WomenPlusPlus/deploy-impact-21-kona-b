@@ -78,39 +78,41 @@ export default function QuizResultsPage() {
             <Link to={`/organisations/${organisation.id}`}>
               <div
                 className={classNames(
-                  "grid grid-cols-5 bg-cream border border-blueDark bg-cream",
-                  "hover:border-orangeDark my-8 sm:mx-36 p-2 sm:p-4 shadow-lg rounded-lg"
+                  "grid grid-cols-5 bg-cream border border-konaInspiredDark",
+                  "hover:bg-gray-100 my-8 sm:mx-36 p-2 sm:p-4 shadow-lg rounded-lg"
                 )}
                 key={organisation.name}
               >
                 <div className="flex flex-wrap content-center bg-gray-200 text-sm h-13">
                   LOGO
                 </div>
-                <div className="col-span-4 ">
-                  <div className="font-bold text-blueDark text-left leading-snug ml-2">
+                <div className="col-span-4 ml-2">
+                  <div className="font-bold text-left leading-snug">
                     {organisation.name}
                   </div>
                   {/* if the score > 80% then it's very relevant */}
                   {/* if score < 40% it's less relevant */}
                   {/* else possibly relevant */}
-                  <div className="flex flex-row ml-2 mt-2">
+                  <div className="mb-2 text-xs font-bold">
                     {score > 40 ? (
                       score > 80 ? (
-                        <div className="mb-2 text-xs font-bold text-greenRelevantDark">
+                        <div className="text-greenRelevantDark">
                           {t("veryRelevant")}
                         </div>
                       ) : (
-                        <div className="mb-2 text-xs font-bold text-yellow-600">
+                        <div className="text-yellow-600">
                           {t("possiblyRelevant")}
                         </div>
                       )
                     ) : (
-                      <div className="mb-2 text-xs font-bold text-red-800">
+                      <div className="text-red-800">
                         {t("less relevant")}
                       </div>
                     )}
+                  </div>
+                  <div className="flex flex-row">
                     {Icons.map((Icon, index) => (
-                      <div className="pl-1" key={Icon + index}>
+                      <div className="mr-1" key={Icon + index}>
                         <Icon />
                       </div>
                     ))}

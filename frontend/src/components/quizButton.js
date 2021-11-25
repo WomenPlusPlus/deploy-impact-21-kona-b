@@ -10,8 +10,9 @@ export default function QuizButton({ translationKey, setValue, active, Icon }) {
       <button
         className={classNames(
           "sm:mr-6 px-4 py-2 rounded-lg shadow-lg text-xs",
-          "border border-gray-600 bg-cream hover:border-orangeDark",
-          { "border-orangeMiddle bg-orangeLight": active }
+          "bg-cream hover:border-KonaInspiredDark",
+          { "border-2 border-konaInspiredDark": active },
+          {"border border-gray-600 ": !active}
         )}
         type="button"
         onClick={() => setValue()}

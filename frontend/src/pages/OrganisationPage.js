@@ -42,7 +42,7 @@ export default function OrganisationPage() {
       <main className="mx-7px">
         <div className="grid grid-cols-7 sm:grid-cols-5 max-w-xl lg:max-w-4xl mx-auto w-mobile mb-8 sm:mb-20">
           <div className="col-start-1 sm:col-start-2 sm:col-span-3 col-span-7">
-            <h1 className="border-b border-kona col-span-3 my-8 text-2xl uppercase">
+            <h1 className="border-b border-konaInspired col-span-3 my-8 text-2xl uppercase">
               {organisation.name}
             </h1>
             <h2 className="font-bold mt-4 tracking-wide uppercase">

@@ -17,7 +17,6 @@ export default function Quiz() {
   const navigate = useNavigate();
 
   // API quiz request
-  console.log('api', api)
   const { data: quiz } = useSWR(`${api}/quiz`);
 
   // answer saves the answer picked by the user
@@ -79,23 +78,23 @@ export default function Quiz() {
   };
 
   return (
-    <div>
+    <div className="md:mx-24">
       <div className="grid grid-row">
         <div className="my-2">
           <ProgressBar step={step} />
         </div>
         {step === 0 && (
           <div className="my-2">
-            <div className="bg-two-hands h-32 lg:h-60 bg-cover bg-bottom"></div>
+            <div className="bg-two-hands h-32 lg:h-48 bg-cover bg-bottom"></div>
           </div>
         )}
       </div>
       {quiz && step < numberQuestions ? (
         <div>
-          <h2 className="mt-4 mx-8 mb-8 sm:my-12 text-center text-xl sm:text-3xl">
+          <h2 className="mt-4 mx-8 mb-8 sm:mb-8 text-center text-xl sm:text-xl">
             {t(`${quiz[step].scope.translation_key}.question`)}
           </h2>
-          <div className="mb-32">
+          <div className="mb-32 sm:mb-6">
             {/* when the type is checkbox, it display the Checkbox component */}
             {quiz[step].type === "multi_select" ? (
               <div>
@@ -134,7 +133,7 @@ export default function Quiz() {
               </div>
             )}
           </div>
-          <div className="grid grid-cols-2 bg-lightBlue sm:bg-white bg-none border-t border-blueDark sm:border-0 place-items-center fixed sm:static -mx-2 mt-4 bottom-0 z-50 h-24">
+          <div className="grid grid-cols-2 w-full bg-gray-100 sm:bg-transparent border-t border-gray-600 sm:border-0 place-items-center fixed sm:static -mx-2 mt-4 sm:mt-0 bottom-0 z-50 h-24">
             {step > 0 && (
               <div>
                 <Button

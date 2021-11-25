@@ -22,7 +22,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="border-b border-kona">
+    <nav className="border-b border-gray-300">
       <div className="flex h-20 items-end justify-between pb-2 relative">
         <Link to={"/"}>
           <img src="/logo.svg" className="h-auto w-12" alt="dots-logo" />
@@ -30,7 +30,7 @@ export default function Navigation() {
         <div className="flex flex-col">
           <LanguageButtons />
           <button
-            className="border border-kona my-1 p-1 rounded-md uppercase"
+            className="border border-konaInspiredDark hover:bg-gray-100 my-1 p-1 rounded-md uppercase"
             onClick={handleClick}
           >
             Menu
@@ -38,7 +38,7 @@ export default function Navigation() {
           {dropDown && (
             <>
               <div onClick={handleClick} className="fixed inset-0"></div>
-              <div className="absolute bg-white flex-col border-b border-kona left-0 sm:left-auto m-px right-0 shadow-2xl top-20 z-50">
+              <div className="absolute bg-white flex-col border-b border-konaInspiredDark left-0 sm:left-auto m-px right-0 shadow-2xl top-20 z-50">
                 {pages.map(([page, url]) => (
                   <Link
                     to={`/${url}`}
