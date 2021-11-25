@@ -13,7 +13,7 @@ Initially we created a user persona (based on our research and brainstorming) us
 
 ![image](https://user-images.githubusercontent.com/91188889/143379272-60c6a742-0dde-49f5-9ca5-5f6de72cae0a.png)
 
-![User journey](https://user-images.githubusercontent.com/91188889/143453348-f1ced381-ef57-43d3-8183-55f3c8a66ba8.jpg)
+<img width="3715" alt="User journey" src="https://user-images.githubusercontent.com/91188889/143454713-68f87e30-903e-49ed-988e-37512df0ed30.png">
 ## User interviews 
 [Interview with Loua.txt](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7602237/Interview.with.Loua.Diomande.txt)
 
