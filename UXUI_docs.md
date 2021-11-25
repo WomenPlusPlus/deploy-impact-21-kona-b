@@ -33,7 +33,8 @@ https://www.figma.com/file/F7R0hfMA46SMYNVa8MnPHV/Wireframes?node-id=0%3A1
 ![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143424073-e174c93f-1b0b-470c-8758-c3a815afba16.png)
 
 ## App colour palette selection
-In the end we decided to use a colour palette similar to Kona Connect as Dots. will be operated by them. We also chose softer colours than what we had originally conceived. 
+In the end we decided to use a colour palette similar to Kona Connect as Dots. will be operated by them. We also chose softer colours than what we had originally conceived.
+
 ![image](https://user-images.githubusercontent.com/91188889/143414817-582a1cc5-7e37-4a74-bb09-e7114b68f63b.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143467135-f778f985-5f15-410d-9352-a1df9c204ce8.png)
 ## Tools & Resources
 Using Figma, we created an "inspiration" board to share ideas, brainstorm, and document some of our designs.
