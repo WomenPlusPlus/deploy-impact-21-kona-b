@@ -11,7 +11,7 @@ import OrganisationPage from "./pages/OrganisationPage";
 import QuizPage from "./pages/QuizPage";
 import OrganisationsPage from "./pages/OrganisationsPage";
 import OrganisationFormPage from "./pages/OrganisationFormPage";
-import PrivacyPolicyPage from "./pages/PrivacyPolicy";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import QuizResultsPage from "./pages/QuizResultsPage";
 
