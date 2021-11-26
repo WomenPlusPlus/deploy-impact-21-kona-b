@@ -235,6 +235,7 @@ We suggest createing integrated and automated, on demand reports using the data 
 The information aligned to the SDG targets and Credit Suisse Framework can be used to help define Dots performance and objectives aligned to the SDGs.
 - __News feed:__ One potential user group of Dots. is people who are looking for education and/or a job. This feature would act like a news feed where the latest information and opportunities would show, allowing the user to be alwasy updated about what the NGOs can offer for them.
 - __NGO location:__ One of the improvements added to the given database was to include the latitude and longitude coordinates of each organisation. The idea is to include a map in the NGO information page containing its exact location, making it more easy for the user to find it.
+- __Restructure database connections:__ The description can be found in the [Access](#access) section of "Database" in this document.
 
 
 ## :clipboard: License <a name = "license"></a>
