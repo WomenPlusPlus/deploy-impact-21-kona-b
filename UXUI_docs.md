@@ -32,8 +32,7 @@ The primary tool we used for this part of the design phase was Figma. Our wirefr
 https://www.figma.com/file/F7R0hfMA46SMYNVa8MnPHV/Wireframes?node-id=0%3A1
 ## Logo
 
-![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143424073-e174c93f-1b0b-470c-8758-c3a815afba16.png)
-
+![image](https://user-images.githubusercontent.com/91188889/143424073-e174c93f-1b0b-470c-8758-c3a815afba16.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png)
 ## App colour palette selection
 In the end, we decided to use a colour palette similar to Kona Connect since Dots. will be operated by them, and we wanted to maintain a link both to Kona and to our reimagined logo for Dots. We also went with slightly softer colours than what we had originally conceived.
 
