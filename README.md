@@ -100,6 +100,9 @@ __Frontent:__
 
 __Backend:__
 - [Python 3.8](https://www.python.org/downloads/)
+- [Pandas](https://pandas.pydata.org/docs/)
+- [SQLAlchemy](https://www.sqlalchemy.org/) - For future developments
+- [Postgres](https://www.postgresql.org/) - For future developments
 
 ### :computer: Installation <a name = "install"></a>
 ####  Frontend (Client) <a name = "frontend"></a>
