@@ -56,9 +56,11 @@ Our mission is to:
 ## 💡 Solution <a name = "idea"></a>
 Facilitating the search for assistance and support can be done by empowering people to know what their human rights are, where to look for reliable help, what to expect from aid services, and how to contact the right organisations.
 
-6 weeks ago we did [brainstorming sessions](https://www.figma.com/file/EOSp95m8WUGfHw4U4xhtg0/Brainstorming-the-solution-for-Dots.?node-id=0%3A1) to define how we were going to solve the stated Dots problem, and how we could use the information to satisfy our stakeholders' needs.  The solution was provided by Kona Connect by means of the platform "Dots.", a web app used by people in vulnerable situations to search for help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users, we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location, and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.).
+6 weeks ago we did [brainstorming sessions](https://www.figma.com/file/EOSp95m8WUGfHw4U4xhtg0/Brainstorming-the-solution-for-Dots.?node-id=0%3A1) to define how we were going to solve the stated Dots problem, and how we could use the information to satisfy our stakeholders' needs.  The solution was provided by Kona Connect by means of the platform "Dots.", a web app used by people in vulnerable situations to search for help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users, we have improved the database by including a classification of the NGOs based on their target user, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
 
-The goal of the tool is to connect people in need to the right organizations as quickly as easily as possible. For this, our solutions provides two main options:
+The classification of the NGOs target users is based on the 17[United Nations Sustainable Development Goals (SDG)](https://sdgs.un.org/fr/goals). The SDGs are a collection of goals carefully designed by the UN to create a better planet for a better future [3](https://b1g1.com/sustainable-development-goals-guide?gclid=CjwKCAiAqIKNBhAIEiwAu_ZLDsXijDYGL9yRmIzROPgwNhQEEz275xRPwZiRCWbydcQcP6JN16Sc4hoCZ8AQAvD_BwE). By means of these goals we not only achieve a meaninful classification of the organisations, but also we are able to trace the impact created by Dots.
+
+The main goal of the tool is to connect people in need to the right organizations as quickly as easily as possible. For this, our solutions provides two main options:
 - A quick quiz: By answering a few questions, users will be guided to the organization(s) most likely to be able to help them and their situation.
 - The list of all organisations with filters: By selecting the filters that apply to their situation, the user will reach the NGOs that provide the required help.
 
@@ -68,7 +70,12 @@ In the first stage, our solution is focused on providing help for the people loc
 
 ## :iphone: The web app <a name = "web_app"></a>
 
-Dots web app can be used from any device (laptop, phone, tablet). Since it's a web app, updates are done automatically, therefore we guarantee the user is accessing the latest available version.
+Dots web app can be used from any device (laptop, phone, tablet). Since it's a Progressive Web App (PWA), updates are done automatically, therefore we guarantee the user is accessing the latest available version. The decision of choosing this technology was supported by the advantages that it has compared to a native app:
+
+* __It can be used offline:__ PWAs can be cached by the web browser and used even when offline.
+* __Better performance:__ The performance of PWAs is much better than traditional web apps.
+* __No installation or updates required:__ All new features and bug fixes are available without any manual action required.
+* __Low on data:__ PWAs are smaller than mobile apps, and they also require less bandwidth than traditional web apps [4](https://brainhub.eu/library/progressive-web-apps-advantages-disadvantages/).
 
 You can now use it here:
 https://dots.azureedge.net/
@@ -172,7 +179,7 @@ This same logic could be applied to the organisation information in our database
 ## :books: App translation <a name = "translation"></a>
 Currently the app is available in English and French, but it has been specially developped so that it can be easily translated to any language. The tranlation files are handled by the front-end and can be found in [/frontend/public/locales/](/frontend/public/locales/). To add your translation you should follow these steps:
 ### Requirements
-The library used to translate the app is **i18next**, if it is not installed in your environment you can download it from [here](https://www.i18next.com/).
+The library used to translate the app is **react-i18next**, if it is not installed in your environment you can download it from [here](https://react.i18next.com/).
 
 
 ### Create your translation
@@ -227,13 +234,7 @@ Collect data from "feedback box".  "Feedback box" asking the user "was the NGO-i
 We suggest createing integrated and automated, on demand reports using the data obtained from the user interaction with the "ngo services" (aligned to SDG targets for 2030). Humanitarian effort reports should be reliable, a result of robust data acquisition and selection.  Gathering information for this type of reports has been taken into consideration by identifying how to obtain the information required to comply with "Credit Suisse's Framework to define and evaluate impact".  Considerations of data coleection following Credit Suisse Framework are mentioned in [The database](#database).  Brainstorming document [here](https://docs.google.com/document/d/1zR11WpejlC97wz9rCjy_EjCHnbwEGTYGX1FY-AIb9h8/edit?usp=sharing).
 The information aligned to the SDG targets and Credit Suisse Framework can be used to help define Dots performance and objectives aligned to the SDGs.
 - __News feed:__ One potential user group of Dots. is people who are looking for education and/or a job. This feature would act like a news feed where the latest information and opportunities would show, allowing the user to be alwasy updated about what the NGOs can offer for them.
-- __Meeting with Senegalese lawyers__: To ask the following questions:
-	- What type of information could we ask the User in the "feedback" box (the one created under each NGO information) taking into consideration we want this to be used for providing constructive feedback to the NGO and keep reliable NGOs in the database.
-	- Are there any special questions we should ask to a defined group of people (i.e.refugee)? 
-This would be useful to obtain any information about the type of questions to ask, and then try to codify it. This way we can make the search assistance more intelligent, it would be a future step. We want to figure out what are the common questions people ask.  For example in a specific situation someone is looking for legal aid.  Are there any sub-question lawyers always ask that maybe we should add to the process?
-	- What type of features can we add to the web app to make the app "an alternative legal aid" and save them the paperwork.
-
-
+- __NGO location:__ One of the improvements added to the given database was to include the latitude and longitude coordinates of each organisation. The idea is to include a map in the NGO information page containing its exact location, making it more easy for the user to find it.
 
 
 ## :clipboard: License <a name = "license"></a>
