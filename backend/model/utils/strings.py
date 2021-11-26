@@ -1,9 +1,11 @@
 # files path
-KEYS_PATH = "csv/keys/"
-FILTERS_PATH = "csv/filters/"
-DATA_PATH = "csv/data/"
-JSON_PATH = "json/"
-QUIZ_PATH = "csv/quiz/"
+CSV_PATH = 'data/csv/'
+JSON_PATH = "data/json/"
+
+KEYS_PATH = CSV_PATH + "keys/"
+FILTERS_PATH = CSV_PATH + "filters/"
+DATA_PATH = CSV_PATH + "data/"
+QUIZ_PATH = CSV_PATH + "quiz/"
 
 # extra filters / column headers
 AGE = "age"
@@ -34,5 +36,5 @@ ORGANISATIONS_DATA = DATA_PATH + 'organisations_in_senegal_konab.csv'
 ORGANISATION_DISPLAY = JSON_PATH + "organisation_display.json"
 
 # quiz
-QUESTIONS = QUIZ_PATH+'Questions.csv'
-ANSWERS = QUIZ_PATH+'Answers.csv'
+QUESTIONS = QUIZ_PATH + 'Questions.csv'
+ANSWERS = QUIZ_PATH + 'Answers.csv'

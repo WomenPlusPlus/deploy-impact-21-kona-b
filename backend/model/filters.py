@@ -1,14 +1,14 @@
 import pandas as pd
 import json
 import ast
-import utils
-import strings
+import model.utils.utils as utils
+import model.utils.strings as strings
 
 
 def get_filters():
     '''
 
-    :return: list of all filters, filter values and corresponding display value
+    :return: list of all filters, filter values and corresponding display value.
     '''
 
     header = ['key', 'value','translation_key','icon']
@@ -51,6 +51,11 @@ def get_filters():
 
 
 def get_filtered_orgs(filters):
+    '''
+
+    :param filters: dictionary of filters and corresponding array of values eg. {"region":["saint_louis","dakar"],"age":["baby"]}
+    :return: list of sorted organisations matching filtering criterea, with an assigned score of how relevant the organisation is to the passed filters.
+    '''
     df_dots_subcategories_keys = pd.read_csv(strings.DOTS_SUBCATEGORIES_KEYS)
     df_display = pd.read_json(strings.ORGANISATION_DISPLAY, lines=True)
     df_age_filters = pd.read_csv(strings.AGE_FILTER)

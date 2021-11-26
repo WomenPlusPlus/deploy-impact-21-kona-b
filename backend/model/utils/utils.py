@@ -1,6 +1,5 @@
-import pandas as pd
 import ast
-import strings
+import model.utils.strings as strings
 
 
 def str_to_list(df):

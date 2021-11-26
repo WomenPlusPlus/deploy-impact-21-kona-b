@@ -1,5 +1,5 @@
 import pandas as pd
-import strings
+import model.utils.strings as strings
 
 # organisations raw data
 df = pd.read_csv(strings.ORGANISATIONS_DATA)

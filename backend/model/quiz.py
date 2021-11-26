@@ -1,7 +1,5 @@
-import pandas as pd
 import json
-import strings
-import data_frames as dfs
+import model.utils.data_frames as dfs
 
 def get_questions():
     q_js = dfs.df_questions.to_json(orient='index')
