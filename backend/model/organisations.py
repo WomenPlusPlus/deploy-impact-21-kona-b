@@ -6,6 +6,7 @@ def get_all():
     '''
     :return: dictionary of all organisations in db
     '''
+
     df = dfs.df_linked_data.astype(str)
     df = utils.str_to_list(df)
     js = df.to_json(orient='index')
@@ -22,7 +23,7 @@ def get_one(org_id):
     '''
     df = dfs.df_linked_data.astype(str)
     df = utils.str_to_list(df)
-    df = df.loc[df['id'] == org_id]
+    df = df.loc[df['org_id'] == org_id]
     js = df.to_json(orient='index')
     js = ast.literal_eval(js)
     res = list(js.values())

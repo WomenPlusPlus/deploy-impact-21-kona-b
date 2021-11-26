@@ -1,18 +1,18 @@
-sdg_id,key,translation_key,value,icon
-1,1,socialProtection,Social protection,MdFamilyRestroom
-2,2,food,Food and farming,RiPlantFill
-3,3,wellBeing,Health and well-being,GiHealthNormal
-4,4,education,Education,GiOpenBook
-5,5,genderEquality,Gender equality,BsGenderFemale
-6,6,cleanWater,Clean water,FaHandHoldingWater
-7,7,energy,Energy consumption,GiRollingEnergy
-8,8,workAndEntrepreneurship,Work and entrepreneurship,MdWork
-9,9,informationTechnology,Information technology,GrTechnology
-10,10,equalOpportunities,Equal opportunities,GiPodiumWinner
-11,11,housing,Housing,GiPlanetConquest
-12,12,sustainableLifestyles,Sustainable lifestyles,MdFoodBank
-13,13,climateAction,Climate action,GiEarthAfricaEurope
-14,14,fishing,Fishing,FaFish
-15,15,biodiversity,Biodiversity,BsTreeFill
-16,16,justiceAndLegal,Justice and legal,GoLaw
-17,17,partnerships,Partnerships,SiHandshake
+id,value,translation_key,icon
+1,Social protection,socialProtection,MdFamilyRestroom
+2,Food and farming,food,RiPlantFill
+3,Health and well-being,wellBeing,GiHealthNormal
+4,Education,education,GiOpenBook
+5,Gender equality,genderEquality,BsGenderFemale
+6,Clean water,cleanWater,FaHandHoldingWater
+7,Energy consumption,energy,GiRollingEnergy
+8,Work and entrepreneurship,workAndEntrepreneurship,MdWork
+9,Information technology,informationTechnology,GrTechnology
+10,Equal opportunities,equalOpportunities,GiPodiumWinner
+11,Housing,housing,GiPlanetConquest
+12,Sustainable lifestyles,sustainableLifestyles,MdFoodBank
+13,Climate action,climateAction,GiEarthAfricaEurope
+14,Fishing,fishing,FaFish
+15,Biodiversity,biodiversity,BsTreeFill
+16,Justice and legal,justiceAndLegal,GoLaw
+17,Partnerships,partnerships,SiHandshake

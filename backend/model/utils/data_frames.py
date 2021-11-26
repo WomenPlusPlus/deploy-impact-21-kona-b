@@ -10,6 +10,7 @@ df_dots_categories_keys = pd.read_csv(strings.DOTS_CATEGORIES_KEYS)
 df_dots_subcategories_keys = pd.read_csv(strings.DOTS_SUBCATEGORIES_KEYS)
 df_gender_keys = pd.read_csv(strings.GENDER_KEYS)
 df_region_keys = pd.read_csv(strings.REGION_KEYS)
+df_subcategory_mapping = pd.read_csv(strings.SUBCATEGORIES_MAPPING)
 
 # filters df
 df_age_filters = pd.read_csv(strings.AGE_FILTER)

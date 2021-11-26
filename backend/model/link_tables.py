@@ -18,11 +18,11 @@ def link_tables():
             val = row[dots_sub_cat_id]
             if val == 1:
                 val_id = dfs.df_dots_subcategories_keys.loc[
-                    dfs.df_dots_subcategories_keys['key'] == int(dots_sub_cat_id)]
+                    dfs.df_dots_subcategories_keys[strings.KEY] == int(dots_sub_cat_id)]
                 sub_category = val_id.iloc[0]['translation_key']
                 org_sub_cats.append(sub_category)
-                category = utils.get_cat_value(dfs.df_dots_categories_keys, dfs.df_dots_subcategories_keys,
-                                               dots_sub_cat_id)
+                cat_id = utils.get_cat_id(dfs.df_subcategory_mapping, dots_sub_cat_id)
+                category = utils.get_col_value(dfs.df_dots_categories_keys,cat_id,'translation_key')
                 org_cats.append(category)
         categories_row.append(list(set(org_cats)))
         sub_cats_row.append(org_sub_cats)

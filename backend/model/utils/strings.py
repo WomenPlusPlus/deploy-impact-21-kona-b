@@ -14,6 +14,7 @@ SUB_CATEGORIES = "dots_subCategories"
 REGION = "region"
 CATEGORIES = "dots_categories"
 AGE_GENDER = "age_gender"
+KEY = "id"
 
 # key-value files
 AGE_KEYS = KEYS_PATH + "age_key_value.csv"
@@ -21,6 +22,7 @@ DOTS_CATEGORIES_KEYS = KEYS_PATH + "dots_categories_key_value.csv"
 DOTS_SUBCATEGORIES_KEYS = KEYS_PATH + "dots_subcategories_key_value.csv"
 GENDER_KEYS = KEYS_PATH + "gender_key_value.csv"
 REGION_KEYS = KEYS_PATH + "region_key_value.csv"
+SUBCATEGORIES_MAPPING = KEYS_PATH+"subcategory_mapping.csv"
 
 # filter files
 AGE_FILTER = FILTERS_PATH + "age_filters.csv"
