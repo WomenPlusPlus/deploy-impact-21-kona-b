@@ -117,12 +117,13 @@ Databases containng information of aid organisations already exist, but the info
 
 The data base information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
 
-To measure the impact of our app we have to define, evaluate and quantify impact.  To know how to define and evaluate it we are following a Credit Suisse Framework and for the quantification we want to use categorised NGO-services.
-The organisations services are categorised in the database according to the SDG and targets that they contribute to. This allows us not only to provide a meaninful grouping of NGOs, but also to trace the impact of the app. In order to be more accurate when recommending NGOs to the user, an age and gender classification was added. This allows the app to recommend specific NGOs directly to the group of people they are able to help.
+To measure the impact of our app we have to define, evaluate and quantify impact (brainstorming and inspiration ideas [here](https://docs.google.com/document/d/1zR11WpejlC97wz9rCjy_EjCHnbwEGTYGX1FY-AIb9h8/edit?usp=sharing)).  We will explain how each classification contributes to registering impact.
+
+The organisations services are categorised in the database according to the SDG and targets that they contribute to. This allows us not only to provide a meaninful grouping of NGOs, but also to trace the impact of the app. In order to be more accurate when recommending NGOs to the user, an age and gender classification was added. This allows the app to recommend specific NGOs directly to the group of people they are able to help.  
 
 To make the database more machine readable, it was processed and divided into the following datasets:
 
-* [age and gender](/backend/csv/filters/gender_and_age_filters.csv): In this dataset the organisations are categorized in a machine readable format according to the age and gender of the people to whom they offer their help. In the following table you can find the categories assigned to the NGOs.
+* [age and gender](/backend/csv/filters/gender_and_age_filters.csv): In this dataset the organisations are categorized in a machine readable format according to the age and gender of the people to whom they offer their help. In the following table you can find the categories assigned to the NGOs. This classification will help Dots answer to who is going to benefit from the service impact.
 
     | Categories  | Options |
     | ------------- | ------------- |
@@ -135,12 +136,13 @@ To make the database more machine readable, it was processed and divided into th
   | Categories  | Options |
   | ------------- | ------------- |
   | location  | dakar,	saint_louis, louga,	thies,	diourbel,	mattam,	fatick,	kaolack,	kaffrine,	tamabacounda,	kedougou,	kolda,	sedhiou,	ziguinohor|
+  This classification will help Dots answer to what is the region where the impact is created.
   
 * [SDG subcategory](/backend/csv/filters/dots_subcategories_filters.csv): One of the strengths of our database is that each NGO is linked to the Sustainable Development Goals (SDG) subcategories. This allow us to filter the database according to the user specific needs, allowing them to find the help they need in a shorter time and more effectively.  This classification was developed taking into consideration that it is not always clear what are the services provided by the NGOs.
   | Categories  | Options |
   | ------------- | ------------- |
   | sdg  | 1-40|
-
+This classification will help Dots answer to what are the services whoses impact is going to be monitored by Dots.
 
 ### Maintenance <a name = "maintenance"></a>
 This app is just as powerful as the information it contains, thefore it is very important to increase and enrich the database. For now, to add a NGO to the database one would need to add the information manually to the corresponding .csv files. The goal is that in the future the information will be stored in a SQL database and the addition of new NGOs will be semi-automated through the NGO-application page. Read more about future develompments in the section _Future Work_.
