@@ -13,7 +13,7 @@
 
 ---
 
-<p align="center"> Kona Connect’s legal team, together with students and expert volunteers from around the world, are developing a tool to connect people in need to the organizations best equipped to help them. This tool which is accessible 24/7 through any device, will automatically guide its users to the help they need, whilst simultaneously reducing aid agencies’ staggering workloads, freeing up time to help more individuals.
+<p align="center"> Kona Connect’s legal team, together with students and expert volunteers from around the world, are developing a tool to connect people in need to the organisations best equipped to help them. This tool which is accessible 24/7 through any device, will automatically guide its users to the help they need, whilst simultaneously reducing aid agencies’ staggering workloads, freeing up time to help more individuals.
     <br> 
 </p>
 
@@ -56,12 +56,12 @@ Our mission is to:
 ## 💡 Solution <a name = "idea"></a>
 Facilitating the search for assistance and support can be done by empowering people to know what their human rights are, where to look for reliable help, what to expect from aid services, and how to contact the right organisations.
 
-6 weeks ago we did [brainstorming sessions](https://www.figma.com/file/EOSp95m8WUGfHw4U4xhtg0/Brainstorming-the-solution-for-Dots.?node-id=0%3A1) to define how we were going to solve the stated Dots problem, and how we could use the information to satisfy our stakeholders' needs.  The solution was provided by Kona Connect by means of the platform "Dots.", a web app used by people in vulnerable situations to search for help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users, we have improved the database by including a classification of the NGOs based on their target user, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
+6 weeks ago we did [brainstorming sessions](https://www.figma.com/file/EOSp95m8WUGfHw4U4xhtg0/Brainstorming-the-solution-for-Dots.?node-id=0%3A1) to define how we were going to solve the stated Dots problem, and how we could use the information to satisfy our stakeholders' needs.  The solution was provided by Kona Connect by means of the platform "Dots.", a web app used by people in vulnerable situations to search for help. To do this, Kona Connect's team has identified and classified the social organisations. In order to provide accurate information for the users, we have improved the database by including a classification of the NGOs based on their target user, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
 
 The classification of the NGOs target users is based on the [17 United Nations Sustainable Development Goals (SDG)](https://sdgs.un.org/fr/goals). The SDGs are a collection of goals carefully designed by the UN to create a better planet for a better future [3](https://b1g1.com/sustainable-development-goals-guide?gclid=CjwKCAiAqIKNBhAIEiwAu_ZLDsXijDYGL9yRmIzROPgwNhQEEz275xRPwZiRCWbydcQcP6JN16Sc4hoCZ8AQAvD_BwE). By means of these goals we not only achieve a meaninful classification of the organisations, but also we are able to trace the impact created by Dots.
 
-The main goal of the tool is to connect people in need to the right organizations as quickly as easily as possible. For this, our solutions provides two main options:
-- A quick quiz: By answering a few questions, users will be guided to the organization(s) most likely to be able to help them and their situation.
+The main goal of the tool is to connect people in need to the right organisations as quickly as easily as possible. For this, our solutions provides two main options:
+- A quick quiz: By answering a few questions, users will be guided to the organisation(s) most likely to be able to help them and their situation.
 - The list of all organisations with filters: By selecting the filters that apply to their situation, the user will reach the NGOs that provide the required help.
 
 To measure the impact of our app we have to define, evaluate and quantify impact ([brainstorming and inspiration ideas](https://docs.google.com/document/d/1zR11WpejlC97wz9rCjy_EjCHnbwEGTYGX1FY-AIb9h8/edit?usp=sharing)). The Credit Suisse Impact Management Project Framework was selected to define and evaluate the likely impact of Dots across five dimensions. We will explain how each classification contributes to the definition of Dots impact. The defined impact has been aligned to the 2030 SDG targets. 
@@ -70,24 +70,26 @@ In the first stage, our solution is focused on providing help for the people loc
 
 ## :iphone: The web app <a name = "web_app"></a>
 
-Dots web app can be used from any device (laptop, phone, tablet). Since it's a Progressive Web App (PWA), updates are done automatically, therefore we guarantee the user is accessing the latest available version. The decision of choosing this technology was supported by the advantages that it has compared to a native app:
+Dots web app is a responsive website so it can be used from any device (laptop, phone, tablet). Our website is also a Progressive Web App (PWA), so the user can save our website on their phone and have our launcher icon on their home screen. They will be then able to open our website like a mobile app. The decision of choosing this technology was supported by the advantages that it has compared to a native app:
+* __Can be used anonymously:__ If the user opens Dots on an incognito window, the visit won't leave any 'trace'. We are aware that some of the users may be in a vulnerable situation and may not want to take the risk to leave a browser history or mobile app on their phone.
+* __Better discoverability:__ Our website could be found through search engines and we believe our users will be searching for information through a search engine rather than an app store.
+* __Updates are done automatically:__ All new features and bug fixes are available without any manual action required.
+* __Sharable:__ The user could easily share a link with a specific URL (example: list of organisations in the results page of the quiz).
+* __Low on data:__ PWAs are smaller than mobile apps, and they also require less bandwidth than traditional mobile apps [4](https://brainhub.eu/library/progressive-web-apps-advantages-disadvantages/).
 
-* __It can be used offline:__ PWAs can be cached by the web browser and used even when offline.
-* __Better performance:__ The performance of PWAs is much better than traditional web apps.
-* __No installation or updates required:__ All new features and bug fixes are available without any manual action required.
-* __Low on data:__ PWAs are smaller than mobile apps, and they also require less bandwidth than traditional web apps [4](https://brainhub.eu/library/progressive-web-apps-advantages-disadvantages/).
+Other resources: [MDN](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction#advantages_of_web_applications)
 
 You can now use it here:
 https://dots.azureedge.net/
 
 ### Pages
 The app has the following pages:
-- __Home:__ This is the app home page. From here the user has the option to use the search assistant or to view the list of organizations.
+- __Home:__ This is the app home page. From here the user has the option to use the search assistant or to view the list of organisations.
 - __Search assistant (quiz):__ This page guides the user to find the right NGO by means of a set of questions.
-- __List of organizations:__ This page presents the complete list of NGOs and allows the user to define the filters.
-- __I am an NGO:__ This is the NGO-portal where NGOs can submit their information so that Konaconnect can include it in their database.
-- __About Us:__ This page presents the authors of the Dots. app.
-- __Privacy policy:__ This page contains the app's privacy policy.
+- __List of organisations:__ This page presents the complete list of NGOs and allows the user to define the filters.
+- __I am an NGO:__ This is the contact form for the NGO to contact Kona Connect. In future development it could be linked to the database.
+- __About us:__ This page presents the authors of the Dots. app.
+- __Privacy policy:__ This page contains the web app's privacy policy.
 
 ## For developers <a name = "for_developers"></a>
 If you are a developer you need to know this.
@@ -109,7 +111,7 @@ __Backend:__
 - Progressive web app
 - Runs in all major browsers
 - Has a mobile-first responsive design
-- Provides access to information in the backend based on the United Nations Sustainable Development Goal selected
+- Display information sent by the backend with the NGOs information and the United Nations Sustainable Development Goals
 
 Find the instructions on how to run it [here](/frontend).
 
@@ -178,42 +180,9 @@ This same logic could be applied to the organisation information in our database
 
 
 ## :books: App translation <a name = "translation"></a>
-Currently the app is available in English and French, but it has been specially developped so that it can be easily translated to any language. The tranlation files are handled by the front-end and can be found in [/frontend/public/locales/](/frontend/public/locales/). To add your translation you should follow these steps:
-### Requirements
-The library used to translate the app is **react-i18next**, if it is not installed in your environment you can [download it from here](https://react.i18next.com/).
+Currently the app is available in English and French, but it has been specially developped so that it can be easily translated to any language. The tranlation files are handled by the front-end and can be found in [/frontend/public/locales/](/frontend/public/locales/).
 
-
-### Create your translation
-
-1. Create a new folder named with the abbreviation of the language, i.e. fr for French.
-2. Go to [/frontend/public/locales/fr](/frontend/public/locales/fr), copy all the files, and paste them in the directory you just created. The files that you have just copy-pasted correspond to the .json files having the french translation for each page in the website. Keep in mind that each language will have a dedicated translation file (.json) for each page. The page that correspond to each translation file is indicated in the filename, i.e. aboutUs.json contains the translation keys for the page "About Us". In case that you want to change the name of the given translation files, you should also change the call to these files in each page.
-4. Add the translation on the right side of the colon (:) between comas (" "), i.e. "female": "Female" --> "female":"Femme". This translation key will be used when the new language is selected.
-
-### Translating a new page
-Whenever you create a new page, you will need to create a new translation file and add adequate the page so that it can be translated. Follow this steps to know how to translate your new page:
-
-1. Add the new supported language: Go to [/frontend/src/i18n.js ](/frontend/src/i18n.js ), this is the i18next configuration file. Add language abbreviation (the name of the directory you have created in step *1* of the section _Create your translation_) in the i18.js file:
-
-```
-23     supportedLngs: ["en", "fr", "new_abbreviation"],
-```
-
-2. Go to the page where you want to add the translation.
-3. Import the i18next library:
-```
-import { useTranslation } from "react-i18next")
-```
-4. Import the translation keys corresponding to the page to translate:
-```
-const { t } = useTranslation("the page you want to translate")
-```
-
-5. Add the translation key for the string to translate:
-```
-{t("translation key")}
-```
-
-For any question, you can refer to [this file](/frontend/src/pages/AboutUsPage.js) and use it as an example.
+For more information about the translation library used on Dots, please have a look at the [frontend documentation](/frontend/docs/translation.md).
 
 ## :art: UX/UI <a name = "ux"></a>
 To know and emphathise with the user was one of our main priorities when developing the app. Therefore, our UX/UI team has made a wonderful job searching information to understand the user needs, frustrations and painpoints. This information combined with the feedback obtained from an interview with a potential user helped us to design the different aspects of the app such as colors, icons and wording. To find more information about the design process and user research check the [UX/UI_docs](/UXUI_docs.md)
@@ -246,9 +215,9 @@ This repository is licensed under the GPL - 3 license. This guarantees the end u
 - [@bcabgil](https://github.com/bcabgil) - Project management and data science
 - [@gildafc](https://github.com/gildafc) - Project management and data science
 - [@lorna-mn](https://github.com/lorna-mn) - UX / UI
-- [@andrew]() - UX / UI
+- [@andrewfair92](https://github.com/andrewfair92) - UX / UI
 - [@heba0](https://github.com/heba0) - Fullstack
-- [@EmilieHumbert](https://github.com/EmilieHumbert) - Frontend Web developer
+- [@EmilieHumbert](https://github.com/EmilieHumbert) - Frontend web developer
 - [@jacksondieter](https://github.com/jacksondieter) - Frontend and backend lead
 
 
@@ -259,4 +228,4 @@ This repository is licensed under the GPL - 3 license. This guarantees the end u
   - Documentation: https://github.com/kylelobo/The-Documentation-Compendium
   - Credit Suisse Impact Management Project Framework found in the Sustainable Investment Framework report: https://www.credit-suisse.com/sustainability/en/reports.html
 - References:
-  - Database of social organizations that provide help to Senegal: https://docs.google.com/spreadsheets/d/1t0-ol45Tz43zTCvqFXLLu5FSWuCbg4kElbocGbylCHA/edit#gid=1868970450
+  - Database of social organisations that provide help to Senegal: https://docs.google.com/spreadsheets/d/1t0-ol45Tz43zTCvqFXLLu5FSWuCbg4kElbocGbylCHA/edit#gid=1868970450

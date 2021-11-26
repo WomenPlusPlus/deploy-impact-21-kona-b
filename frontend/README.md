@@ -63,4 +63,5 @@ npm run deploy
   - [react-document-title](https://github.com/gaearon/react-document-title) - Adds title to pages
   - [react-hook-form](https://react-hook-form.com/) - Handles form
   - [I18next](https://www.i18next.com/) - Internationalisation Framework
+  - [add-to-homescreen-react](https://www.npmjs.com/package/@ideasio/add-to-homescreen-react) - Progressive web app
   - [react-super-responsive-table](https://github.com/coston/react-super-responsive-table/releases) - Converts table data to a user-friendly list in mobile view
