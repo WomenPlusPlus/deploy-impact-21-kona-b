@@ -111,7 +111,7 @@ def get_filtered_orgs(filters):
     # get full orgainsation data corresponding to ids
     df = pd.DataFrame(columns=df_display.columns)
     for i in sorted_orgs:
-        filtered_df = df_display.loc[df_display["org_id"] == i]
+        filtered_df = df_display.loc[df_display["id"] == i]
         df = df.append(filtered_df)
 
     df['score'] = counts

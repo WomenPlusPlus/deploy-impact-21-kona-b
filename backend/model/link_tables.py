@@ -34,5 +34,5 @@ def link_tables():
     dfs.df[strings.AGE_GENDER] = [dfs.df[strings.GENDER][i] + dfs.df[strings.AGE][i] for i in
                                   range(len(dfs.df[strings.GENDER]))]
     dfs.df[strings.REGION] = utils.get_linked_data(dfs.df_region_filters, dfs.df_region_keys)
-
+    dfs.df = dfs.df.rename(columns={'org_id': 'id'}) #quick fix
     dfs.df.to_json(strings.ORGANISATION_DISPLAY, orient='records', lines=True)
