@@ -31,7 +31,9 @@
 - [The database](#database)
   - [Maintenance](#maintenance)
 - [App translation](#translation)
+- [UX/UI](#ux)
 - [Troubleshooting](#troubleshooting)
+- [Future Work](#future-work)
 - [License](#license)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
@@ -61,7 +63,16 @@ In the first stage, our solution is focused in providing help for the people loc
 Dots web app can be used from any device (laptop, phone, tablet). 
 
 You can now use it here:
-https://konaconnectdots.z1.web.core.windows.net/
+https://dots.azureedge.net/
+
+### Pages
+The app has the following pages:
+- __Home:__ This is the app home page. From here the user has the option to use the search assistant or to view the list of organizations.
+- __Search assistant (quiz):__ This page guides the user to find the right NGO by means of a set of questions.
+- __List of organizations:__ This page presents the complete list of NGOs and allows the user to define the filters.
+- __I am an NGO:__ This is the NGO-portal where NGOs can submit their information so that Konaconnect can include it in their database.
+- __About Us:__ This page presents the authors of the Dots. app.
+- __Privacy policy:__ This page contains the app's privacy policy.
 
 ## For developers <a name = "for_developers"></a>
 If you are a developer you need to know this.
@@ -93,15 +104,17 @@ Find the instructions on how to run it [here](/backend).
 ## :house: Repository structure <a name = "structure"></a>
 
 - __backend:__ In this directory you will find all the files related to the backend.
-  
-  - ... backend files and subdirectories 
+ 
 - __frontend:__ In this directory you will find all the files related to the frontend.
-  
-  - ...frontend files and subdirectories
+
+- __UX/UI_docs.md:__ UX/UI documentation.
+
 - __LICENSE:__ File containing the license information.
 
 ## :bar_chart: The database <a name = "database"></a>
 The data base information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
+
+The organisations are categorised in the database according to the SDG and sub-SDG that they contribute to. This allows us not only to provide a meaninful grouping of NGOs, but also to trace the impact of the app. In order to be more accurate when recommending NGOs to the user, an age and gender classification was added. This allows the app to recommend specific NGOs directly to the group of people they are able to help.
 
 To make the database more machine readable, it was processed and divided into the following datasets:
 
@@ -126,7 +139,7 @@ To make the database more machine readable, it was processed and divided into th
 
 
 ### Maintenance <a name = "maintenance"></a>
-This app is just as powerful as the information it contains, thefore it is very important to increase and enrich the database. 
+This app is just as powerful as the information it contains, thefore it is very important to increase and enrich the database. For now, to add a NGO to the database one would need to add the information manually to the corresponding .csv files. The goal is that in the future the information will be stored in a SQL database and the addition of new NGOs will be semi-automated through the NGO-application page. Read more about future develompments in the section _Future Work_.
 
 ## :books: App translation <a name = "translation"></a>
 Currently the app is available in English and French, but it has been specially developped so that it can be easily translated to any language. The tranlation files are handled by the front-end and can be found in [/frontend/public/locales/](/frontend/public/locales/). To add your translation you should follow these steps:
@@ -166,8 +179,23 @@ const { t } = useTranslation("the page you want to translate")
 
 For any question, you can refer to [this file](/frontend/src/pages/AboutUsPage.js) and use it as an example.
 
+## :art: UX/UI <a name = "ux"></a>
+To know and emphathise with the user was one of our main priorities when developing the app. Therefore, our UX/UI team has made a wonderful job searching information to understand the user needs, frustrations and painpoints. This information combined with the feedback obtained from an interview with a potential user helped us to design the different aspects of the app such as colors, icons and wording. To find more information about the design process and user research check the [UX/UI_docs](/UXUI_docs.md)
+
+
 ## :postal_horn: Troubleshooting <a name = "troubleshooting"></a>
 If you find any error or weird behaviour when using Dots, please open an issue and we will try to address it ass soon as possible.
+
+## :robot: Future Work <a name = "future-work"></a>
+The app provided here is only the minimum viable product of the Dots. app and several improvements are planned to come:
+
+- __Adding more NGOs:__ Adding more NGOs to the dataset to create a unified resource that people in need can quickly access and navigate.
+- __Collect user data:__ Collecting data about how the user intracts with the app would allow us to get a better understanding of the accessibility and common usages of the app. Additionally, this data would allow us to create recommendation systems to new users based on searchers that previously other users did.
+- __Collect user feedback:__ The goal is that users would rank the information provided in Dots. and add their comments. This would allow Konaconnect to improve the app and update the NGOs information.
+- __Add info pop-ups:__ The information pop-ups would be a way of interactively educating the user about their rights and the UN Sustainable Development Goals.
+- __NGOs portal + admin login:__ This feature allows the NGOs to apply directly to appear in Dots. On the other hand, an admin login is required so that the Dots. administrator can access the information submitted through the NGOs portal and approve it or regect it.
+- __News feed:__ One potential user group of Dots. is people who are looking for education and/or a job. This feature would act like a news feed where the latest information and opportunities would show, allowing the user to be alwasy updated about what the NGOs can offer for them.
+
 
 ## :clipboard: License <a name = "license"></a>
 This repository is licensed under the GPL - 3 license. This guarantees the end users the freedom to run, study, share, and modify the software provided. You can find more information in the [LICENSE](/LICENSE.txt) file.
