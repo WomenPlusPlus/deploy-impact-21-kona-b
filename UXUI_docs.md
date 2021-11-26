@@ -22,7 +22,7 @@ Refugee in Senegal: [Interview with Loua.txt](https://github.com/WomenPlusPlus/d
 
 Senegalese citizen: [Interview with Abdou.txt](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7602281/Interview.with.Abdou.txt)
 
-Peruvian citizen:[User research - Elizabeth.xlsx](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7609275/User.research.-.Elizabeth.xlsx)
+Peruvian citizen: [User research - Elizabeth.xlsx](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/files/7609275/User.research.-.Elizabeth.xlsx)
 ## Sketches
 Before building the wireframes and mockups, we decided to do some basic sketches of what we thought the web app could look like, in particular, the homepage, the quiz, and the table of organisations. It was a helpful way to visualise key features and functionalities of the web app (e.g. for the quiz, having a progress bar and a back button). For a closer look, check out our Figma design page: https://www.figma.com/file/F0nGn8xVPq6rsHqWRG5SPg/UX-Design-Sprint?node-id=2%3A185
 
