@@ -113,6 +113,8 @@ Find the instructions on how to run it [here](/backend).
 - __LICENSE:__ File containing the license information.
 
 ## :bar_chart: The database <a name = "database"></a>
+Databases with aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided.  For this reason we decided to create our own and be able to ask the user about it.
+
 The data base information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
 
 The organisations are categorised in the database according to the SDG and sub-SDG that they contribute to. This allows us not only to provide a meaninful grouping of NGOs, but also to trace the impact of the app. In order to be more accurate when recommending NGOs to the user, an age and gender classification was added. This allows the app to recommend specific NGOs directly to the group of people they are able to help.
@@ -149,7 +151,7 @@ The SQL database creation was developed in parallel to the creation of the CSV c
 
 We wanted to avoid using CSV files in the future, therefore the CSV files are migrated into database.  As a further step we would like to connect the front end directly to the database, and just have the CSV for an initial run.  
 
-We have written down all the API end points that can access this database such as getting organisation information and quiz information.  The list of APIs with the explanation of usage can be found [here](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/tree/backend_refactor/backend#rest-apis). 
+We have written down all the API end points that can access this database such as getting organisation information and quiz information.  The list of APIs with the explanation of usage can be found [here](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/tree/main/backend#rest-apis). 
 
 The end points in the API able to modify the database can be found [here](link Dieter table). 
 
