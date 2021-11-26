@@ -117,7 +117,8 @@ Databases containng information of aid organisations already exist, but the info
 
 The data base information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
 
-The organisations are categorised in the database according to the SDG and sub-SDG that they contribute to. This allows us not only to provide a meaninful grouping of NGOs, but also to trace the impact of the app. In order to be more accurate when recommending NGOs to the user, an age and gender classification was added. This allows the app to recommend specific NGOs directly to the group of people they are able to help.
+To measure the impact of our app we have to define, evaluate and quantify impact.  To know how to define and evaluate it we are following a Credit Suisse Framework and for the quantification we want to use categorised NGO-services.
+The organisations services are categorised in the database according to the SDG and targets that they contribute to. This allows us not only to provide a meaninful grouping of NGOs, but also to trace the impact of the app. In order to be more accurate when recommending NGOs to the user, an age and gender classification was added. This allows the app to recommend specific NGOs directly to the group of people they are able to help.
 
 To make the database more machine readable, it was processed and divided into the following datasets:
 
@@ -239,5 +240,6 @@ This repository is licensed under the GPL - 3 license. This guarantees the end u
 - Inspiration:
   - User interaction: https://www.blinkist.com/
   - Documentation: https://github.com/kylelobo/The-Documentation-Compendium
+  - How to gather impact information - CS impact Framework: https://docs.google.com/document/d/1zR11WpejlC97wz9rCjy_EjCHnbwEGTYGX1FY-AIb9h8/edit?usp=sharing
 - References:
   - Database of social organizations that provide help to Senegal: https://docs.google.com/spreadsheets/d/1t0-ol45Tz43zTCvqFXLLu5FSWuCbg4kElbocGbylCHA/edit#gid=1868970450
