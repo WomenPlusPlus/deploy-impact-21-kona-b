@@ -78,13 +78,13 @@ cd backend
        └── utils.py
 
 ```
-`utils` are used to define common functions/constants that are used by the model files.
+`utils` : Are used to define common functions/constants that are used by the model files.
 
-`strings.py` : strings constants, including file names, paths and common keys used across model files.
+`strings.py` : Strings constants, including file names, paths and common keys used across model files.
 
-`data_frames.py` : import all pandas dataframes to be used accross the model files.
+`data_frames.py` : Import all pandas dataframes to be used accross the model files.
 
-`utils.py` : common functions used across model files.
+`utils.py` : Common functions used across model files.
 
 ### Data:
 
@@ -463,118 +463,122 @@ cd backend
         body
       
         ```json
-        { "filters":{"gender":["female"],"region":["saint_louis","dakar"],"age":["baby"],"dots_subcategories":["1"],"dots_categories":["1"]}}
+        { 
+            "filters": {
+                "gender":["female"],
+                "region":["saint_louis","dakar"],"age":["baby"],"dots_subcategories":["1"],"dots_categories":["1"]
+            }
+        }
         ```
        
         response
           
       ```json
-              [
-                {
-                    "address": "Ndiolofféne Nord",
-                    "age": [
-                        "adult",
-                        "teen",
-                        "child",
-                        "baby"
-                    ],
-                    "age_gender": [
-                        "female",
-                        "other",
-                        "male",
-                        "adult",
-                        "teen",
-                        "child",
-                        "baby"
-                    ],
-                    "contactable": "True",
-                    "dots_categories": [
-                        "food",
-                        "education",
-                        "socialProtection",
-                        "wellBeing",
-                        "genderEquality",
-                        "workAndEntrepreneurship"
-                    ],
-                    "dots_subCategories": [
-                        "housingAndSocialServices",
-                        "nutritiousFood",
-                        "healthPrevention",
-                        "diseasePrevention",
-                        "mentalHealth",
-                        "primaryAndSecondaryEducation",
-                        "accessHigherEducation",
-                        "skillsForEmployment",
-                        "endViolenceWomen",
-                        "employment",
-                        "youthEmployment"
-                    ],
-                    "email": "c.hallegot@laposte.net",
-                    "facebook": "https:\/\/fr-fr.facebook.com\/La-Liane-591490217531018\/",
-                    "flicker": "None",
-                    "gender": [
-                        "female",
-                        "other",
-                        "male"
-                    ],
-                    "hotline": "None",
-                    "id": "1",
-                    "instagram": "https:\/\/instagram.com\/lalianesenegal\/",
-                    "latitude": "None",
-                    "linkedin": "None",
-                    "longitude": "None",
-                    "name": "La Liane",
-                    "objective": "Better living conditions for women and children",
-                    "opening_hours": "None",
-                    "other": "None",
-                    "phone_number": "77 434 51 51 \/ 77 783 31 40",
-                    "region": [
+        [
+            {
+                "address": "Ndiolofféne Nord",
+                "age": [
+                    "adult",
+                    "teen",
+                    "child",
+                    "baby"
+                ],
+                "age_gender": [
+                    "female",
+                    "other",
+                    "male",
+                    "adult",
+                    "teen",
+                    "child",
+                    "baby"
+                ],
+                "contactable": "True",
+                "dots_categories": [
+                    "food",
+                    "education",
+                    "socialProtection",
+                    "wellBeing",
+                    "genderEquality",
+                    "workAndEntrepreneurship"
+                ],
+                "dots_subCategories": [
+                    "housingAndSocialServices",
+                    "nutritiousFood",
+                    "healthPrevention",
+                    "diseasePrevention",
+                    "mentalHealth",
+                    "primaryAndSecondaryEducation",
+                    "accessHigherEducation",
+                    "skillsForEmployment",
+                    "endViolenceWomen",
+                    "employment",
+                    "youthEmployment"
+                ],
+                "email": "c.hallegot@laposte.net",
+                "facebook": "https:\/\/fr-fr.facebook.com\/La-Liane-591490217531018\/",
+                "flicker": "None",
+                "gender": [
+                    "female",
+                    "other",
+                    "male"
+                ],
+                "hotline": "None",
+                "id": "1",
+                "instagram": "https:\/\/instagram.com\/lalianesenegal\/",
+                "latitude": "None",
+                "linkedin": "None",
+                "longitude": "None",
+                "name": "La Liane",
+                "objective": "Better living conditions for women and children",
+                "opening_hours": "None",
+                "other": "None",
+                "phone_number": "77 434 51 51 \/ 77 783 31 40",
+                "region": [
                         "saintLouis"
-                    ],
-                    "score": "4",
-                    "services": "Food and shelter",
-                    "sound_cloud": "None",
-                    "tiktok": "None",
-                    "twitter": "None",
-                    "website": "https:\/\/laliane.eu",
-                    "youtube": "None"
-                },
-                {
-                    "address": "Hlm villa 407 derrière la Maison de Lille Saint-Louis, Sénégal",
-                    "age": [
-                        "adult",
-                        "teen",
-                        "child",
-                        "baby"
-                    ],
-                    "age_gender": [
-                        "female",
-                        "other",
-                        "male",
-                        "adult",
-                        "teen",
-                        "child",
-                        "baby"
-                    ],
-                    "contactable": "True",
-                    "dots_categories": [
-                        "education",
-                        "socialProtection",
-                        "wellBeing",
-                        "equalOpportunities",
-                        "workAndEntrepreneurship"
-                    ],
-                    "dots_subCategories": [
-                        "economicResources",
-                        "healthPrevention",
-                        "diseasePrevention",
-                        "primaryAndSecondaryEducation",
-                        "accessHigherEducation",
-                        "skillsForEmployment",
-                        "employment",
-                        "youthEmployment",
-                        "migration"
-                    ],..
+                ],
+                "score": "4",
+                "services": "Food and shelter",
+                "sound_cloud": "None",
+                "tiktok": "None",
+                "twitter": "None",
+                "website": "https:\/\/laliane.eu",
+                "youtube": "None"
+            },
+            {
+                "address": "Hlm villa 407 derrière la Maison de Lille Saint-Louis, Sénégal",
+                "age": [
+                    "adult",
+                    "teen",
+                    "child",                        "baby"
+                ],
+                "age_gender": [
+                    "female",
+                    "other",
+                    "male",
+                    "adult",
+                    "teen",
+                    "child",
+                    "baby"
+                ],
+                "contactable": "True",
+                "dots_categories": [
+                    "education",
+                    "socialProtection",
+                    "wellBeing",
+                    "equalOpportunities",
+                    "workAndEntrepreneurship"
+                ],
+                "dots_subCategories": [
+                    "economicResources",
+                    "healthPrevention",
+                    "diseasePrevention",
+                    "primaryAndSecondaryEducation",
+                    "accessHigherEducation",
+                    "skillsForEmployment",
+                    "employment",
+                    "youthEmployment",
+                    "migration"
+                ],..
                   
          
           
@@ -684,7 +688,7 @@ We can add/edit the answers in `data/csv/quiz/Answers.csv` file by adding:
 
 ## Special Features
 - Assigning a score to the organisations when filtering: 
-  When calling the filter api `organisations/filter` a score of 1 is added to each organisation satisfying one of the filter options. There are two exceptions: first is the categories filter, since a category maps to several subcategories, the score will depend on how many relevant subcategories the organisation satisfy.The second exception is having age-gender combination eg. child+female, this should give a score of 1 for organisations satisfying the combination, and not one of them (not gender only or age only).
+  When calling the filter api `organisations/filter` a score of 1 is added to each organisation satisfying one of the filter options. There are two exceptions: first is the categories filter, since a category maps to several subcategories, the score will depend on how many relevant subcategories the organisation satisfy. The second exception is having age-gender combination eg. child+female, this should give a score of 1 for organisations satisfying the combination, and not one of them (not gender only or age only).
   The response of the API provides a list of organisations with a score of at least 1. The returned list is sorted in descending order of the assigned score.
 
 - Using a Python backend, which makes the app more extensible and can use different Machine Learning libraries along with the many features supported in Python.
@@ -692,14 +696,14 @@ We can add/edit the answers in `data/csv/quiz/Answers.csv` file by adding:
 ## Limitations
 
 - Although using CSVs as the data source made it easier for us to collaborate and explore different ways to structure the data, it can be tricky to maintain.
-Unlike SQL, CSV files have no restricted structure which makes it more prone to crash the backend/frontend with any small change. 
+Unlike SQL, CSV files have no restricted structure which makes it more prone to crash the backend/frontend with any small changes. 
 It is also tricky to add/update/delete the CSV files using APIs since it will not be easy to ensure the APIs are called by the authorized team. Therefore, we chose to not add such features, to avoid adding misleading data to the data we have.
 
 - Some strings, such as URLs, are malformed when displayed on the frontend and need some cleaning/default values. This issue should've been compromised with the frontend since strings can be displayed in different formats on different platforms.
 
 ## Future Development
 
-- Migrate the backend to read from postgres DB instead of CSV files. We currently store the data in Postgres on this [branch]( https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/tree/config-db-container/backend). However, further development is needed to refactor the backend to read from the SQL backend.
+- Migrate the backend to read from postgres DB instead of CSV files. We currently store the data in Postgres on this [branch]( https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/tree/config-db-container/backend). However, further development is needed to refactor the backend to read from the SQL database.
   
   It is still possible to use the existing backend logic since pandas library supports SQL queries. Additionally, future developers can use the relational tables features in SQL to make the code more efficient and reliable.
   
