@@ -40,9 +40,12 @@
 - [Acknowledgments](#acknowledgments)
 
 ## ‼️ Problem Statement <a name = "problem_statement"></a>
-Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. 
+Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. For organisations who want to develop a tool to contribute to diminishing unserved human rights, databases containng information of aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided.
 
 One of the main factors that contributes to the increase of people living in precarious situations is statelessnes. A stateless person is someone who is "not considered as a national by any state under the operation of its law" [1](https://en.wikipedia.org/wiki/Statelessness). UNHCR estimates that statelesness affects millions of people worldwide, and at least 700.000 are in West and Central Affrica [2](https://data2.unhcr.org/en/situations/statelesswa). Being statelessnes is just one of the many reasons that causes people to be in vulnerable situations, being of high importance to provide a tool that eases the search for help.
+
+Empowering people by knowing what are their human rights, where to look for reliable help and what to expect from the service are things required to leave vulerability, as well as providing all the contacting information to reach the help.
+
 
 ## :boom: Mission <a name = "mission"></a>
 Our mission is to:
