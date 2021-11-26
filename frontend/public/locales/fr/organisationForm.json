@@ -1,0 +1,11 @@
+{
+  "title": "Contactez-nous",
+  "introduction": "Si vous êtes une organisation basée au Sénégal et que vous souhaitez que nous ajoutions vos coordonnées sur Dots., veuillez remplir le formulaire ci-dessous et nous vous répondrons.",
+  "submitMessage": "Merci d'avoir soumis votre formulaire. Nous vous répondrons sous peu !",
+  "nameOrganisation": "Nom de l'organisation",
+  "contactPerson": "Personne de contact (nom complet)",
+  "phoneNumber": "Numéro de téléphone",
+  "email": "Email",
+  "website": "Site Internet",
+  "submit": "Envoyer"
+}
