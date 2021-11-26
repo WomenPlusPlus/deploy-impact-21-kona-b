@@ -33,6 +33,9 @@ https://www.figma.com/file/F7R0hfMA46SMYNVa8MnPHV/Wireframes?node-id=0%3A1
 ## Dots. logo
 
 ![image](https://user-images.githubusercontent.com/91188889/143424073-e174c93f-1b0b-470c-8758-c3a815afba16.png) &nbsp;&nbsp; ![image](https://user-images.githubusercontent.com/91188889/143408065-2b732cc7-e3c0-42fd-8d7d-7e8f5cd5ca6f.png)
+
+To avoid confusion between Kona Connect as a whole and the service offered by Dots, we found it appropriate to create a new visual identity for the application. By abstracting the original logo and exploring the “connect the dots” metaphor, we arrived at a new logo design which is simultaneously recognizable as being part of the Kona brand while also taking on a life of its own. There are two distinct versions of the logo - one for large format / print and the other for within the app itself. 
+
 ## App colour palette selection
 In the end, we decided to use a colour palette similar to Kona Connect since Dots. will be operated by them, and we wanted to maintain a link both to Kona and to our reimagined logo for Dots. We also went with slightly softer colours than what we had originally conceived.
 
