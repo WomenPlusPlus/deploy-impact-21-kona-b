@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import RatingStars from "./ratingStars";
 
 export default function RatingForm() {
-  const { t } = useTranslation("organisationPage");
+  const { t } = useTranslation("organisation");
 
   return (
     <>
