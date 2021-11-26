@@ -86,14 +86,10 @@ def get_filtered_orgs(filters):
                 orgs.extend(list(res["id"]))
 
             if filter_type == strings.AGE:
-                res = df_age_filters.loc[df_age_filters[filter_value] == 1]
-                orgs.extend(list(res["id"]))
                 age_flag = True
                 age = filter_value
 
             if filter_type == strings.GENDER:
-                res = df_gender_filters.loc[df_gender_filters[filter_value] == 1]
-                orgs.extend(list(res["id"]))
                 gender_flag = True
                 gender = filter_value
 
@@ -101,6 +97,12 @@ def get_filtered_orgs(filters):
     if age_flag and gender_flag:
         res = df_age_gender_filters.loc[df_age_gender_filters[age] == 1]
         res = res.loc[res[gender] == 1]
+        orgs.extend(list(res["id"]))
+    elif gender_flag:
+        res = df_gender_filters.loc[df_gender_filters[filter_value] == 1]
+        orgs.extend(list(res["id"]))
+    elif age_flag:
+        res = df_age_filters.loc[df_age_filters[filter_value] == 1]
         orgs.extend(list(res["id"]))
 
     # get a list of unique organisation ids, sorted by their no. of occurence
