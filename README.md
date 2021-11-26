@@ -245,6 +245,6 @@ This repository is licensed under the GPL - 3 license. This guarantees the end u
 - Inspiration:
   - User interaction: https://www.blinkist.com/
   - Documentation: https://github.com/kylelobo/The-Documentation-Compendium
-  - Credit Suisse Impact Management Project Framework: https://www.credit-suisse.com/sustainability/en/reports.html
+  - Credit Suisse Impact Management Project Framework found in the Sustainable Investment Framework report: https://www.credit-suisse.com/sustainability/en/reports.html
 - References:
   - Database of social organizations that provide help to Senegal: https://docs.google.com/spreadsheets/d/1t0-ol45Tz43zTCvqFXLLu5FSWuCbg4kElbocGbylCHA/edit#gid=1868970450
