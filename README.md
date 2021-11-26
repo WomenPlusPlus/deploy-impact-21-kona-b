@@ -113,7 +113,7 @@ Find the instructions on how to run it [here](/backend).
 - __LICENSE:__ File containing the license information.
 
 ## :bar_chart: The database <a name = "database"></a>
-Databases with aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided.  For this reason we decided to create our own and be able to ask the user about it.
+Databases containng information of aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided.  For this reason we decided to create our own and be able to ask the user about it.
 
 The data base information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
 
