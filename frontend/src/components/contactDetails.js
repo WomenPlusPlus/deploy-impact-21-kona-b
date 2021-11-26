@@ -6,7 +6,7 @@ import SocialMedias from "./socialMedias";
 import Map from "./map";
 
 export default function ContactDetails({ organisation }) {
-  const { t } = useTranslation("organisationPage");
+  const { t } = useTranslation("organisation");
 
   const details = [
     [MdLocationOn, organisation.address],
