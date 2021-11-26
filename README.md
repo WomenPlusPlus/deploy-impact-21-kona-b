@@ -123,7 +123,7 @@ The organisations services are categorised in the database according to the SDG 
 
 To make the database more machine readable, it was processed and divided into the following datasets:
 
-* [age and gender](/backend/csv/filters/gender_and_age_filters.csv): In this dataset the organisations are categorized in a machine readable format according to the age and gender of the people to whom they offer their help. In the following table you can find the categories assigned to the NGOs. This classification will help Dots answer to who is going to benefit from the service impact.
+* [age and gender](/backend/csv/filters/gender_and_age_filters.csv): In this dataset the organisations are categorized in a machine readable format according to the age and gender of the people to whom they offer their help. In the following table you can find the categories assigned to the NGOs. This classification will help Dots to answer "who is going to benefit from the service impact".
 
     | Categories  | Options |
     | ------------- | ------------- |
@@ -136,13 +136,13 @@ To make the database more machine readable, it was processed and divided into th
   | Categories  | Options |
   | ------------- | ------------- |
   | location  | dakar,	saint_louis, louga,	thies,	diourbel,	mattam,	fatick,	kaolack,	kaffrine,	tamabacounda,	kedougou,	kolda,	sedhiou,	ziguinohor|
-  This classification will help Dots answer to what is the region where the impact is created.
+  This classification will help Dots to answer "what is the region where the impact is created".
   
 * [SDG subcategory](/backend/csv/filters/dots_subcategories_filters.csv): One of the strengths of our database is that each NGO is linked to the Sustainable Development Goals (SDG) subcategories. This allow us to filter the database according to the user specific needs, allowing them to find the help they need in a shorter time and more effectively.  This classification was developed taking into consideration that it is not always clear what are the services provided by the NGOs.
   | Categories  | Options |
   | ------------- | ------------- |
   | sdg  | 1-40|
-This classification will help Dots answer to what are the services whoses impact is going to be monitored by Dots.
+This classification will help Dots to answer "what are the services whoses impact is going to be monitored by Dots".
 
 ### Maintenance <a name = "maintenance"></a>
 This app is just as powerful as the information it contains, thefore it is very important to increase and enrich the database. For now, to add a NGO to the database one would need to add the information manually to the corresponding .csv files. The goal is that in the future the information will be stored in a SQL database and the addition of new NGOs will be semi-automated through the NGO-application page. Read more about future develompments in the section _Future Work_.
