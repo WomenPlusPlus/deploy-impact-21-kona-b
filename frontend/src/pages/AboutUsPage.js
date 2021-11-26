@@ -14,8 +14,6 @@ export default function AboutUsPage() {
   return (
     <DocumentTitle title="Privacy policy">
       <main className="mx-7px">
-        <div className="grid grid-cols-7 sm:grid-cols-7 max-w-xl lg:max-w-4xl mx-auto w-mobile mb-8 sm:mb-20">
-          <div className="col-start-1 sm:col-start-2 sm:col-span-5 col-span-7">
             <h1
               className="mb-6 mt-12
              text-3xl uppercase"
@@ -41,14 +39,12 @@ export default function AboutUsPage() {
               </Trans>
             </p>
             {links.map((link) => (
-              <p key="link" className="mt-2">
+              <p key={link} className="mt-2">
                 <a href={link} target="_blank" rel="noreferrer">
                   {link}
                 </a>
               </p>
             ))}
-          </div>
-        </div>
       </main>
     </DocumentTitle>
   );
