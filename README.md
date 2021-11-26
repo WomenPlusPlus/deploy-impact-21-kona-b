@@ -150,11 +150,10 @@ The SQL database creation was developed in parallel to the creation of the CSV c
 We wanted to avoid using CSV files in the future, therefore the CSV files are migrated into database.  As a further step we would like to connect the front end directly to the database, and just have the CSV for an initial run.  
 
 We have written down all the API end points that can access this database such as getting organisation information and quiz information.  The list of APIs with the explanation of usage can be found [here](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/tree/backend_refactor/backend#rest-apis). 
-In a future, we suggest having an admin portal to access the SQL database.  
 
-A suggestion is to include an authentication system for the person managing the database information.  A tool that generates access tokens for API authorization scenarios that limit the access to the database is OAuth.  Find more information [here](https://auth0.com/docs/get-started). 
+In a future, we suggest having an admin portal to access the SQL database.  In the admin portal an authentication system should be included to validate who is the user managing the database information.  A tool that generates access tokens for API authorization scenarios that limit the access to the database is OAuth.  Find more information [here](https://auth0.com/docs/get-started). 
 
-This same logic could be applied for the organisation information in our database, and providing access to edit. The organisations can submit their data through the "organisation application form" and the data will be sent to the database portal, at the same time it will send an alert to the Dots team by Email or other way to notify.  The Dots team should have the capacitiy to accept or discard the submitted organisation information.  In case the information is not approved, Dots should be able to answer the notification mail to the NGO and get back to the organisation.
+This same logic could be applied to the organisation information in our database, and to provide editing access. The organisations can submit their data through the "organisation application form" and the data will be sent to the database portal, at the same time it will send an alert to the Dots team by Email or other way to notify.  The Dots team should have the capacitiy to accept or discard the submitted organisation information.  In case the information is not approved, Dots should be able to answer the notification mail to the NGO and get back to the organisation.
 
 
 ## :books: App translation <a name = "translation"></a>
