@@ -48,7 +48,7 @@ def get_subcat_value(df_subcategory_mapping, dots_cat_id):
     :param dots_cat_id: category id
     :return: subcategory id
     '''
-    filtered_df = df_subcategory_mapping.loc[df_subcategory_mapping['dots_category_id'] == dots_cat_id]
+    filtered_df = df_subcategory_mapping.loc[df_subcategory_mapping['dots_category_id'] == int(dots_cat_id)]
     sub_cat_ids = list(filtered_df['dots_subcategory_id'])
     return sub_cat_ids
 

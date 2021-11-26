@@ -74,11 +74,11 @@ def get_filtered_orgs(filters):
                 sub_cat_ids = utils.get_subcat_value(dfs.df_subcategory_mapping,filter_value)
                 for id in sub_cat_ids:
                     res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[str(id)] == 1]
-                    orgs.extend(list(res["organization_id"]))
+                    orgs.extend(list(res["org_id"]))
 
             if filter_type == strings.SUB_CATEGORIES:
                 res = df_dots_subcategories_filters.loc[df_dots_subcategories_filters[filter_value] == 1]
-                orgs.extend(list(res["organization_id"]))
+                orgs.extend(list(res["org_id"]))
 
             if filter_type == strings.REGION:
                 res = df_region_filters.loc[df_region_filters[filter_value] == 1]
