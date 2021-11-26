@@ -40,7 +40,7 @@
 - [Acknowledgments](#acknowledgments)
 
 ## ‼️ Problem Statement <a name = "problem_statement"></a>
-The Sustainable Development Goals (SDGs) are the world’s shared plan to end extreme poverty, reduce inequality, and protect the planet. Achieving the goals by 2030 will require a lot of effort, determination to learn about what works, and agility to adapt to new information and changing trends.  Initiatives that generate impact, advancing the SDG imperative to “leave no one behind,” should be backed by evidence, practical commitments, and action, something that doesnt happent right now.
+The 17 Sustainable Development Goals (SDGs) are the world’s shared plan that includes ending extreme poverty, reducing inequalities, and protecting the planet. Achieving the Goals by 2030 will require a lot of effort, determination to learn about what works, and agility to adapt to new information and changing trends. Initiatives that generate impact and advance the SDG commitment to “leave no one behind,” should be backed by evidence, practical commitments, and action - something that doesn't happen right now.
 
 Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. Databases containng information of aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided. 
 
