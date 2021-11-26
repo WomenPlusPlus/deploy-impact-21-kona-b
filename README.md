@@ -44,7 +44,7 @@ The 17 Sustainable Development Goals (SDGs) are the world’s shared plan that i
 
 Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. Databases containing information of aid organisations already exist, but the information tends to be incomplete and fails to describe the services provided. 
 
-The urgency to solve this problem is reflected by the increase of people living in precarious situations. A main factor of this increase is statelessnes. A stateless person is someone who is "not considered as a national by any state under the operation of its law" [1](https://en.wikipedia.org/wiki/Statelessness). UNHCR estimates that statelesness affects millions of people worldwide, and at least 700.000 are in West and Central Africa [2](https://data2.unhcr.org/en/situations/statelesswa). Being stateless is just one of the many reasons that lead people to be in vulnerable situations, rendering it of high importance the provision of a tool that eases peoples' search for help.
+The urgency to solve this problem is reflected by the increase of people living in precarious situations. A main factor of this increase is statelessness. A stateless person is someone who is "not considered as a national by any state under the operation of its law" [1](https://en.wikipedia.org/wiki/Statelessness). UNHCR estimates that statelesness affects millions of people worldwide, and at least 700.000 are in West and Central Africa [2](https://data2.unhcr.org/en/situations/statelesswa). Being stateless is just one of the many reasons that lead people to be in vulnerable situations, rendering it of high importance the provision of a tool that eases peoples' search for help.
 
 
 ## :boom: Mission <a name = "mission"></a>
@@ -54,7 +54,7 @@ Our mission is to:
 * Facilitate access to NGO information to fulfill user's needs using intelligent technologies, i.e. Dots.
 
 ## 💡 Solution <a name = "idea"></a>
-Easing the search for assistance and support can be done by empowering people to know what their human rights are, where to look for reliable help, what to expect from aid services, and how to contact the organisations.
+Facilitating the search for assistance and support can be done by empowering people to know what their human rights are, where to look for reliable help, what to expect from aid services, and how to contact the right organisations.
 
 6 weeks ago we did [brainstorming sessions](https://www.figma.com/file/EOSp95m8WUGfHw4U4xhtg0/Brainstorming-the-solution-for-Dots.?node-id=0%3A1) to define how we were going to solve the stated Dots problem, and how we could use the information to satisfy our stakeholders' needs.  The solution was provided by Kona Connect by means of the platform "Dots.", a web app used by people in vulnerable situations to search for help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users, we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location, and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.).
 
