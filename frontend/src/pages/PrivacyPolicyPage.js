@@ -15,27 +15,23 @@ export default function PrivacyPolicyPage() {
     "text.6",
     "text.7",
     "text.8",
-    "text.9"
+    "text.9",
   ];
 
   return (
     <DocumentTitle title="Privacy policy">
       <main className="mx-7px">
-        <div className="grid grid-cols-7 sm:grid-cols-7 max-w-xl lg:max-w-4xl mx-auto w-mobile mb-8 sm:mb-20">
-          <div className="col-start-1 sm:col-start-2 sm:col-span-5 col-span-7">
-            <h1
-              className="mb-6 mt-12
+        <h1
+          className="mb-6 mt-12
              text-3xl uppercase"
-            >
-              {t("title")}
-            </h1>
-            {paragraphs.map((paragraph) => (
-              <p className="mb-6 leading-relaxed" key={paragraph}>
-                {t(paragraph)}
-              </p>
-            ))}
-          </div>
-        </div>
+        >
+          {t("title")}
+        </h1>
+        {paragraphs.map((paragraph) => (
+          <p className="mb-6 leading-relaxed" key={paragraph}>
+            {t(paragraph)}
+          </p>
+        ))}
       </main>
     </DocumentTitle>
   );
