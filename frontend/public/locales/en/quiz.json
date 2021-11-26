@@ -15,14 +15,14 @@
   "userSubCategories": "SubCat.",
   "end": "End",
   "user": {
-    "question": "Who are you seeking help for?",
+    "question": "For who are you looking for help?",
     "filters": {
       "me": "Me",
       "other": "Someone Else"
     }
   },
   "gender": {
-    "question": "What is your Gender?",
+    "question": "What is your gender?",
     "filters": {
       "male": "Male",
       "female": "Female",
@@ -30,7 +30,7 @@
     }
   },
   "age": {
-    "question": "What is your Age group?",
+    "question": "What is your age group?",
     "filters": {
       "baby": "Baby (0-3)",
       "child": "Child (4-12)",
@@ -40,7 +40,7 @@
     }
   },
   "region": {
-    "question": "In which Region are you seeking help?",
+    "question": "In which region(s) are you looking for help?",
     "filters": {
       "dakar": "Dakar",
       "saintLouis": "Saint-Louis",
@@ -59,7 +59,7 @@
     }
   },
   "dots_categories": {
-    "question": "What topic interest you?",
+    "question": "What topics interest you?",
     "filters": {
       "socialProtection": "Social protection",
       "food": "Food & farming",

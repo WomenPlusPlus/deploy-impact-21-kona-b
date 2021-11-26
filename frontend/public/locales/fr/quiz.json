@@ -40,7 +40,7 @@
     }
   },
   "region": {
-    "question": "Dans quelle région cherchez-vous de l'aide?",
+    "question": "Dans quelles régions cherchez-vous de l'aide?",
     "filters": {
       "dakar": "Dakar",
       "saintLouis": "Saint-Louis",
@@ -59,7 +59,7 @@
     }
   },
   "dots_categories": {
-    "question": "Quel sujet vous intéresse?",
+    "question": "Quels sujets vous intéresse?",
     "filters": {
       "socialProtection": "Protection social",
       "food": "Nourriture et agriculture",
@@ -81,7 +81,7 @@
     }
   },
   "dots_subCategories": {
-    "question": "Quel type d'aide recherchez-vous?",
+    "question": "Quels types d'aide recherchez-vous?",
     "filters": {
       "housingAndSocialServices": "Accès au logement et aux services sociaux",
       "economicResources": "Accès aux ressources économiques et aux technologies de l'information",
