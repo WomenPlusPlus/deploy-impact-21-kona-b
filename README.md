@@ -54,7 +54,7 @@ Our mission is to:
 * Facilitate access to NGO   information to fulfill user's needs using intelligent technologies, i.e. Dots.
 
 ## 💡 Solution <a name = "idea"></a>
-The solution is provided by Konna Connect by means of the platform "Dots", a web app used for searching help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
+6 weeks ago we did [brainstorming sessions](link brainstorming Figma) to define how we were going to solve the stated problem and how we could use the information to satisfy our stakeholders needs.  The solution is provided by Konna Connect by means of the platform "Dots", a web app used for searching help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
 
 The goal of the tool is to connect people in need to the right organizations as quickly as easily as possible. For this, our solutions provides two main options:
 - A quick quiz: By answering a few question, users will be guided to the organization(s) most likely to be able to help them and their situation.
