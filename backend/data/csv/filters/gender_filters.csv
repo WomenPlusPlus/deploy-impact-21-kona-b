@@ -1,10 +1,10 @@
-id,name,female,other,male
+org_id,name,male,female,other
 1,La Liane,1,1,1
 2,Association Jeunesse Espoir (AJS),1,1,1
 3,Connexion Sans Frontieres,1,1,1
 4,African Network for Horticultural Development,1,1,1
 5,African Network for Integrated Development (ANID),1,1,1
-6,African Network for Support to Women Entrepreneurs (ANSWE),1,0,0
+6,African Network for Support to Women Entrepreneurs (ANSWE),0,1,0
 7,African Office for Development and Cooperation,1,1,1
 8,Centre de Recherche Ouest Africaine (CROA),1,1,1
 9,Association des Jeunes pour le Developpement  (AJD/PASTEEF),1,1,1
@@ -57,7 +57,7 @@ id,name,female,other,male
 56,Maison de la Gare,1,1,1
 57,Association des juristes sénégalaises,1,1,1
 58,ONG Concept,1,1,1
-59,Action femme Enfant (AFE),1,0,0
+59,Action femme Enfant (AFE),0,1,0
 60,Village Pilote,1,1,1
 61,ENDA Tiers Monde,0,0,0
 62,ENDA Jeunesse Action,1,1,1

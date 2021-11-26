@@ -1,0 +1,18 @@
+id,value,translation_key,icon
+1,Social protection,socialProtection,MdFamilyRestroom
+2,Food and farming,food,RiPlantFill
+3,Health and well-being,wellBeing,GiHealthNormal
+4,Education,education,GiOpenBook
+5,Gender equality,genderEquality,BsGenderFemale
+6,Clean water,cleanWater,FaHandHoldingWater
+7,Energy consumption,energy,GiRollingEnergy
+8,Work and entrepreneurship,workAndEntrepreneurship,MdWork
+9,Information technology,informationTechnology,GrTechnology
+10,Equal opportunities,equalOpportunities,GiPodiumWinner
+11,Housing,housing,GiPlanetConquest
+12,Sustainable lifestyles,sustainableLifestyles,MdFoodBank
+13,Climate action,climateAction,GiEarthAfricaEurope
+14,Fishing,fishing,FaFish
+15,Biodiversity,biodiversity,BsTreeFill
+16,Justice and legal,justiceAndLegal,GoLaw
+17,Partnerships,partnerships,SiHandshake

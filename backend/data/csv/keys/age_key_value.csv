@@ -1,0 +1,5 @@
+id,value,translation_key,icon
+baby,Baby (under 3),baby,FaBaby
+child,Child (4-12),child,FaChild
+youth,Youth (13-17),teen,BsPersonFill
+adult,Adult (18+),adult,BsPersonPlusFill

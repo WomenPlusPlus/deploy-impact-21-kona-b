@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import organisations
-import quiz
 import ast
-import filters
+import model.organisations as organisations
+import model.quiz as quiz
+import model.filters as filters
+from model.link_tables import link_tables
 
 # ----------------------------------------------------------------------------#
 # App Config.
@@ -38,32 +39,10 @@ def get_all_organisations():
     res = organisations.get_all()
     return jsonify(res), 201
 
-
-@app.route('/api/v0/organisations', methods=['POST'])
-def add_organisations():
-    body = ast.literal_eval(request.data.decode('utf-8'))
-    organisations.add(body['data'])
-    return jsonify("Organisation Added Successfully"), 201
-
-
 @app.route('/api/v0/organisations/<org_id>', methods=['GET'])
 def get_one_organisations(org_id):
     res = organisations.get_one(org_id)
     return jsonify(res), 201
-
-
-@app.route('/api/v0/organisations/<org_id>', methods=['POST'])
-def update_organisation(org_id):
-    body = ast.literal_eval(request.data.decode('utf-8'))
-    organisations.update_values(org_id, body['data'])
-    return jsonify("Organisation Updated Successfully"), 201
-
-
-@app.route('/api/v0/organisations/<org_id>', methods=['DELETE'])
-def delete_organisation(org_id):
-    organisations.delete(org_id)
-    return jsonify("Organisation Deleted Successfully"), 201
-
 
 # quiz
 
@@ -139,4 +118,5 @@ def internal_server_error(error):
 
 # allows running with Flask or Python
 if __name__ == "__main__":
+    link_tables()
     app.run()
