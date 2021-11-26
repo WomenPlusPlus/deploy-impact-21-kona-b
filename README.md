@@ -61,7 +61,7 @@ In the first stage, our solution is focused in providing help for the people loc
 
 ## :iphone: The web app <a name = "web_app"></a>
 
-Dots web app can be used from any device (laptop, phone, tablet). 
+Dots web app can be used from any device (laptop, phone, tablet). Since its a web app, updates are done automatically, therefore we guarantee the user is accessing the latest available version.
 
 You can now use it here:
 https://dots.azureedge.net/
@@ -211,6 +211,7 @@ The app provided here is only the minimum viable product of the Dots. app and se
 
 - __Adding more NGOs:__ Adding more NGOs to the dataset to create a unified resource that people in need can quickly access and navigate.
 - __Collect user data:__ Collecting data about how the user intracts with the app would allow us to get a better understanding of the accessibility and common usages of the app. Additionally, this data would allow us to create recommendation systems to new users based on searchers that previously other users did.
+Collect data from "feedback box".  "Feedback box" asking the user "was the NGO-information provided useful? Tell us more about it".  The user should be able to leave a written or spoken message about the NGO information provided.  This information could be used to improve NGO services, and to keep a reliable list of organisations.
 - __Collect user feedback:__ The goal is that users would rank the information provided in Dots. and add their comments. This would allow Konaconnect to improve the app and update the NGOs information.
 - __Add info pop-ups:__ The information pop-ups would be a way of interactively educating the user about their rights and the UN Sustainable Development Goals.
 - __NGOs portal + admin login:__ This feature allows the NGOs to apply directly to appear in Dots. On the other hand, an admin login is required so that the Dots. administrator can access the information submitted through the NGOs portal and approve it or regect it.
