@@ -42,9 +42,9 @@
 ## ‼️ Problem Statement <a name = "problem_statement"></a>
 The 17 Sustainable Development Goals (SDGs) are the world’s shared plan that includes ending extreme poverty, reducing inequalities, and protecting the planet. Achieving the Goals by 2030 will require a lot of effort, determination to learn about what works, and agility to adapt to new information and changing trends. Initiatives that generate impact and advance the SDG commitment to “leave no one behind,” should be backed by evidence, practical commitments, and action - something that doesn't happen right now.
 
-Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. Databases containng information of aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided. 
+Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. Databases containing information of aid organisations already exist, but the information tends to be incomplete and fails to describe the services provided. 
 
-The urge to solve this problem is reflected by the increase of people living in precarious situations.  A main factor of the increase is statelessnes. A stateless person is someone who is "not considered as a national by any state under the operation of its law" [1](https://en.wikipedia.org/wiki/Statelessness). UNHCR estimates that statelesness affects millions of people worldwide, and at least 700.000 are in West and Central Affrica [2](https://data2.unhcr.org/en/situations/statelesswa). Being statelessnes is just one of the many reasons that causes people to be in vulnerable situations, being of high importance to provide a tool that eases the search for help.
+The urgency to solve this problem is reflected by the increase of people living in precarious situations. A main factor of this increase is statelessnes. A stateless person is someone who is "not considered as a national by any state under the operation of its law" [1](https://en.wikipedia.org/wiki/Statelessness). UNHCR estimates that statelesness affects millions of people worldwide, and at least 700.000 are in West and Central Africa [2](https://data2.unhcr.org/en/situations/statelesswa). Being stateless is just one of the many reasons that lead people to be in vulnerable situations, rendering it of high importance the provision of a tool that eases peoples' search for help.
 
 
 ## :boom: Mission <a name = "mission"></a>
@@ -54,21 +54,21 @@ Our mission is to:
 * Facilitate access to NGO information to fulfill user's needs using intelligent technologies, i.e. Dots.
 
 ## 💡 Solution <a name = "idea"></a>
-Easing the search for help can be done by empowering people to know what are their human rights, where to look for reliable help, what to expect from the aid service, and how to contact the organisation.
+Easing the search for assistance and support can be done by empowering people to know what their human rights are, where to look for reliable help, what to expect from aid services, and how to contact the organisations.
 
-6 weeks ago we did [brainstorming sessions](https://www.figma.com/file/EOSp95m8WUGfHw4U4xhtg0/Brainstorming-the-solution-for-Dots.?node-id=0%3A1) to define how we were going to solve the stated Dots problem and how we could use the information to satisfy our stakeholders needs.  The solution is provided by Konna Connect by means of the platform "Dots", a web app used for searching help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
+6 weeks ago we did [brainstorming sessions](https://www.figma.com/file/EOSp95m8WUGfHw4U4xhtg0/Brainstorming-the-solution-for-Dots.?node-id=0%3A1) to define how we were going to solve the stated Dots problem, and how we could use the information to satisfy our stakeholders' needs.  The solution was provided by Kona Connect by means of the platform "Dots.", a web app used by people in vulnerable situations to search for help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users, we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location, and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.).
 
 The goal of the tool is to connect people in need to the right organizations as quickly as easily as possible. For this, our solutions provides two main options:
-- A quick quiz: By answering a few question, users will be guided to the organization(s) most likely to be able to help them and their situation.
-- The list of all organisations with filters: By selecting the filters that apply to their situation the user will get the NGOs that provide the needed help.
+- A quick quiz: By answering a few questions, users will be guided to the organization(s) most likely to be able to help them and their situation.
+- The list of all organisations with filters: By selecting the filters that apply to their situation, the user will reach the NGOs that provide the required help.
 
-To measure the impact of our app we have to define, evaluate and quantify impact (brainstorming and inspiration ideas [here](https://docs.google.com/document/d/1zR11WpejlC97wz9rCjy_EjCHnbwEGTYGX1FY-AIb9h8/edit?usp=sharing)).  The Credit Suisse Impact Management Project Framework was selected to define and evaluates the likely impact of Dots across five dimenions. We will explain how each classification contributes to definition of Dots impact.  The impact defined have been aligned to the 2030 SDG targets. 
+To measure the impact of our app we have to define, evaluate and quantify impact (brainstorming and inspiration ideas [here](https://docs.google.com/document/d/1zR11WpejlC97wz9rCjy_EjCHnbwEGTYGX1FY-AIb9h8/edit?usp=sharing)). The Credit Suisse Impact Management Project Framework was selected to define and evaluate the likely impact of Dots across five dimensions. We will explain how each classification contributes to the definition of Dots impact. The defined impact defined has been aligned to the 2030 SDG targets. 
     
-In the first stage, our solution is focused in providing help for the people located in Senegal. Therefore, the web app is available in English and French, and has a framework which allows to easily translate it to any regional language. Moreover, thanks to the design of our UX/UI experts, most interface options are coupled with an icon to make the app more accessible and intuitive.
+In the first stage, our solution is focused on providing help for the people located in Senegal. Therefore, the web app is available in English and French, and has a framework which allows easy translation to any regional language. Moreover, thanks to the design of our UX/UI experts, most interface options are coupled with an icon to make the app more accessible and intuitive.
 
 ## :iphone: The web app <a name = "web_app"></a>
 
-Dots web app can be used from any device (laptop, phone, tablet). Since its a web app, updates are done automatically, therefore we guarantee the user is accessing the latest available version.
+Dots web app can be used from any device (laptop, phone, tablet). Since it's a web app, updates are done automatically, therefore we guarantee the user is accessing the latest available version.
 
 You can now use it here:
 https://dots.azureedge.net/
@@ -120,9 +120,9 @@ Find the instructions on how to run it [here](/backend).
 - __LICENSE:__ File containing the license information.
 
 ## :bar_chart: The database <a name = "database"></a>
-Databases containng information of aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided.  For this reason we decided to create our own and be able to ask the user about it.
+Databases containing information of aid organisations already exist, but the information tends to be incomplete and doesn't describe the services provided.  For this reason we decided to create our own and to be able to ask the user about it.
 
-The data base information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
+The database information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
 
 The organisations services are categorised in the database according to the SDG and targets that they contribute to. This allows us not only to provide a meaninful grouping of NGOs, but also to trace the impact of the app. In order to be more accurate when recommending NGOs to the user, an age and gender classification was added. This allows the app to recommend specific NGOs directly to the group of people they are able to help.  
 
@@ -163,7 +163,7 @@ We have written down all the API end points that can access this database such a
 
 The end points in the API able to modify the database can be found [here](link Dieter table). 
 
-In a future, we suggest having an admin portal to access the SQL database.  In the admin portal an authentication system should be included to validate who is the user managing the database information.  A tool that generates access tokens for API authorization scenarios that limit the access to the database is OAuth.  
+In the future, we suggest having an admin portal to access the SQL database.  In the admin portal an authentication system should be included to validate who is the user managing the database information.  A tool that generates access tokens for API authorization scenarios that limit the access to the database is OAuth.  
 Find more information [here](https://auth0.com/docs/get-started). 
 
 This same logic could be applied to the organisation information in our database by providing editing access to each NGO. The organisations can submit their data through the "organisation application form" and the data will be sent to the database portal at the same time as it will send an alert to the Dots team by Email or other notification system.  The Dots team should have the capacity to accept or discard the submitted organisation information.  In case the information is not approved, Dots should be able to answer the notification mail to the NGO and get back to the organisation.  The organisation should be provided with an access to edit or delete its information.
