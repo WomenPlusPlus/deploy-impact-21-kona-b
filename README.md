@@ -113,6 +113,8 @@ Find the instructions on how to run it [here](/backend).
 - __LICENSE:__ File containing the license information.
 
 ## :bar_chart: The database <a name = "database"></a>
+Databases with aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided.  For this reason we decided to create our own and be able to ask the user about it.
+
 The data base information can be found in [/backend/csv/data](/backend/csv/data/organisations_in_senegal_konab.csv). This file contains all the NGO information in a human readable format. For each NGO the information collected is: NGO name, objective,	services,	can the NGO be contacted by individuals,	phone_number,	email,	website,	address,	region,	latitude,	longitude,	opening hours,	hotline,	facebook,	linkedin,	twitter,	youtube,	instagram,	tiktok,	flicker,	sound_cloud, and	other in case they have another social media account.
 
 The organisations are categorised in the database according to the SDG and sub-SDG that they contribute to. This allows us not only to provide a meaninful grouping of NGOs, but also to trace the impact of the app. In order to be more accurate when recommending NGOs to the user, an age and gender classification was added. This allows the app to recommend specific NGOs directly to the group of people they are able to help.
@@ -133,7 +135,7 @@ To make the database more machine readable, it was processed and divided into th
   | ------------- | ------------- |
   | location  | dakar,	saint_louis, louga,	thies,	diourbel,	mattam,	fatick,	kaolack,	kaffrine,	tamabacounda,	kedougou,	kolda,	sedhiou,	ziguinohor|
   
-* [SDG subcategory](/backend/csv/filters/dots_subcategories_filters.csv): One of the strengths of our database is that each NGO is linked to the Sustainable Development Goals (SDG) subcategories. This allow us to filter the database according to the user specific needs, allowing them to find the help they need in a shorter time and more effectively.
+* [SDG subcategory](/backend/csv/filters/dots_subcategories_filters.csv): One of the strengths of our database is that each NGO is linked to the Sustainable Development Goals (SDG) subcategories. This allow us to filter the database according to the user specific needs, allowing them to find the help they need in a shorter time and more effectively.  This classification was developed taking into consideration that it is not always clear what are the services provided by the NGOs.
   | Categories  | Options |
   | ------------- | ------------- |
   | sdg  | 1-40|
@@ -149,11 +151,14 @@ The SQL database creation was developed in parallel to the creation of the CSV c
 
 We wanted to avoid using CSV files in the future, therefore the CSV files are migrated into database.  As a further step we would like to connect the front end directly to the database, and just have the CSV for an initial run.  
 
-We have written down all the API end points that can access this database such as getting organisation information and quiz information.  The list of APIs with the explanation of usage can be found [here](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/tree/backend_refactor/backend#rest-apis). 
+We have written down all the API end points that can access this database such as getting organisation information and quiz information.  The list of APIs with the explanation of usage can be found [here](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/tree/main/backend#rest-apis). 
 
-In a future, we suggest having an admin portal to access the SQL database.  In the admin portal an authentication system should be included to validate who is the user managing the database information.  A tool that generates access tokens for API authorization scenarios that limit the access to the database is OAuth.  Find more information [here](https://auth0.com/docs/get-started). 
+The end points in the API able to modify the database can be found [here](link Dieter table). 
 
-This same logic could be applied to the organisation information in our database, and to provide editing access. The organisations can submit their data through the "organisation application form" and the data will be sent to the database portal, at the same time it will send an alert to the Dots team by Email or other way to notify.  The Dots team should have the capacitiy to accept or discard the submitted organisation information.  In case the information is not approved, Dots should be able to answer the notification mail to the NGO and get back to the organisation.
+In a future, we suggest having an admin portal to access the SQL database.  In the admin portal an authentication system should be included to validate who is the user managing the database information.  A tool that generates access tokens for API authorization scenarios that limit the access to the database is OAuth.  
+Find more information [here](https://auth0.com/docs/get-started). 
+
+This same logic could be applied to the organisation information in our database by providing editing access to each NGO. The organisations can submit their data through the "organisation application form" and the data will be sent to the database portal at the same time as it will send an alert to the Dots team by Email or other notification system.  The Dots team should have the capacity to accept or discard the submitted organisation information.  In case the information is not approved, Dots should be able to answer the notification mail to the NGO and get back to the organisation.  The organisation should be provided with an access to edit or delete its information.
 
 
 ## :books: App translation <a name = "translation"></a>
@@ -209,6 +214,9 @@ The app provided here is only the minimum viable product of the Dots. app and se
 - __Collect user feedback:__ The goal is that users would rank the information provided in Dots. and add their comments. This would allow Konaconnect to improve the app and update the NGOs information.
 - __Add info pop-ups:__ The information pop-ups would be a way of interactively educating the user about their rights and the UN Sustainable Development Goals.
 - __NGOs portal + admin login:__ This feature allows the NGOs to apply directly to appear in Dots. On the other hand, an admin login is required so that the Dots. administrator can access the information submitted through the NGOs portal and approve it or regect it.
+- __Dots impact reporting:__ The amount of resources available to create real impact, to monitor advances and to identify underserved human rights has been increasing and is set to grow in the upcoming years.  This is assumed because of the increasing pressures on mapping the trazability of contributions towards the Sustainable Development Goals and targets, and because of the improved Machile Learning and other technologies. 
+We suggest createing integrated and automated, on demand reports using the data obtained from the user interaction with the "ngo services" (aligned to SDG targets for 2030). Humanitarian effort reports should be reliable, a result of robust data acquisition and selection.  Gathering information for this type of reports has been taken into consideration by identifying how to obtain the information required to comply with "Credit Suisse's Framework to define and evaluate impact".  Considerations of data coleection following Credit Suisse Framework are mentioned in [The database](#database).  
+The information aligned to the SDG targets and Credit Suisse Framework can be used to help define Dots performance and objectives aligned to the SDGs.
 - __News feed:__ One potential user group of Dots. is people who are looking for education and/or a job. This feature would act like a news feed where the latest information and opportunities would show, allowing the user to be alwasy updated about what the NGOs can offer for them.
 
 

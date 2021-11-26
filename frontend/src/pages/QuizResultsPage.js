@@ -85,7 +85,7 @@ export default function QuizResultsPage() {
                 key={organisation.name}
               >
                 <div className="flex justify-center">
-                  <div className="flex flex-wrap bg-gray-200 content-center h-12 justify-center text-sm text-center w-12">
+                  <div className="flex flex-wrap bg-gray-200 text-gray-200 content-center h-12 justify-center text-sm text-center w-12">
                     LOGO
                   </div>
                 </div>
