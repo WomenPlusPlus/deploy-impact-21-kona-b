@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-export default function OrganisationFilters({ title, allValues, setSelected }) {
+export default function OrganisationFilters({
+  title,
+  translationKeyPrefix,
+  allValues,
+  setSelected,
+}) {
   const { t } = useTranslation("quiz");
 
+  // selected values state
   const [selectedValues, setSelectedValues] = useState([]);
 
-  const handleRegionsChange = (event) => {
+  // handle a change of filters
+  const handleChange = (event) => {
     if (selectedValues.includes(event.target.name)) {
       // if value is already selected, remove it
       setSelectedValues(
@@ -24,8 +31,8 @@ export default function OrganisationFilters({ title, allValues, setSelected }) {
   }, [setSelected, selectedValues]);
 
   return (
-    <div className="mb-5 px-5">
-      <h3 className="font-extrabold mt-5 uppercase">{title}</h3>
+    <div className="py-6 px-5">
+      <h3 className="font-extrabold mb-2 uppercase">{title}</h3>
       {allValues.map((value) => (
         <div key={value} className="flex flex-row">
           <input
@@ -34,13 +41,13 @@ export default function OrganisationFilters({ title, allValues, setSelected }) {
             type="checkbox"
             name={value}
             checked={selectedValues.includes(value)}
-            onChange={handleRegionsChange}
+            onChange={handleChange}
           />
           <label
             className="cursor-pointer select-none"
             htmlFor={`filter-${title}-${value}`}
           >
-            {t(`region.filters.${value}`)}
+            {t(`${translationKeyPrefix}.${value}`)}
           </label>
         </div>
       ))}

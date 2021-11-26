@@ -12,6 +12,8 @@ export default function OrganisationsTable() {
   const { t } = useTranslation("quiz, organisations");
 
   const [organisations, setOrganisations] = useState([]);
+
+  // use API to get organisations data and set the state to organisations
   const [filteredOrganisations, setFilteredOrganisations] = useState([]);
   useEffect(() => {
     fetch(`${api}/organisations`).then((response) =>
@@ -22,7 +24,7 @@ export default function OrganisationsTable() {
   }, []);
 
   const [active, setActive] = useState(false);
-  
+
   return (
     <div className="grid lg:grid-cols-3 gap-2 lg:gap-6">
       <button
@@ -70,17 +72,20 @@ export default function OrganisationsTable() {
           <Tbody>
             {filteredOrganisations.map((organisation) => {
               // checking which icons to use depending on the categories
-              const IconCategories = organisation.dots_categories
+              const iconCategories = organisation.dots_categories
                 .map((category) => iconMap[category])
                 .filter(Boolean);
 
               return (
                 <Tr
-                  className="border-b border-konaInspired rounded-lg mb-2"
+                  className="border-b border-konaInspired rounded-lg mb-2 align-top"
                   key={organisation.id}
                 >
-                  <Td className="py-2 pr-4">
-                    <Link to={`/organisations/${organisation.id}`}>
+                  <Td className="m-1">
+                    <Link
+                      className="col-span-2"
+                      to={`/organisations/${organisation.id}`}
+                    >
                       {organisation.name}
                     </Link>
                   </Td>
@@ -93,10 +98,12 @@ export default function OrganisationsTable() {
                       )
                       .join(", ") || " "}
                   </Td>
-                  <Td className="grid grid-cols-3">
-                    {IconCategories.map((Icon) => {
-                      return <div className="mx-2">{Icon && <Icon />}</div>;
-                    })}
+                  <Td className="m-1">
+                    <div className="flex flex-wrap gap-1 py-1">
+                      {iconCategories.map((Icon) => {
+                        return <div key={Icon}>{Icon && <Icon />}</div>;
+                      })}
+                    </div>
                   </Td>
                 </Tr>
               );
