@@ -9,7 +9,7 @@ import OrganisationFilters from "./organisationFilters";
 import iconMap from "../lib/iconMap";
 
 export default function OrganisationsTable() {
-  const { t } = useTranslation("quiz");
+  const { t } = useTranslation("quiz, organisations");
 
   const [organisations, setOrganisations] = useState([]);
   const [filteredOrganisations, setFilteredOrganisations] = useState([]);
@@ -49,10 +49,22 @@ export default function OrganisationsTable() {
       <div className="lg:col-span-2 mt-6">
         <Table>
           <Thead>
-            <Tr className="border-b-2 border-konaInspired pb-5 text-left">
-              <Th className="pb-5">Name</Th>
-              <Th className="pb-5">Region</Th>
-              <Th className="pb-5">SDGs</Th>
+            <Tr className="border-b-2 border-konaInspired pb-5 text-left align-bottom">
+              <Th>
+                {t("name", {
+                  ns: "organisations",
+                })}
+              </Th>
+              <Th>
+                {t("region", {
+                  ns: "organisations",
+                })}
+              </Th>
+              <Th>
+                {t("services", {
+                  ns: "organisations",
+                })}
+              </Th>
             </Tr>
           </Thead>
           <Tbody>
@@ -72,8 +84,14 @@ export default function OrganisationsTable() {
                       {organisation.name}
                     </Link>
                   </Td>
-                  <Td className="pr-4">
-                    {t(`region.filters.${organisation.region}`)}
+                  <Td className="m-1">
+                    {organisation.region
+                      .map((region) =>
+                        t(`region.filters.${region}`, {
+                          ns: "quiz",
+                        })
+                      )
+                      .join(", ") || " "}
                   </Td>
                   <Td className="grid grid-cols-3">
                     {IconCategories.map((Icon) => {
