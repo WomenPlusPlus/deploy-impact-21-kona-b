@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 import Error from "../components/error";
 
 export default function ContactForm() {
+  const { t } = useTranslation("organisationForm");
+
   const {
     register,
     handleSubmit,
@@ -23,15 +26,13 @@ export default function ContactForm() {
   return (
     <div>
       {complete ? (
-        <div>
-          Thanks for submitting your form. We will get back to you shortly!
-        </div>
+        <div>{t("submitMessage")}</div>
       ) : (
         <>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div>
               <label className="block font-bold mb-2 tracking-wide text-sm uppercase">
-                Name of the organisation
+                {t("nameOrganisation")}
               </label>
               <input
                 className="appearance-none focus:outline-none focus:shadow-outline border border-gray-300 leading-tight px-3 py-2 rounded text-gray-700 w-full mb-6"
@@ -43,7 +44,7 @@ export default function ContactForm() {
             </div>
             <div>
               <label className="block font-bold mb-2 tracking-wide text-sm uppercase">
-                Contact person (full name)
+                {t("contactPerson")}
               </label>
               <input
                 className="appearance-none focus:outline-none focus:shadow-outline border border-gray-300 leading-tight px-3 py-2 rounded text-gray-700 w-full mb-6"
@@ -57,7 +58,7 @@ export default function ContactForm() {
             </div>
             <div>
               <label className="block font-bold mb-2 tracking-wide text-sm uppercase">
-                Telephone number
+                {t("phoneNumber")}
               </label>
               <input
                 className="appearance-none focus:outline-none focus:shadow-outline border border-gray-300 leading-tight px-3 py-2 rounded text-gray-700 w-full mb-6"
@@ -66,7 +67,7 @@ export default function ContactForm() {
                 {...register("phoneNumber")}
               />
               <label className="block font-bold mb-2 tracking-wide text-sm uppercase">
-                Email
+                {t("email")}
               </label>
               <input
                 className="appearance-none focus:outline-none focus:shadow-outline border border-gray-300 leading-tight px-3 py-2 rounded text-gray-700 w-full mb-6"
@@ -77,7 +78,7 @@ export default function ContactForm() {
               {errors.email && <Error message={"This field is required"} />}
 
               <label className="block font-bold mb-2 tracking-wide text-sm uppercase">
-                Website
+                {t("website")}
               </label>
               <input
                 className="appearance-none focus:outline-none focus:shadow-outline border border-gray-300 leading-tight px-3 py-2 rounded text-gray-700 w-full mb-6"
@@ -91,7 +92,7 @@ export default function ContactForm() {
               className="border border-konaInspired px-4 py-2 rounded uppercase"
               type="submit"
             >
-              Submit
+              {t("submit")}
             </button>
           </form>
         </>
