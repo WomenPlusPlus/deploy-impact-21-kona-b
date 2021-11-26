@@ -40,18 +40,18 @@
 - [Acknowledgments](#acknowledgments)
 
 ## ‼️ Problem Statement <a name = "problem_statement"></a>
-Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. For organisations who want to develop a tool to contribute to diminishing unserved human rights, databases containng information of aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided.
+Access to tailored and trustworthy information is essential for individuals in precarious (and often life-threatening) situations. However, it is easy to get lost in a bureaucratic maze amongst the numerous support institutions that exist. Databases containng information of aid organisations already exist, but the information tends to be uncomplete and dont describe the services provided.
 
 One of the main factors that contributes to the increase of people living in precarious situations is statelessnes. A stateless person is someone who is "not considered as a national by any state under the operation of its law" [1](https://en.wikipedia.org/wiki/Statelessness). UNHCR estimates that statelesness affects millions of people worldwide, and at least 700.000 are in West and Central Affrica [2](https://data2.unhcr.org/en/situations/statelesswa). Being statelessnes is just one of the many reasons that causes people to be in vulnerable situations, being of high importance to provide a tool that eases the search for help.
 
-Empowering people by knowing what are their human rights, where to look for reliable help and what to expect from the service are things required to leave vulerability, as well as providing all the contacting information to reach the help.
+Easing the search for help can be done by empowering people to know what are their human rights, where to look for reliable help, what to expect from the aid service, and how to contact the organisation.
 
 
 ## :boom: Mission <a name = "mission"></a>
 Our mission is to:
 * Develop a trustworthy and unified NGO database.
 * Empower people to know their human rights.
-* Facilitate access to NGO   information to fulfill user's needs using intelligent technologies, i.e. Dots.
+* Facilitate access to NGO information to fulfill user's needs using intelligent technologies, i.e. Dots.
 
 ## 💡 Solution <a name = "idea"></a>
 6 weeks ago we did [brainstorming sessions](link brainstorming Figma) to define how we were going to solve the stated problem and how we could use the information to satisfy our stakeholders needs.  The solution is provided by Konna Connect by means of the platform "Dots", a web app used for searching help. To do this, Kona Connect's team has identified and classified the social organizations. In order to provide accurate information for the users we have improved the database by including information about the age and gender of the target individuals, the SDGs and sub-SDGs to which they contribute, location and contact information (coordinates, address, email, phone number, opening hours, web site, social media, etc.)
