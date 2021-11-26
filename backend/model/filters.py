@@ -82,7 +82,7 @@ def get_filtered_orgs(filters):
 
             if filter_type == strings.REGION:
                 res = df_region_filters.loc[df_region_filters[filter_value] == 1]
-                orgs.extend(list(res["id"]))
+                orgs.extend(list(res["org_id"]))
 
             if filter_type == strings.AGE:
                 age_flag = True
