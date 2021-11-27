@@ -700,7 +700,7 @@ Unlike SQL, CSV files have no restricted structure which makes it more prone to 
 It is also tricky to add/update/delete the CSV files using APIs since it will not be easy to ensure the APIs are called by the authorized team. Therefore, we chose to not add such features, to avoid adding misleading data to the data we have.
 
 - Some strings, such as URLs, are malformed when displayed on the frontend and need some cleaning/default values. This issue should've been compromised with the frontend since strings can be displayed in different formats on different platforms.
-
+- It is not possible to design a conditional quiz logic with the current implementation. This means that the questions that appear to the user will be independant of each other. It will be nice to have a logic that gives the user more relevant answers to choose from based on their previous answers in the future. 
 ## Future Development
 
 - Migrate the backend to read from postgres DB instead of CSV files. We currently store the data in Postgres on this [branch]( https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/tree/config-db-container/backend). However, further development is needed to refactor the backend to read from the SQL database.
@@ -709,9 +709,10 @@ It is also tricky to add/update/delete the CSV files using APIs since it will no
   
   By having the data in a Postgres DB, it is possible to develop a portal for Dots admins to edit and maintain the data in the database easily and securely. 
 
-- Using Machine Learning techniques to recommend the users more relevant results using previous users interactions.
-- Using NLP to help users search for more relevant results.
+- Use Machine Learning techniques to recommend the users more relevant results using previous users interactions.
+- Use NLP to help users search for more relevant results.
 - Visualize users' data using python ML libraries to help improve the user experience.
 - Collect users' feedback to help provide the users with relevant organisations.
-- Providing the user with general tips related to their quiz answers / general useful tips (e.g. legal tips related to their situation, local aid available for their situation (local authorities etc.)).
-- Adding the text translation in the backend, so that it will be easier to add, modify and switch between several languages. This can be done by replacing the `translation_key` column used by the existing data with the actual translation, and modifying the frontend to switch between them.
+- Provide the user with general tips related to their quiz answers / general useful tips (e.g. legal tips related to their situation, local aid available for their situation (local authorities etc.)).
+- Add the text translation in the backend, so that it will be easier to add, modify and switch between several languages. This can be done by replacing the `translation_key` column used by the existing data with the actual translation, and modifying the frontend to switch between them.
+- Support conditional logic in the quiz, where the questions and answer options displayed to the user will be based on their previous answers.
