@@ -43,4 +43,6 @@ In the end, we decided to use a colour palette similar to Kona Connect since Dot
 ## Tools & Resources
 Using Figma, we created an "inspiration" board to share ideas, brainstorm, and document some of our designs.
 https://www.figma.com/file/9pduIVje8vDdGgXf4DkydV/Inspiration?node-id=0%3A1
+Figma was also our main tool for working on wireframes and mockups. 
+Adobe Illustrator was used to create the logo.
 
