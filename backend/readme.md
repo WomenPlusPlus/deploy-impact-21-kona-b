@@ -24,7 +24,7 @@ sudo apt install python3-pip
 python app.py
 ```
 
-## To deploy backend (Azure):
+## To deploy backend (Azure)<a name="deployment"></a>:
 
 In order to deploy the website, you need to follow the following steps:
 - Make sure you have the Microsoft Azure CLI installed ([more info here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli))
