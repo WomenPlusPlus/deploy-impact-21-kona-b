@@ -699,7 +699,7 @@ We can add/edit the answers in `data/csv/quiz/Answers.csv` file by adding:
 Unlike SQL, CSV files have no restricted structure which makes it more prone to crash the backend/frontend with any small changes. 
 It is also tricky to add/update/delete the CSV files using APIs since it will not be easy to ensure the APIs are called by the authorized team. Therefore, we chose to not add such features, to avoid adding misleading data to the data we have.
 
-- Some strings, such as URLs, are malformed when displayed on the frontend and need some cleaning/default values. This issue should've been compromised with the frontend since strings can be displayed in different formats on different platforms.
+- Some strings, such as URLs, are malformed when displayed on the frontend and need some cleaning/default values. This issue should be compromised with the frontend and the data source since strings can be displayed in different formats on different platforms.
 - It is not possible to design a conditional quiz logic with the current implementation. This means that the questions that appear to the user will be independant of each other. It will be nice to have a logic that gives the user more relevant answers to choose from based on their previous answers in the future. 
 ## Future Development
 
@@ -716,3 +716,4 @@ It is also tricky to add/update/delete the CSV files using APIs since it will no
 - Provide the user with general tips related to their quiz answers / general useful tips (e.g. legal tips related to their situation, local aid available for their situation (local authorities etc.)).
 - Add the text translation in the backend, so that it will be easier to add, modify and switch between several languages. This can be done by replacing the `translation_key` column used by the existing data with the actual translation, and modifying the frontend to switch between them.
 - Support conditional logic in the quiz, where the questions and answer options displayed to the user will be based on their previous answers.
+- Clean the data to make sure it is displayed in the frontend without malformed strings.
