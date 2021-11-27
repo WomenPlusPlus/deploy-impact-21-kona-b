@@ -238,6 +238,11 @@ The information aligned to the SDG targets and Credit Suisse Framework can be us
 - __News feed:__ One potential user group of Dots. is people who are looking for education and/or a job. This feature would act like a news feed where the latest information and opportunities would show, allowing the user to be alwasy updated about what the NGOs can offer for them.
 - __NGO location:__ One of the improvements added to the given database was to include the latitude and longitude coordinates of each organisation. The idea is to include a map in the NGO information page containing its exact location, making it more easy for the user to find it.
 - __Restructure database connections:__ The description can be found in the [Access](#access) section of "Database" in this document.
+- __Meeting with Senegalese lawyers__: To ask the following questions:
+	- What type of information could we ask the User in the "feedback" box (the one created under each NGO information) taking into consideration we want this to be used for providing constructive feedback to the NGO and keep reliable NGOs in the database.
+	- Are there any special questions we should ask to a defined group of people (i.e.refugee)? 
+This would be useful to obtain any information about the type of questions to ask, and then try to codify it. This way we can make the search assistance more intelligent, it would be a future step. We want to figure out what are the common questions people ask.  For example in a specific situation someone is looking for legal aid.  Are there any sub-question lawyers always ask that maybe we should add to the process?
+	- What type of features can we add to the web app to make the app "an alternative legal aid" and save them the paperwork.
 
 
 ## :clipboard: License <a name = "license"></a>
