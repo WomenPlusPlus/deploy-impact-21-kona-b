@@ -28,6 +28,7 @@
     - [Frontend](#frontend)
     - [Backend](#backend)
 - [Repository structure](#structure)
+- [Cloud deployment](#cloud_deployment)
 - [The database](#database)
   - [Maintenance](#maintenance)
   - [Access](#access)
@@ -130,6 +131,14 @@ Find the instructions on how to run it [here](/backend).
 - __UX/UI_docs.md:__ UX/UI documentation.
 
 - __LICENSE:__ File containing the license information.
+
+## Cloud deployment<a name = "cloud_deployment" ></a>
+
+The frontend and backend are hosted on Azure. The frontend uses Azure storage containers with a CDN in front. The backend uses App Service to run the Python code.
+
+Specific deployment commands can be found in the [frontend](./frontend/README.md#deployment) and [backend](./backend/readme.md#deployment)] directories.
+
+To deploy the web app Azure CLI would need to be installed and correctly set up. Find out more [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
 
 ## :bar_chart: The database <a name = "database"></a>
 Databases containing information of aid organisations already exist, but the information tends to be incomplete and doesn't describe the services provided.  For this reason we decided to create our own and to be able to ask the user about it.
