@@ -146,14 +146,14 @@ To make the database more machine readable, it was processed and divided into th
     | age | baby, child, youth, adult  |
     
   
-* [region](/backend/csv/filters/region_filters.csv): To provide as much information as possible to the user, the database also contains the specific region where each NGO is located. Find below the available options:
+* [region](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/blob/main/backend/data/csv/filters/region_filters.csv): To provide as much information as possible to the user, the database also contains the specific region where each NGO is located. Find below the available options:
 
   | Categories  | Options |
   | ------------- | ------------- |
   | location  | dakar,	saint_louis, louga,	thies,	diourbel,	mattam,	fatick,	kaolack,	kaffrine,	tamabacounda,	kedougou,	kolda,	sedhiou,	ziguinohor|
 This classification will help Dots to answer "what is the region where the impact is created".
 
-* [SDG subcategory](/backend/csv/filters/dots_subcategories_filters.csv): One of the strengths of our database is that each NGO is linked to the Sustainable Development Goals (SDG) subcategories. This allow us to filter the database according to the user specific needs, allowing them to find the help they need in a shorter time and more effectively.  This classification was developed taking into consideration that it is not always clear what are the services provided by the NGOs.
+* [SDG subcategory](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/blob/main/backend/data/csv/filters/dots_subcategories_filters.csv): One of the strengths of our database is that each NGO is linked to the Sustainable Development Goals (SDG) subcategories. This allow us to filter the database according to the user specific needs, allowing them to find the help they need in a shorter time and more effectively.  This classification was developed taking into consideration that it is not always clear what are the services provided by the NGOs.
   | Categories  | Options |
   | ------------- | ------------- |
   | sdg  | 1-40|
