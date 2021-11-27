@@ -217,7 +217,7 @@ const { t } = useTranslation("the page you want to translate")
 For any question, you can refer to [this file](/frontend/src/pages/AboutUsPage.js) and use it as an example.
 
 ## :art: UX/UI <a name = "ux"></a>
-To know and emphathise with the user was one of our main priorities when developing the app. Therefore, our UX/UI team has made a wonderful job searching information to understand the user needs, frustrations and painpoints. This information combined with the feedback obtained from an interview with a potential user helped us to design the different aspects of the app such as colors, icons and wording. To find more information about the design process and user research check the [UX/UI_docs](/UXUI_docs.md)
+To know and emphathise with the user was one of our main priorities when developing the app. Therefore, our UX/UI team has done wonderful job researching information to understand the user needs, frustrations and pain points. This information, combined with the feedback obtained from interviews with potential users, helped us to design the different aspects of the app such as colours, icons and wording. To find more information about the design process and user research check the [UX/UI_docs](/UXUI_docs.md)
 
 
 ## :postal_horn: Troubleshooting <a name = "troubleshooting"></a>
