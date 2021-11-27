@@ -136,7 +136,7 @@ Find the instructions on how to run it [here](/backend).
 
 The frontend and backend are hosted on Azure. The frontend uses Azure storage containers with a CDN in front. The backend uses App Service to run the Python code.
 
-Specific deployment commands can be found in the [frontend](./frontend/README.md#deployment) and [backend](./backend/readme.md#deployment)] directories.
+Specific deployment commands can be found in the [frontend](./frontend/README.md#deployment) and [backend](./backend/readme.md#deployment) directories.
 
 To deploy the web app Azure CLI would need to be installed and correctly set up. Find out more [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
 
