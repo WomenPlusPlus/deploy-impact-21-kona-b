@@ -139,6 +139,7 @@ The organisations services are categorised in the database according to the SDG 
 To make the database more machine readable, it was processed and divided into the following datasets:
 
 * [age and gender](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/blob/main/backend/data/csv/filters/gender_and_age_filters.csv): In this dataset the organisations are categorized in a machine readable format according to the age and gender of the people to whom they offer their help. In the following table you can find the categories assigned to the NGOs. This classification will help Dots to answer "who is going to benefit from the service impact".
+* We also have a separate [age](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/blob/main/backend/data/csv/filters/age_filters.csv) and [gender](https://github.com/WomenPlusPlus/deploy-impact-21-kona-b/blob/main/backend/data/csv/filters/gender_filters.csv) classification files to enable the user to filter the dataset using these fields separately.
 
     | Categories  | Options |
     | ------------- | ------------- |
